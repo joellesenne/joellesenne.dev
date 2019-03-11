@@ -1,0 +1,5 @@
+{
+    "npm-scripts.showStartNotification": false,
+    "cSpell.language": "en"
+    // "graphqlForVSCode.nodePath": "ui/node_modules"
+}

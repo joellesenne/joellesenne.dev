@@ -1,0 +1,85 @@
+import React from 'react'
+import Helmet from 'react-helmet'
+import { Link, graphql } from 'gatsby'
+import PropTypes from 'prop-types'
+import kebabCase from 'lodash/kebabCase'
+import size from 'lodash/size'
+
+// config
+import config from '../../config/site'
+
+// views
+import { Layout, Container, Content } from '../components/views'
+
+// partials
+import { Header, About, Contact, Footer, Wave } from '../components/partials'
+
+// elements
+import { ButtonWrapper, Button, Number, TagButton } from '../components/elements/Button'
+
+// components
+import { Headroom } from '../components/allPages'
+
+const tagsPage = ({
+  data: {
+    allMdx: { group, edges },
+  },
+}) => (
+  <Layout>
+    <Helmet title={`Tags | ${config.siteTitle}`} />
+    <Header bg title="Tags" subtitle={`${size(edges)} articles divisés en ${size(group)} tags`}>
+      <Headroom />
+      <Wave top />
+    </Header>
+    <Container>
+      <Content>
+        {group.map(tag => (
+          <TagButton>
+            <Link key={tag.id} to={`/tag/${kebabCase(tag.fieldValue)}`}>
+              <span>
+                {tag.fieldValue} <Number>{tag.totalCount}</Number>
+              </span>
+            </Link>
+          </TagButton>
+        ))}
+        <ButtonWrapper>
+          <Link to="/categories">
+            <Button type="button">Catégories</Button>
+          </Link>
+        </ButtonWrapper>
+      </Content>
+      <About />
+      <Contact />
+    </Container>
+    <Footer />
+  </Layout>
+)
+
+export default tagsPage
+
+tagsPage.propTypes = {
+  data: PropTypes.shape({
+    Mdx: PropTypes.shape({
+      group: PropTypes.array.isRequired,
+      edges: PropTypes.array.isRequired,
+    }),
+  }).isRequired,
+}
+
+export const pageQuery = graphql`
+  query TagsPage {
+    allMdx(
+      filter: { fields: { sourceInstanceName: { in: ["blog", "projects"] } }, frontmatter: { publish: { eq: true } } }
+    ) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
+      }
+      edges {
+        node {
+          id
+        }
+      }
+    }
+  }
+`

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/config/site.js">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/config/site.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/config/theme.js">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/config/theme.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/gatsby-browser.js">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/gatsby-browser.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/gatsby-config.js">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/gatsby-config.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/gatsby-node.js">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/gatsby-node.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/gatsby-ssr.js">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/gatsby-ssr.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/AllArticles.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/AllArticles.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/AllProjects.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/AllProjects.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/Button.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/Button.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/Code.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/Code.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/Headroom.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/Headroom.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/index.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/index.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/ItemTagCategory.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/ItemTagCategory.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/Navigation.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/Navigation.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/PrevNext.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/PrevNext.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/Tags.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/Tags.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/Base.jsx">
+<testcase time="0" name="org.eslint.import/no-unresolved"><failure message="Unable to resolve path to module &apos;./elements/Base&apos;."><![CDATA[line 8, col 22, Error - Unable to resolve path to module &apos;./elements/Base&apos;. (import/no-unresolved)]]></failure></testcase>
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/AllArticle.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/AllArticle.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Animation.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Animation.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/ArticleCard.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/ArticleCard.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Avatar.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Avatar.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Button.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Button.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Footer.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Footer.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Header.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Header.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Image.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Image.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Link.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Link.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Navigation.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Navigation.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/ProjectCard.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/ProjectCard.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Tags.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Tags.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Typographies.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Typographies.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Wrapper.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Wrapper.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/partials/About.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/partials/About.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/partials/Contact.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/partials/Contact.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/partials/Footer.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/partials/Footer.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/partials/Header.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/partials/Header.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/partials/index.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/partials/index.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/partials/Wave.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/partials/Wave.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/SEO.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/SEO.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/SVG.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/SVG.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/BlobAnimation.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/BlobAnimation.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/Container.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/Container.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/Content.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/Content.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/Heros.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/Heros.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/index.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/index.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="3" errors="3" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/Layout.jsx">
+<testcase time="0" name="org.eslint.import/no-unresolved"><failure message="Unable to resolve path to module &apos;config/theme&apos;."><![CDATA[line 6, col 19, Error - Unable to resolve path to module &apos;config/theme&apos;. (import/no-unresolved)]]></failure></testcase>
+<testcase time="0" name="org.eslint.import/no-unresolved"><failure message="Unable to resolve path to module &apos;styles/global&apos;."><![CDATA[line 8, col 25, Error - Unable to resolve path to module &apos;styles/global&apos;. (import/no-unresolved)]]></failure></testcase>
+<testcase time="0" name="org.eslint.import/no-unresolved"><failure message="Unable to resolve path to module &apos;components/SEO&apos;."><![CDATA[line 11, col 17, Error - Unable to resolve path to module &apos;components/SEO&apos;. (import/no-unresolved)]]></failure></testcase>
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/Wrapper.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/Wrapper.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/icons/Logo.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/icons/Logo.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="4" errors="4" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/pages/404.jsx">
+<testcase time="0" name="org.eslint.indent"><failure message="Expected indentation of 6 spaces but found 8."><![CDATA[line 25, col 1, Error - Expected indentation of 6 spaces but found 8. (indent)]]></failure></testcase>
+<testcase time="0" name="org.eslint.prettier/prettier"><failure message="Delete `&#183;&#183;`"><![CDATA[line 25, col 7, Error - Delete `&#183;&#183;` (prettier/prettier)]]></failure></testcase>
+<testcase time="0" name="org.eslint.prettier/prettier"><failure message="Delete `&#183;&#183;`"><![CDATA[line 27, col 1, Error - Delete `&#183;&#183;` (prettier/prettier)]]></failure></testcase>
+<testcase time="0" name="org.eslint.indent"><failure message="Expected indentation of 6 spaces but found 8."><![CDATA[line 27, col 1, Error - Expected indentation of 6 spaces but found 8. (indent)]]></failure></testcase>
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/pages/a-propos.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/pages/a-propos.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/pages/blog.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/pages/blog.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/pages/categories.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/pages/categories.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/pages/index.jsx">
+<testcase time="0" name="org.eslint.no-unused-vars"><failure message="&apos;ParallaxLayer&apos; is defined but never used."><![CDATA[line 4, col 20, Warning - &apos;ParallaxLayer&apos; is defined but never used. (no-unused-vars)]]></failure></testcase>
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/pages/projets.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/pages/projets.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/pages/tags.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/pages/tags.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/styles/global.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/styles/global.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/templates/categorie.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/templates/categorie.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/templates/post.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/templates/post.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/templates/projet.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/templates/projet.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/templates/tag.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/templates/tag.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/utils/index.js">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/utils/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/utils/timeToRead.js">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/utils/timeToRead.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/wrap-root-element.js">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/wrap-root-element.js" />
+</testsuite>
+</testsuites>
