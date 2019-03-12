@@ -1,6 +1,5 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react'
-import { Link } from 'gatsby'
 
 // elements
 import { ButtonWrapper, Button } from 'components/elements/Button'
@@ -9,7 +8,7 @@ import { Content } from 'components/views'
 import { Avatar } from 'components/elements/Avatar'
 
 // images
-import avatarImg from 'images/avatar.png'
+import avatarImg from '../../images/avatar.png'
 
 const SectionPage = () => (
   <Content>
@@ -26,9 +25,7 @@ const SectionPage = () => (
       du pixel.
     </Paragraph>
     <ButtonWrapper>
-      <Link to="/a-propos">
-        <Button type="button">A-Propos</Button>
-      </Link>
+      <Button to="/a-propos">A-Propos</Button>
     </ButtonWrapper>
   </Content>
 )

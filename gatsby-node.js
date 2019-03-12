@@ -192,6 +192,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         config: path.resolve(__dirname, 'config'),
         content: path.resolve(__dirname, 'content/'),
         component: path.resolve(__dirname, 'components/'),
+        images: path.resolve(__dirname, 'images/'),
       },
       modules: [path.resolve(__dirname, 'src'), 'node_modules'],
     },

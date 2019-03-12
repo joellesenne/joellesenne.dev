@@ -6,7 +6,7 @@ import kebabCase from 'lodash/kebabCase'
 import upperFirst from 'lodash/upperFirst'
 
 // elements
-import { Post, Title, Information, Excerpt } from 'components/elements/ArticleCard'
+import { Post, Title, Information, Excerpt } from 'components/elements/ArticlesCard'
 import { GatsbyLink } from 'components/elements/Link'
 
 // icons

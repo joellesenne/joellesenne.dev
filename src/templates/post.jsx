@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
@@ -6,23 +7,23 @@ import kebabCase from 'lodash/kebabCase'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 
 // views
-import { Layout, Container, Content } from '../components/views'
+import { Layout, Container, Content } from 'components/views'
 
 // partials
-import { Header, About, Contact, Footer, Wave } from '../components/partials'
+import { Header, Bio, Contact, Footer, Wave } from 'components/partials'
 
 // elements
-import { Article, PostContent } from '../components/elements/AllArticle'
-import { ImgFilter } from '../components/elements/Image'
-import { GatsbyLink } from '../components/elements/Link'
-import { Line } from '../components/elements/Line'
+import { Article, PostContent } from 'components/elements/AllArticlesProjects'
+import { ImgFilter } from 'components/elements/Image'
+import { GatsbyLink } from 'components/elements/Link'
+import { Line } from 'components/elements/Line'
 
 // components
-import SEO from '../components/SEO'
-import { Headroom, PrevNext, Tags } from '../components/allPages'
+import SEO from 'components/SEO'
+import { Headroom, PrevNext, Tags } from 'components/common'
 
 // icons
-import SVG from '../components/SVG'
+import SVG from 'components/SVG'
 
 const Post = ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) => {
   const post = postNode.frontmatter
@@ -59,7 +60,7 @@ const Post = ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) =>
             <PrevNext prev={prev} next={next} />
           </Article>
         </Content>
-        <About />
+        <Bio />
         <Contact />
       </Container>
       <Footer />

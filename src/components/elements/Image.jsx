@@ -4,7 +4,7 @@ export const ImgFilter = styled.div`
   .gatsby-image-wrapper {
     position: relative;
     height: 350px;
-    filter: grayscale(30%) saturate(165%);
+    filter: grayscale(30%) saturate(165%) opacity(0.5);
     z-index: -10;
     @media (max-width: ${props => props.theme.breakpoints.lg}) {
       height: 310px;

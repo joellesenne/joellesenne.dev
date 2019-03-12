@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 import styled from 'styled-components'
 import { darken } from 'polished'
 
@@ -65,7 +66,7 @@ export const Link = styled.a`
   box-decoration-break: clone;
   transition: ${props => props.theme.transition.link};
   &:hover {
-    -webkit-text-fill-color: ${props => props.theme.colors.link.gradientLeft};
     border-bottom: 2px solid ${props => props.theme.colors.link.gradientLeft};
+    -webkit-text-fill-color: ${props => props.theme.colors.link.gradientLeft};
   }
 `

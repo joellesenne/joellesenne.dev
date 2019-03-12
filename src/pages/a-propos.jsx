@@ -1,17 +1,18 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react'
 import Helmet from 'react-helmet'
 
 // config
-import config from '../../config/site'
+import config from 'config/site'
 
 // views
-import { Layout, Container } from '../components/views'
+import { Layout, Container } from 'components/views'
 
 // partials
-import { Header, Contact, Footer, Wave } from '../components/partials'
+import { Header, Contact, Footer, Wave } from 'components/partials'
 
 // components
-import { Headroom } from '../components/allPages'
+import { Headroom } from 'components/common'
 
 const aboutPage = () => (
   <Layout>

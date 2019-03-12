@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
@@ -6,19 +7,19 @@ import kebabCase from 'lodash/kebabCase'
 import size from 'lodash/size'
 
 // config
-import config from '../../config/site'
+import config from 'config/site'
 
 // views
-import { Layout, Container, Content } from '../components/views'
+import { Layout, Container, Content } from 'components/views'
 
 // partials
-import { Header, About, Contact, Footer, Wave } from '../components/partials'
+import { Header, Bio, Contact, Footer, Wave } from 'components/partials'
 
 // elements
-import { ButtonWrapper, Button, Number, TagButton } from '../components/elements/Button'
+import { ButtonWrapper, Button, Number, TagButton } from 'components/elements/Button'
 
 // components
-import { Headroom } from '../components/allPages'
+import { Headroom } from 'components/common'
 
 const tagsPage = ({
   data: {
@@ -33,22 +34,20 @@ const tagsPage = ({
     </Header>
     <Container>
       <Content>
-        {group.map(tag => (
-          <TagButton>
-            <Link key={tag.id} to={`/tag/${kebabCase(tag.fieldValue)}`}>
+        <ButtonWrapper>
+          {group.map(tag => (
+            <TagButton key={tag.id} to={`/tag/${kebabCase(tag.fieldValue)}`}>
               <span>
                 {tag.fieldValue} <Number>{tag.totalCount}</Number>
               </span>
-            </Link>
-          </TagButton>
-        ))}
+            </TagButton>
+          ))}
+        </ButtonWrapper>
         <ButtonWrapper>
-          <Link to="/categories">
-            <Button type="button">Catégories</Button>
-          </Link>
+          <Button to="/categories">Catégories</Button>
         </ButtonWrapper>
       </Content>
-      <About />
+      <Bio />
       <Contact />
     </Container>
     <Footer />

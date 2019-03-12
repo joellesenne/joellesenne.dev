@@ -8,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
     vertical-align: baseline;
   }
   html {
@@ -16,11 +15,14 @@ const GlobalStyle = createGlobalStyle`
     font-size: 18px;
     line-height: 1.5;
     text-rendering: optimizeLegibility;
+    scrollbar-width: 20px;
+    scrollbar-color: ${props => props.theme.colors.base.bg};
     overflow-x: hidden;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
     h1 {
       font-size: 2.441rem;
     }
@@ -112,11 +114,25 @@ const GlobalStyle = createGlobalStyle`
   }
   ::-moz-selection {
     color: ${props => props.theme.colors.base.white};
-    background-color: ${props => props.theme.colors.link.gradientStart};
+    background-color: ${props => props.theme.colors.link.gradientRight};
   }
   ::selection {
     color: ${props => props.theme.colors.base.white};
-    background-color: ${props => props.theme.colors.link.gradientStart};
+    background-color: ${props => props.theme.colors.link.gradientLeft};
+  }
+  html::-webkit-scrollbar {
+    width: 20px;
+    height: 20px
+  }
+  html::-webkit-scrollbar-track {
+    background: ${props => props.theme.colors.base.bg};
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  html::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, #da8725, #da1a60);
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
   }
 `
 

@@ -1,22 +1,23 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 // config
-import config from '../../config/site'
+import config from 'config/site'
 
 // views
-import { Layout, Container, Content } from '../components/views'
+import { Layout, Container, Content } from 'components/views'
 
 // partials
-import { Header, About, Contact, Footer, Wave } from '../components/partials'
+import { Header, Bio, Contact, Footer, Wave } from 'components/partials'
 
 // elements
-import { ProjectsWrapper } from '../components/elements/ProjectCard'
+import { ProjectsWrapper } from 'components/elements/ProjectsCard'
 
 // components
-import { Headroom, AllProjects } from '../components/allPages'
+import { Headroom, AllProjects } from 'components/common'
 
 const projectsPage = ({
   data: {
@@ -45,7 +46,7 @@ const projectsPage = ({
           ))}
         </ProjectsWrapper>
       </Content>
-      <About />
+      <Bio />
       <Contact />
     </Container>
     <Footer />

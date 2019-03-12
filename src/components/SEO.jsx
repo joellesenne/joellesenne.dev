@@ -1,8 +1,10 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
-// import { graphql, StaticQuery } from 'gatsby'
-import config from '../../config/site'
+
+// config
+import config from 'config/site'
 
 const SEO = props => {
   const { postNode, postPath, article, project, buildTime } = props

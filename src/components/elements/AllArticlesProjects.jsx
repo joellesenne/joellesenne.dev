@@ -13,6 +13,10 @@ export const Article = styled.article`
   @media (max-width: ${props => props.theme.breakpoints.md}) {
     padding: 3rem 3rem;
   }
+`
+
+export const PostContent = styled.section`
+  margin-top: 4rem;
   p {
     font-size: 1.1rem;
     letter-spacing: -0.003em;
@@ -29,14 +33,6 @@ export const Article = styled.article`
     margin-bottom: 1rem;
     font-size: 16px;
   }
-`
-
-export const Title = styled.h1`
-  margin-bottom: 1rem;
-`
-
-export const PostContent = styled.section`
-  margin-top: 4rem;
   a {
     background: ${props => props.theme.gradient.link};
     -webkit-background-clip: text;
@@ -49,4 +45,8 @@ export const PostContent = styled.section`
       border-bottom: 2px solid ${props => props.theme.colors.link.gradientLeft};
     }
   }
+`
+
+export const Title = styled.h1`
+  margin-bottom: 1rem;
 `

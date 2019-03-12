@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 // elements
-import { LinkWrapper, Title, Excerpt } from 'components/elements/ProjectCard'
+import { LinkWrapper, Title, Excerpt } from 'components/elements/ProjectsCard'
 
 const ArticlePage = ({ title, excerpt, slug }) => (
   <LinkWrapper to={slug}>

@@ -24,9 +24,6 @@
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/AllProjects.jsx">
 <testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/AllProjects.jsx" />
 </testsuite>
-<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/Button.jsx">
-<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/Button.jsx" />
-</testsuite>
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/Code.jsx">
 <testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/Code.jsx" />
 </testsuite>
@@ -48,8 +45,8 @@
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/Tags.jsx">
 <testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/allPages/Tags.jsx" />
 </testsuite>
-<testsuite package="org.eslint" time="0" tests="1" errors="1" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/Base.jsx">
-<testcase time="0" name="org.eslint.import/no-unresolved"><failure message="Unable to resolve path to module &apos;./elements/Base&apos;."><![CDATA[line 8, col 22, Error - Unable to resolve path to module &apos;./elements/Base&apos;. (import/no-unresolved)]]></failure></testcase>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/CodePenEmbed.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/CodePenEmbed.jsx" />
 </testsuite>
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/AllArticle.jsx">
 <testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/AllArticle.jsx" />
@@ -74,6 +71,9 @@
 </testsuite>
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Image.jsx">
 <testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Image.jsx" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Line.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Line.jsx" />
 </testsuite>
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Link.jsx">
 <testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/elements/Link.jsx" />
@@ -132,10 +132,8 @@
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/index.jsx">
 <testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/index.jsx" />
 </testsuite>
-<testsuite package="org.eslint" time="0" tests="3" errors="3" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/Layout.jsx">
-<testcase time="0" name="org.eslint.import/no-unresolved"><failure message="Unable to resolve path to module &apos;config/theme&apos;."><![CDATA[line 6, col 19, Error - Unable to resolve path to module &apos;config/theme&apos;. (import/no-unresolved)]]></failure></testcase>
-<testcase time="0" name="org.eslint.import/no-unresolved"><failure message="Unable to resolve path to module &apos;styles/global&apos;."><![CDATA[line 8, col 25, Error - Unable to resolve path to module &apos;styles/global&apos;. (import/no-unresolved)]]></failure></testcase>
-<testcase time="0" name="org.eslint.import/no-unresolved"><failure message="Unable to resolve path to module &apos;components/SEO&apos;."><![CDATA[line 11, col 17, Error - Unable to resolve path to module &apos;components/SEO&apos;. (import/no-unresolved)]]></failure></testcase>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/Layout.jsx">
+<testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/Layout.jsx" />
 </testsuite>
 <testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/Wrapper.jsx">
 <testcase time="0" name="/Users/francoislesenne/WorksPaces/Projects/v1/joel-lesenne/www/joellesenne.xyz/src/components/views/Wrapper.jsx" />

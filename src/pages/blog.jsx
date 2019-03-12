@@ -1,19 +1,20 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 // config
-import config from '../../config/site'
+import config from 'config/site'
 
 // views
-import { Layout, Container, Content } from '../components/views'
+import { Layout, Container, Content } from 'components/views'
 
 // partials
-import { Header, About, Contact, Footer, Wave } from '../components/partials'
+import { Header, Bio, Contact, Footer, Wave } from 'components/partials'
 
 // components
-import { Headroom, AllArticles } from '../components/allPages'
+import { Headroom, AllArticles } from 'components/common'
 
 const blogPage = ({
   data: {
@@ -40,7 +41,7 @@ const blogPage = ({
           />
         ))}
       </Content>
-      <About />
+      <Bio />
       <Contact />
     </Container>
     <Footer />

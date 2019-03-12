@@ -1,9 +1,10 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 // elements
-import { GatsbyLink } from '../elements/Link'
+import { GatsbyLink } from 'components/elements/Link'
 
 const Wrapper = styled.div`
   display: flex;

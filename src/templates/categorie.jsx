@@ -1,22 +1,25 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
+import kebabCase from 'lodash/kebabCase'
 
 // config
-import config from '../../config/site'
+import config from 'config/site'
 
 // views
-import { Layout, Container, Content } from '../components/views'
+import { Layout, Container, Content } from 'components/views'
 
 // partials
-import { Header, About, Contact, Footer, Wave } from '../components/partials'
+import { Header, Bio, Contact, Footer, Wave } from 'components/partials'
 
 // components
-import { Headroom, ItemTagCategory } from '../components/allPages'
+import { Headroom, ItemTagCategory } from 'components/common'
 
 // elements
-import { ButtonWrapper, Button } from '../components/elements/Button'
+import { ButtonWrapper, Button } from 'components/elements/Button'
+import { GatsbyLink } from 'components/elements/Link'
 
 const categoryPage = ({
   pageContext: { category },
@@ -29,9 +32,12 @@ const categoryPage = ({
     <Header
       bg
       title={category}
-      subtitle={`${totalCount} ${
-        totalCount === 1 ? 'article trouvé' : 'articles trouvés'
-      } dans la catégorie : ${category}.`}
+      subtitle={
+        <>
+          {totalCount} {totalCount === 1 ? 'article trouvé' : 'articles trouvés'} dans la catégorie :{' '}
+          <GatsbyLink to={`/categorie/${kebabCase(category)}`}>{category}</GatsbyLink>
+        </>
+      }
     >
       <Headroom />
       <Wave top />
@@ -52,12 +58,10 @@ const categoryPage = ({
           />
         ))}
         <ButtonWrapper>
-          <Link to="/categories">
-            <Button type="button">Gatégories</Button>
-          </Link>
+          <Button to="/categories">Gatégories</Button>
         </ButtonWrapper>
       </Content>
-      <About />
+      <Bio />
       <Contact />
     </Container>
     <Footer />
