@@ -1,6 +1,5 @@
 # My personal site
-  
-  [![Build Status](https://travis-ci.com/joellesenne/joellesenne.xyz.svg?token=grPssqD9gpHqh7fqn8Ep&branch=master)](https://travis-ci.com/joellesenne/joellesenne.xyz)
+[![Build Status](https://travis-ci.com/joellesenne/joellesenne.xyz.svg?style=for-the-badge&token=grPssqD9gpHqh7fqn8Ep&branch=master)](https://travis-ci.com/joellesenne/joellesenne.xyz) [![GitHub license](https://img.shields.io/badge/Mit-License-lightgrey.svg?style=flat-square)](https://github.com/joellesenne/https//joellesenne.xyz/blob/master/LICENSE) [![Joel Lesenne Homepage](https://img.shields.io/badge/joellesenne-homepage-lightgrey.svg?style=flat-square)](https//joellesenne.xyz)
 
 ## About
 
@@ -32,7 +31,8 @@ this is for you to share my code in the world.
 - 4 – Downloads [git-scm.com](https://git-scm.com/downloads) – [Docs](https://git-scm.com/docs) for config
 
 ### 💻 Command `bach` :
-``` 
+
+```
 # Node version
 ~ $ node --version
 
@@ -68,7 +68,6 @@ this is for you to share my code in the world.
 - Make a parallax effect
 - Use a CMS
 - Deploy on [Netlify](https://www.netlifycms.org/)
-
 
 ## License
 

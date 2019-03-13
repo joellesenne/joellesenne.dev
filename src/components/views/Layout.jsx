@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+// /* eslint-disable react/prop-types */
 /* eslint-disable import/no-unresolved */
 import React from 'react'
 import PropTypes from 'prop-types'
