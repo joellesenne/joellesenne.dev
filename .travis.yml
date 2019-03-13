@@ -1,13 +1,20 @@
 language: node_js
-os:
-  - linux
-  - osx
 
 node_js:
-  - "node"
+  - "stable"
   - "lts/*"
-  - '10'
+
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+  - node_modules
+
+before_script:
+  - "npm i -g gatsby-cli"
+  - "yarn"
 
 script:
-  - npm install
-  - npm run lint
+  - gatsby build

@@ -1,7 +1,7 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import kebabCase from 'lodash/kebabCase'
 import size from 'lodash/size'

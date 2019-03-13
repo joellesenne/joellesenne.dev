@@ -4,6 +4,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { ThemeProvider } from 'styled-components'
 import CookieConsent from 'react-cookie-consent'
+import { lighten, darken } from 'polished'
 
 // config
 import theme from 'config/theme'
@@ -18,7 +19,7 @@ import Wrapper from './Wrapper'
 
 // styles
 
-const Layout = ({ children, buttonText, buttonStyle }) => {
+const Layout = ({ children, buttonText }) => {
   const btnStyle = {
     color: props => props.theme.colors.base.bg,
     background: props => props.theme.colors.base.color,
@@ -33,8 +34,16 @@ const Layout = ({ children, buttonText, buttonStyle }) => {
         <Wrapper>{children}</Wrapper>
         <CookieConsent
           buttonText={buttonText}
-          style={{ background: '#141672', padding: '0 1.5rem' }}
-          buttonStyle={(buttonStyle, btnStyle)}
+          style={{
+            padding: '0 1.5rem',
+            color: theme.colors.base.color,
+            background: lighten(0.08, theme.colors.base.bg),
+          }}
+          buttonStyle={{
+            color: theme.colors.base.bg,
+            background: theme.colors.base.color,
+            borderRadius: '13px',
+          }}
         >
           Ce site utilise des cookies pour améliorer l'expérience utilisateur.
         </CookieConsent>
@@ -47,7 +56,6 @@ export default Layout
 
 Layout.propTypes = {
   buttonText: PropTypes.string,
-  buttonStyle: PropTypes.any.isRequired,
   children: PropTypes.oneOfType([PropTypes.array, PropTypes.node]).isRequired,
 }
 
