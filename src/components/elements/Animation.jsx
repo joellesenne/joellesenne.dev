@@ -64,10 +64,10 @@ export const BlobAbout = styled.div`
 const hand = keyframes`
   0% {
     transform: rotate(20deg) translate(0px, 0px);
-}
-100% {
+  }
+  100% {
     transform: rotate(30deg) translate(-1px, -1px);
-}
+  }
 `
 
 const handAnimation = length => css`
@@ -95,63 +95,62 @@ export const rotateAnimation = length => css`
   animation: ${rotate} ${length} linear infinite;
 `
 // Wave Animation
-const wave = keyframes`
+const waveTop = keyframes`
   0% {
-    d: path("M 0 100 
-    Q 250 50 400 200 
-    Q 550 350 800 300 
-    L 800 0 
-    L 0 0 
-    L 0 100 
-    Z");
+    d: path("M-16,167c93.651-21.807,151.543-33.944,346-37,172.305-2.708,236.819,50.67,491,22l2,314-836,2Z");
   }
   50% {
-    d: path("M 0 100 
-    Q 200 150 400 200 
-    Q 600 250 800 300 
-    L 800 0 
-    L 0 0 
-    L 0 100 
-    Z");
+    d: path("M-14,181s132.418-57.008,401-40,267.941,3.586,422-10l12,328-835,2V181Z");
   }
   100% {
-    d: path("M 0 100 
-    Q 150 350 400 200 
-    Q 650 50 800 300 
-    L 800 0 
-    L 0 0 
-    L 0 100 
-    Z");
+    d: path("M-12,246c237.342-51.353,657.948-1.991,829.051-158.021C817,91,815,457,815,457l-826-7S-12.089,276.275-12,246Z");
   }
 `
 
-const waveAnimation = length => css`
-  animation: ${wave} ${length} cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite alternate;
+const waveBottom = keyframes`
+  0% {
+    d: path("M809,134s-79.484-31.938-351,20S208.527,236.684-16,233l4,230,822-2Z");
+  }
+  50% {
+    d: path("M816,229s-128.34-48.234-360-36-267.846,7.574-470-11l7,282,817-3Z");
+  }
+  100% {
+    d: path("M806,309s-208.623,6.977-467-57S148.4,188.3-16,177l1,282,823,1Z");
+  }
+`
+
+const waveAnimationTop = length => css`
+  animation: ${waveTop} ${length} cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite alternate;
+`
+const waveAnimationBottom = length => css`
+  animation: ${waveBottom} ${length} cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite alternate;
 `
 export const WaveWrapper = styled.div`
   position: absolute;
   width: 100%;
-  bottom: -1px;
+  left: 0;
+  bottom: 0;
+  right: 0;
   z-index: -1;
-  transform: matrix(1, 0, 0, -1, 0, 0);
+  transform: matrix(2, 0, 0, 1, 0, 0);
 `
 export const InnerWave = styled.div`
   position: relative;
   width: 100%;
-  bottom: 0;
+  bottom: 248px;
   z-index: -1;
   svg {
     display: block;
     position: absolute;
     width: 100%;
-    height: 5.5rem;
+    height: 250px;
     fill: ${props => (props.top ? props.theme.colors.base.bg : lighten(0.08, props.theme.colors.base.bg))};
     @media (max-width: ${props => props.theme.breakpoints.md}) {
-      height: 4.5rem;
+      height: 1rem;
     }
   }
   path {
-    ${waveAnimation('15s')};
+    ${props => (props.top ? waveAnimationTop('20s') : waveAnimationBottom('20s'))};
   }
 `
 

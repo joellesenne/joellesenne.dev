@@ -25,7 +25,7 @@ const blogPage = ({
     <Helmet title={`Blog | ${config.siteTitle}`} />
     <Header bg title="Blog" subtitle="Un concentré de réflextion, de tutoriels et de nouvelles">
       <Headroom />
-      <Wave top />
+      <Wave top Wave />
     </Header>
     <Container>
       <Content>

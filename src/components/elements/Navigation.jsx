@@ -55,8 +55,8 @@ export const LogoText = styled.span`
   font-size: 1.25rem;
   text-transform: uppercase;
   background: ${props => props.theme.gradient.link};
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   transition: ${props => props.theme.transition.link};
@@ -78,8 +78,8 @@ export const NavWrapper = styled.nav`
     align-self: center;
     flex-grow: 1;
     background: ${props => props.theme.gradient.link};
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     color: #89103c !important;

@@ -48,6 +48,7 @@
     "prism-react-renderer": "^0.1.6",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
+    "react-cookie-consent": "^2.2.2",
     "react-dom": "^16.8.4",
     "react-headroom": "^2.2.8",
     "react-helmet": "^5.2.0",
