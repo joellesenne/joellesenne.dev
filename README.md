@@ -46,7 +46,7 @@ this is for you to share my code in the world.
 ~ $ npm install -g gatsby-cli
 
 # gatsby-cli version
-~ $ gatsby-cli version
+~ $ gatsby-cli --version
 
 # Clone this repository
 ~ $ git clone  https://github.com/joellesenne/joellesenne.xyz.git
