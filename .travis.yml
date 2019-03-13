@@ -11,6 +11,3 @@ node_js:
 script:
   - npm install
   - npm run lint
-  
-dist: trusty
-sudo: false
