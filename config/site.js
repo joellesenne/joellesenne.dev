@@ -39,6 +39,6 @@ const website = {
   ...meta,
   ...social,
   ...manifest,
-  googleAnalyticsID: 'UA-28372011-2',
+  googleAnalyticsID: 'XX-XXXXXXXX-X',
 }
 module.exports = website

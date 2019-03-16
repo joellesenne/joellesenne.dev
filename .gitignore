@@ -1,3 +1,13 @@
+# Project dependencies
+.cache
+node_modules
+.git
+.env
+
+#Build directory
+/public
+.DS_store
+
 ### Node ###
 # Logs
 logs

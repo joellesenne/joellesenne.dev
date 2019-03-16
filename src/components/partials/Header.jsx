@@ -1,12 +1,10 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react'
 import PropTypes from 'prop-types'
 
 // elements
-import { Header } from '../elements/Header'
-import { BigTitle, Subtitle } from '../elements/Typographies'
-
-// views
-import { Heros } from '../views'
+import { Header, Heros } from 'components/elements/Header'
+import { BigTitle, Subtitle } from 'components/elements/Typographies'
 
 const HeaderPage = ({ title, subtitle, children, big, bg }) => (
   <Header big={big} bg={bg}>

@@ -60,7 +60,9 @@ const indexPage = ({
           ))}
         </ProjectsWrapper>
         <ButtonWrapper>
-          <Button to="/projets">Project</Button>
+          <Button to="/projets" type="primary">
+            Project
+          </Button>
         </ButtonWrapper>
       </Content>
       <Content>
@@ -77,7 +79,9 @@ const indexPage = ({
           />
         ))}
         <ButtonWrapper>
-          <Button to="/blog">Blog</Button>
+          <Button to="/blog" type="secondary">
+            Blog
+          </Button>
         </ButtonWrapper>
       </Content>
       <Bio />

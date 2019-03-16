@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "keywords": [
     "gatsby",
+    "react",
     "portfolio",
     "joellesenne"
   ],
@@ -18,7 +19,8 @@
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
     "lint:ci": "eslint --format junit -o results/eslint/result.xml",
     "format": "prettier \"**/*.{md,mdx} \" --write",
-    "test": "snyk test"
+    "cy:open": "cypress open",
+    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open"
   },
   "dependencies": {
     "@mdx-js/mdx": "^0.20.3",
@@ -28,6 +30,7 @@
     "gatsby-image": "^2.0.30",
     "gatsby-mdx": "^0.4.2",
     "gatsby-plugin-catch-links": "^2.0.12",
+    "gatsby-plugin-feed": "^2.0.15",
     "gatsby-plugin-google-analytics": "^2.0.16",
     "gatsby-plugin-lodash": "^3.0.4",
     "gatsby-plugin-manifest": "^2.0.22",
@@ -41,6 +44,7 @@
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-images": "^3.0.6",
     "gatsby-source-filesystem": "^2.0.23",
+    "gatsby-source-netlify": "^1.0.1",
     "gatsby-transformer-sharp": "^2.1.15",
     "lodash": "^4.17.11",
     "mdx-utils": "^0.0.2",
@@ -58,20 +62,24 @@
   },
   "devDependencies": {
     "babel-eslint": "^9.x",
+    "cypress": "^3.1.5",
+    "cypress-testing-library": "^2.3.6",
     "dotenv": "^6.2.0",
     "eslint": "^5.15.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-cypress": "^2.2.1",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.16.4",
-    "snyk": "^1.136.1"
+    "snyk": "^1.136.1",
+    "start-server-and-test": "^1.7.11"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/joellesenne/joellesenne.xyz"
+    "url": "git+https://github.com/joellesenne/joellesenne.xyz.git"
   },
   "bugs": {
     "url": "https://github.com/joellesenne/joellesenne.xyz/issues"

@@ -1,5 +1,5 @@
 # My personal site
-[![Build Status](https://travis-ci.com/joellesenne/joellesenne.xyz.svg?style=for-the-badge&token=grPssqD9gpHqh7fqn8Ep&branch=master)](https://travis-ci.com/joellesenne/joellesenne.xyz) [![GitHub license](https://img.shields.io/badge/Mit-License-lightgrey.svg?style=flat-square)](https://github.com/joellesenne/https//joellesenne.xyz/blob/master/LICENSE) [![Joel Lesenne Homepage](https://img.shields.io/badge/joellesenne-homepage-lightgrey.svg?style=flat-square)](https//joellesenne.xyz)
+[![Build Status](https://travis-ci.com/joellesenne/joellesenne.xyz.svg?style=for-the-badge&token=grPssqD9gpHqh7fqn8Ep&branch=master)](https://travis-ci.com/joellesenne/joellesenne.xyz) [![GitHub license](https://img.shields.io/badge/Mit-License-blue.svg?style=flat-square)](https://github.com/joellesenne/https//joellesenne.xyz/blob/master/LICENSE) [![Joel Lesenne Homepage](https://img.shields.io/badge/joellesenne-HomePage-blue.svg?style=flat-square)](https//joellesenne.xyz) ![Maintenance](https://img.shields.io/maintenance/yes/2019.svg?style=flat-square)
 
 ## About
 
@@ -32,7 +32,7 @@ this is for you to share my code in the world.
 
 ### 💻 Command `bach` :
 
-```
+```bach
 # Node version
 ~ $ node --version
 
@@ -63,11 +63,13 @@ this is for you to share my code in the world.
 
 🎉 have fun
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/joellesenne/joellesenne.xyz)
+
 ## 🚧 Coming soon
 
 - Make a parallax effect
 - Use a CMS
-- Deploy on [Netlify](https://www.netlifycms.org/)
+- ~~Deploy on [Netlify](https://www.netlifycms.org/)~~
 
 ## License
 
