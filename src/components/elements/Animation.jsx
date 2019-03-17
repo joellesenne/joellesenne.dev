@@ -60,25 +60,33 @@ export const BlobAbout = styled.div`
   animation-delay: -6s;
 `
 
-// Hand Animation (Bug)
+// Hand Animation
 const hand = keyframes`
   0% {
     transform: rotate(20deg) translate(0px, 0px);
   }
   100% {
-    transform: rotate(30deg) translate(-1px, -1px);
+    transform: rotate(30deg);
   }
 `
 
-const handAnimation = length => css`
-  animation: ${hand} ${length} 400ms ease-in-out alternate 6;
+export const handAnimation = length => css`
+  animation: ${hand} ${length} alternate infinite;
+  animation-duration: 400ms;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: 6;
+  transform-origin: right bottom;
 `
 
 export const Hand = styled.span`
+  display: inline-block;
   position: relative;
-  ${handAnimation('2000ms')}
+  margin-left: 10px;
+  top: 5px;
+  left: -15px;
   transform: rotate(20deg);
-  transform-origin: right bottom;
+  ${handAnimation('15s')};
 `
 
 // Rotate Animation
@@ -94,7 +102,7 @@ const rotate = keyframes`
 export const rotateAnimation = length => css`
   animation: ${rotate} ${length} linear infinite;
 `
-// Wave Animation
+// Wave Animation (bugs)
 const waveTop = keyframes`
   0% {
     d: path("M-16,167c93.651-21.807,151.543-33.944,346-37,172.305-2.708,236.819,50.67,491,22l2,314-836,2Z");
@@ -132,7 +140,7 @@ export const WaveWrapper = styled.div`
   bottom: 0;
   right: 0;
   z-index: -1;
-  transform: matrix(2, 0, 0, 1, 0, 0);
+  transform: matrix(4, 0, 0, 1, 0, 0);
 `
 export const InnerWave = styled.div`
   position: relative;

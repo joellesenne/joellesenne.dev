@@ -16,7 +16,7 @@ const AnimationPage = ({ top }) => (
         viewBox={top ? wave.waveTop.viewBox : wave.waveBottom.viewBox}
         preserveAspectRatio={top ? wave.waveBottom.preserveAspectRatio : wave.waveBottom.preserveAspectRatio}
       >
-        {wave.waveBlock.shape}
+        {top ? wave.waveTop.shape : wave.waveBottom.shape}
       </svg>
     </InnerWave>
   </WaveWrapper>

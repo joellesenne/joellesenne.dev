@@ -11,7 +11,8 @@ import { Title } from 'components/elements/Typographies'
 import { ButtonWrapper, Button } from 'components/elements/Button'
 import { ProjectsWrapper } from 'components/elements/ProjectsCard'
 
-// views
+// common
+import { AllArticles, AllProjects } from 'components/common'
 
 // partials
 import { Header, Bio, Contact, Footer } from 'components/partials'
@@ -19,8 +20,7 @@ import { Header, Bio, Contact, Footer } from 'components/partials'
 // animation
 import { Hand } from 'components/elements/Animation'
 
-// components
-import { AllArticles, AllProjects } from 'components/common'
+// views
 import { Layout, Container, Content, BlobAnimation } from '../components/views'
 
 const indexPage = ({
@@ -38,7 +38,7 @@ const indexPage = ({
       title={
         <>
           Hey, <br />
-          Je suis {config.siteTitle}! <Hand>👋</Hand>
+          Je suis {config.siteTitle}!<Hand>👋</Hand>
         </>
       }
       subtitle={config.siteDescription}

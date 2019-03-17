@@ -40,18 +40,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-netlify',
-      options: {
-        // Learning <https://github.com/LekoArts/gatsby-source-netlify>
-        apiKey: process.env.NETLIFY_KEY,
-        scheme: 'https',
-        host: 'api.netlify.com',
-        pathPrefix: '/api/v1',
-        globalParams: {}, // parameters you want available for every request.
-        // Global params are only sent of the open-api spec specifies the provided params.
-      },
-    },
-    {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: process.env.GA_TRACKING_ID,

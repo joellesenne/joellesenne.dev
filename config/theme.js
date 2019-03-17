@@ -6,6 +6,7 @@ const colors = {
     bg: '#0e0f4f',
     white: '#fff',
     black: '#000',
+    bgLight: '#171982',
   },
   nav: {
     bg: '#171982',
@@ -30,7 +31,7 @@ const gradient = {
   btn: `linear-gradient(
     45deg, ${colors.link.gradientRight} 0%, ${colors.link.gradientLeft} 100%
   )`,
-  bg: `radial-gradient(closest-side ellipse, rgba(15, 14, 22, 0.45), ${colors.base.gradientRight})`,
+  bg: `radial-gradient(closest-side ellipse, rgba(15, 14, 22, 0.45), ${colors.base.bgLight})`,
 }
 
 const transition = {

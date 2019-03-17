@@ -7,17 +7,17 @@ import { graphql } from 'gatsby'
 // config
 import config from 'config/site'
 
-// views
-import { Layout, Container, Content } from 'components/views'
+// elements
+import { ProjectsWrapper } from 'components/elements/ProjectsCard'
+
+// common
+import { Headroom, AllProjects } from 'components/common'
 
 // partials
 import { Header, Bio, Contact, Footer, Wave } from 'components/partials'
 
-// elements
-import { ProjectsWrapper } from 'components/elements/ProjectsCard'
-
-// components
-import { Headroom, AllProjects } from 'components/common'
+// views
+import { Layout, Container, Content } from 'components/views'
 
 const projectsPage = ({
   data: {

@@ -1,6 +1,8 @@
 # Project dependencies
 .cache
 node_modules
+.vscode/*
+.vscode/settings.json
 .git
 .env
 
@@ -72,3 +74,4 @@ bundle-stats.json
 .env.development
 .env.production
 .gglconfig
+.vscode/settings.json

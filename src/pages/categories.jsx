@@ -9,17 +9,17 @@ import size from 'lodash/size'
 // config
 import config from 'config/site'
 
-// views
-import { Layout, Container, Content } from 'components/views'
+// elements
+import { ButtonWrapper, Button, Number, TagButton } from 'components/elements/Button'
+
+// common
+import { Headroom } from 'components/common'
 
 // partials
 import { Header, Bio, Contact, Footer, Wave } from 'components/partials'
 
-// elements
-import { ButtonWrapper, Button, Number, TagButton } from 'components/elements/Button'
-
-// components
-import { Headroom } from 'components/common'
+// views
+import { Layout, Container, Content } from 'components/views'
 
 const categoriesPage = ({
   data: {

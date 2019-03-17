@@ -7,14 +7,14 @@ import { graphql } from 'gatsby'
 // config
 import config from 'config/site'
 
-// views
-import { Layout, Container, Content } from 'components/views'
+// common
+import { Headroom, AllArticles } from 'components/common'
 
 // partials
 import { Header, Bio, Contact, Footer, Wave } from 'components/partials'
 
-// components
-import { Headroom, AllArticles } from 'components/common'
+// views
+import { Layout, Container, Content } from 'components/views'
 
 const blogPage = ({
   data: {

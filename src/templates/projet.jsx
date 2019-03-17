@@ -6,21 +6,23 @@ import Img from 'gatsby-image'
 import kebabCase from 'lodash/kebabCase'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 
-// views
-import { Layout, Container, Content } from 'components/views'
-
-// partials
-import { Header, Bio, Contact, Footer, Wave } from 'components/partials'
-
 // elements
 import { Article, PostContent } from 'components/elements/AllArticlesProjects'
 import { ImgFilter } from 'components/elements/Image'
 import { GatsbyLink } from 'components/elements/Link'
 import { Line } from 'components/elements/Line'
 
+// common
+import { Headroom, PrevNext, Tags } from 'components/common'
+
+// partials
+import { Header, Bio, Contact, Footer, Wave } from 'components/partials'
+
 // components
 import SEO from 'components/SEO'
-import { Headroom, PrevNext, Tags } from 'components/common'
+
+// views
+import { Layout, Container, Content } from 'components/views'
 
 // icons
 import SVG from 'components/SVG'

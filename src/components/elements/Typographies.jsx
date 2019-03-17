@@ -9,6 +9,7 @@ import { rotateAnimation } from './Animation'
 import triangle from '../../images/triangle.svg'
 
 export const BigTitle = styled.h1`
+  position: relative;
   margin-bottom: 1rem;
   font-size: 3rem;
   letter-spacing: 0.05em;

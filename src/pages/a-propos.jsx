@@ -8,11 +8,11 @@ import config from 'config/site'
 // views
 import { Layout, Container } from 'components/views'
 
+// common
+import { Headroom } from 'components/common'
+
 // partials
 import { Header, Contact, Footer, Wave } from 'components/partials'
-
-// components
-import { Headroom } from 'components/common'
 
 const aboutPage = () => (
   <Layout>
