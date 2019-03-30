@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { lighten } from 'polished'
 
-const Pages = styled.article`
+export const Pages = styled.article`
   margin-top: 2rem;
   padding: 2rem 4.5rem;
   max-width: 960px;
@@ -15,7 +15,7 @@ const Pages = styled.article`
   }
 `
 
-const PageContent = styled.section`
+export const PageContent = styled.section`
   margin-top: 4rem;
   @media (max-width: ${props => props.theme.breakpoints.md}) {
     margin-top: 1rem;
@@ -62,14 +62,6 @@ const PageContent = styled.section`
   }
 `
 
-const Title = styled.h1`
+export const Title = styled.h1`
   margin-bottom: 1rem;
 `
-
-const Style = {
-  Pages,
-  PageContent,
-  Title,
-}
-
-export default Style

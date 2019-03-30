@@ -14,7 +14,7 @@ import { Layout, Container, Content } from '../components/views'
 import { Header, Contact, Footer } from '../components/partials'
 import { Navigation, SocialShares, Line, ApplauseButton } from '../components'
 import { Paragraph } from '../components/Typographies/StyledTypographies'
-import { Style } from '../components/All/Pages'
+import { Pages, PageContent } from '../components/All/Pages/StyledPages'
 import { ImgFilter } from '../components/elements/Images/StyledImage'
 import SEO from '../components/All/SEO'
 
@@ -34,15 +34,15 @@ const Page = ({ pageContext: { slug }, data: { mdx: pageNode } }) => {
       <Container customSEO>
         <Content>
           <SEO postPath={slug} postNode={pageNode} page />
-          <Style.Pages>
-            <Style.PageContent>
+          <Pages>
+            <PageContent>
               <MDXRenderer>{pageNode.code.body}</MDXRenderer>
-            </Style.PageContent>
+            </PageContent>
             <ApplauseButton />
             <SocialShares />
             <Line />
             <Paragraph>Merci de votre patience.</Paragraph>
-          </Style.Pages>
+          </Pages>
         </Content>
         <Contact />
       </Container>
