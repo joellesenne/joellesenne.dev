@@ -8,18 +8,14 @@ import kebabCase from 'lodash/kebabCase'
 // config
 import config from 'config/site'
 
-// elements
-import { ButtonWrapper, Button } from 'components/elements/Button'
-import { GatsbyLink } from 'components/elements/Link'
+// components
 
-// common
-import { Headroom, ItemTagCategory } from 'components/common'
-
-// partials
-import { Header, Bio, Contact, Footer, Wave } from 'components/partials'
-
-// views
-import { Layout, Container, Content } from 'components/views'
+import { Navigation, Button, Line } from 'components'
+import { Layout, Container, Content } from '../components/views'
+import { Header, Bio, Contact, Footer } from '../components/partials'
+import { Wave } from '../components/Animation'
+import { GatsbyLink } from '../components/elements/Link/StyledLink'
+import { ItemTagCategory } from '../components/All'
 
 const tagPage = ({
   pageContext: { tag },
@@ -39,7 +35,7 @@ const tagPage = ({
         </>
       }
     >
-      <Headroom />
+      <Navigation />
       <Wave top />
     </Header>
     <Container>
@@ -57,9 +53,8 @@ const tagPage = ({
             excerpt={edge.node.excerpt}
           />
         ))}
-        <ButtonWrapper>
-          <Button to="/tags">Tags</Button>
-        </ButtonWrapper>
+        <Line />
+        <Button url="/tags" title="Tous les Tags" />
       </Content>
       <Bio />
       <Contact />

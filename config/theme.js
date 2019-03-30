@@ -58,7 +58,7 @@ const theme = {
   transition,
   fontFamily,
   breakpoints,
-  maxWidth: '960px',
+  maxWidth: '1200px',
 }
 
 export default theme

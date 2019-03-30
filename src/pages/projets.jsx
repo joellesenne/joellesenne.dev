@@ -7,17 +7,15 @@ import { graphql } from 'gatsby'
 // config
 import config from 'config/site'
 
-// elements
-import { ProjectsWrapper } from 'components/elements/ProjectsCard'
+// bug
+import { ProjectsWrapper } from '../components/All/ProjectsCard/StyledProjectsCard'
 
-// common
-import { Headroom, AllProjects } from 'components/common'
-
-// partials
-import { Header, Bio, Contact, Footer, Wave } from 'components/partials'
-
-// views
-import { Layout, Container, Content } from 'components/views'
+// component
+import { Wave } from '../components/Animation'
+import { Header, Bio, Contact, Footer } from '../components/partials'
+import { Navigation } from '../components'
+import { Layout, Container, Content } from '../components/views'
+import { AllProjects } from '../components/All'
 
 const projectsPage = ({
   data: {
@@ -27,7 +25,7 @@ const projectsPage = ({
   <Layout>
     <Helmet title={`Projets | ${config.siteTitle}`} />
     <Header bg title="Projets" subtitle="Un concentré de projets réaliser">
-      <Headroom />
+      <Navigation />
       <Wave top />
     </Header>
     <Container>

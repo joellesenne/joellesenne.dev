@@ -8,18 +8,13 @@ import kebabCase from 'lodash/kebabCase'
 // config
 import config from 'config/site'
 
-// elements
-import { ButtonWrapper, Button } from 'components/elements/Button'
-import { GatsbyLink } from 'components/elements/Link'
-
-// common
-import { Headroom, ItemTagCategory } from 'components/common'
-
-// partials
-import { Header, Bio, Contact, Footer, Wave } from 'components/partials'
-
-// views
-import { Layout, Container, Content } from 'components/views'
+// components
+import { Wave } from '../components/Animation'
+import { Layout, Container, Content } from '../components/views'
+import { Header, Bio, Contact, Footer } from '../components/partials'
+import { Navigation, Button, Line } from '../components'
+import { GatsbyLink } from '../components/elements/Link/StyledLink'
+import { ItemTagCategory } from '../components/All'
 
 const categoryPage = ({
   pageContext: { category },
@@ -39,7 +34,7 @@ const categoryPage = ({
         </>
       }
     >
-      <Headroom />
+      <Navigation />
       <Wave top />
     </Header>
     <Container>
@@ -57,9 +52,8 @@ const categoryPage = ({
             excerpt={edge.node.excerpt}
           />
         ))}
-        <ButtonWrapper>
-          <Button to="/categories">Gatégories</Button>
-        </ButtonWrapper>
+        <Line />
+        <Button url="/categories" title="toutes les catégories" />
       </Content>
       <Bio />
       <Contact />

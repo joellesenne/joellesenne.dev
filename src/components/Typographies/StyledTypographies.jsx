@@ -3,10 +3,10 @@ import styled from 'styled-components'
 import { darken } from 'polished'
 
 // animation
-import { rotateAnimation } from './Animation'
+import { rotateAnimation } from '../Animation/Animation'
 
 // image
-import triangle from '../../images/triangle.svg'
+import triangle from '../../medias/images/triangle.svg'
 
 export const BigTitle = styled.h1`
   position: relative;

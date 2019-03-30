@@ -2,6 +2,7 @@
 const basics = {
   siteName: 'Joël Lesenne',
   siteDescription: 'Je créé des sites d’expériences web pour vos activités personnelles ou professionnelles...',
+  siteLang: 'fr-FR',
 }
 
 // MetaData
@@ -14,7 +15,7 @@ const meta = {
   siteUrl: 'https://joellesenne.xyz',
   siteLogo: '/logo.png',
   siteBanner: '/banner.jpg',
-  siteLang: 'fr',
+  siteLang: basics.siteLang,
   favicon: 'static/favicon.png',
   author: basics.siteName,
 }
@@ -23,6 +24,7 @@ const meta = {
 const social = {
   userName: '@joellesenne',
   userSlug: 'joellesenne',
+  ogLanguage: basics.siteLang,
 }
 
 // Manifest
@@ -36,6 +38,7 @@ const website = {
   pathPrefix: '/',
   blogPostDir: 'blog',
   projectPostDir: 'projects',
+  pagesDir: 'pages',
   ...meta,
   ...social,
   ...manifest,

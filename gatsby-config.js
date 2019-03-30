@@ -1,10 +1,19 @@
+const path = require('path')
+
 const config = require('./config/site')
 
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
+// require('dotenv').config()
+
+const activeEnv = process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'development'
+
+console.log(`Using environment config: '${activeEnv}'`)
 
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `.env.${activeEnv}`,
 })
+
+// console.log(process.env)
 
 module.exports = {
   pathPrefix: config.pathPrefix,
@@ -15,21 +24,35 @@ module.exports = {
     siteUrl: config.siteUrl + pathPrefix,
   },
   plugins: [
+    'gatsby-plugin-remove-serviceworker',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
     {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        config: path.join(__dirname, 'config'),
+        content: path.join(__dirname, 'content/'),
+        images: path.join(__dirname, 'images/'),
+        src: path.join(__dirname, 'src'),
+        components: path.join(__dirname, 'src/components'),
+        medias: path.join(__dirname, 'src/medias'),
+        utils: path.join(__dirname, 'src/utils'),
+        pages: path.join(__dirname, 'src/pages'),
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/images/`,
+        path: `${__dirname}/src/medias/`,
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'blog',
-        path: `${__dirname}/contents//${config.blogPostDir}`,
+        path: `${__dirname}/contents/${config.blogPostDir}`,
       },
     },
     {
@@ -37,6 +60,13 @@ module.exports = {
       options: {
         name: 'projects',
         path: `${__dirname}/contents/${config.projectPostDir}`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'pages',
+        path: `${__dirname}/contents/${config.pagesDir}`,
       },
     },
     {
@@ -150,6 +180,5 @@ module.exports = {
         icon: config.favicon,
       },
     },
-    'gatsby-plugin-offline',
   ],
 }

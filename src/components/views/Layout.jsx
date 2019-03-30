@@ -9,10 +9,10 @@ import { lighten } from 'polished'
 // config
 import theme from 'config/theme'
 
-import GlobalStyle from 'styles/global'
+import GlobalStyle from 'src/styles/global'
 
 // components
-import SEO from 'components/SEO'
+import SEO from '../All/SEO'
 
 // views
 import Wrapper from './Wrapper'

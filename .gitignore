@@ -1,10 +1,16 @@
 # Project dependencies
 .cache
 node_modules
-.vscode/*
-.vscode/settings.json
 .git
 .env
+.env.development
+.env.production
+.env.local
+
+# Edit code
+.vscode/*
+.vscode/settings.json
+.idea/*
 
 #Build directory
 /public
@@ -60,18 +66,10 @@ jspm_packages
 # Yarn Integrity file
 .yarn-integrity
 
-
-# Build Files
-public/
-.cache/
-
 # Gatsby context
 .gatsby-context.js
 
 # Bundle stats
 bundle-stats.json
 
-.env.development
-.env.production
-.gglconfig
-.vscode/settings.json
+

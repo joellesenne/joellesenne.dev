@@ -1,6 +1,6 @@
 {
   "npm-scripts.showStartNotification": false,
-  "cSpell.language": "en",
+  "cSpell.language": "fr",
   // "graphqlForVSCode.nodePath": "ui/node_modules"
 
   // Editor
@@ -12,6 +12,7 @@
   "editor.wordWrap": "on",
   "editor.snippetSuggestions": "top",
   "editor.formatOnSave": true,
+  "editor.renderWhitespace": "all",
   "[javascriptreact]": {
     "editor.formatOnSave": false
   },
@@ -27,8 +28,10 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Night Owl",
   "material-icon-theme.showUpdateMessage": false,
+  "window.menuBarVisibility": "toggle",
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
   // Terminal
+  "terminal.integrated.fontSize": 16,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   // Eslint
@@ -40,6 +43,7 @@
   },
   "javascript.format.enable": false,
   // Prettier
+  "prettier.eslintIntegration": true,
   "prettier.tabWidth": 2,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",

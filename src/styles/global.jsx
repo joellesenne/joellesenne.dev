@@ -92,10 +92,6 @@ const GlobalStyle = createGlobalStyle`
   a:hover {
     color: ${props => props.theme.colors.link.gradientLeft};
   }
-  img, svg {
-    vertical-align: middle;
-    max-width: 100%;
-  }
   button {
     text-decoration: none;
     text-transform: uppercase;
@@ -105,9 +101,16 @@ const GlobalStyle = createGlobalStyle`
       outline: none;
     }
   }
+  img, svg {
+    vertical-align: middle;
+    max-width: 100%;
+  }
   svg:not(:root) {
     overflow: hidden;
     vertical-align: middle;
+  }
+  ul, li {
+    list-style: none;
   }
   [hidden] {
     display: none !important;

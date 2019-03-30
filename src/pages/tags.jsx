@@ -9,17 +9,13 @@ import size from 'lodash/size'
 // config
 import config from 'config/site'
 
-// elements
-import { ButtonWrapper, Button, Number, TagButton } from 'components/elements/Button'
-
-// common
-import { Headroom } from 'components/common'
-
-// partials
-import { Header, Bio, Contact, Footer, Wave } from 'components/partials'
-
-// views
-import { Layout, Container, Content } from 'components/views'
+// components
+import { Wave } from '../components/Animation'
+import { Layout, Container, Content } from '../components/views'
+import { Header, Bio, Contact, Footer } from '../components/partials'
+import { Navigation, Button, Line } from '../components'
+import { ButtonWrapper } from '../components/elements/Button/StyledButton'
+import { Number, TagButton } from '../components/elements/Tags/StyledTags'
 
 const tagsPage = ({
   data: {
@@ -29,7 +25,7 @@ const tagsPage = ({
   <Layout>
     <Helmet title={`Tags | ${config.siteTitle}`} />
     <Header bg title="Tags" subtitle={`${size(edges)} articles divisés en ${size(group)} tags`}>
-      <Headroom />
+      <Navigation />
       <Wave top />
     </Header>
     <Container>
@@ -43,9 +39,8 @@ const tagsPage = ({
             </TagButton>
           ))}
         </ButtonWrapper>
-        <ButtonWrapper>
-          <Button to="/categories">Catégories</Button>
-        </ButtonWrapper>
+        <Line />
+        <Button url="/categories" title="Voir les catégories" />
       </Content>
       <Bio />
       <Contact />

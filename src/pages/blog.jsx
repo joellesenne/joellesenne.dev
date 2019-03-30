@@ -7,14 +7,12 @@ import { graphql } from 'gatsby'
 // config
 import config from 'config/site'
 
-// common
-import { Headroom, AllArticles } from 'components/common'
-
-// partials
-import { Header, Bio, Contact, Footer, Wave } from 'components/partials'
-
-// views
-import { Layout, Container, Content } from 'components/views'
+// component
+import { Wave } from '../components/Animation'
+import { Header, Bio, Contact, Footer } from '../components/partials'
+import { Navigation } from '../components'
+import { Layout, Container, Content } from '../components/views'
+import { AllArticles } from '../components/All'
 
 const blogPage = ({
   data: {
@@ -24,7 +22,7 @@ const blogPage = ({
   <Layout>
     <Helmet title={`Blog | ${config.siteTitle}`} />
     <Header bg title="Blog" subtitle="Un concentré de réflextion, de tutoriels et de nouvelles">
-      <Headroom />
+      <Navigation />
       <Wave top Wave />
     </Header>
     <Container>

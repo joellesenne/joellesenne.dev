@@ -1,5 +1,8 @@
 # My personal site
-[![Build Status](https://travis-ci.com/joellesenne/joellesenne.xyz.svg?style=for-the-badge&token=grPssqD9gpHqh7fqn8Ep&branch=master)](https://travis-ci.com/joellesenne/joellesenne.xyz) [![GitHub license](https://img.shields.io/badge/Mit-License-blue.svg?style=flat-square)](https://github.com/joellesenne/https//joellesenne.xyz/blob/master/LICENSE) [![Joel Lesenne Homepage](https://img.shields.io/badge/joellesenne-HomePage-blue.svg?style=flat-square)](https//joellesenne.xyz) ![Maintenance](https://img.shields.io/maintenance/yes/2019.svg?style=flat-square)
+
+[![CircleCI](https://circleci.com/gh/joellesenne/joellesenne.xyz/tree/master.svg?style=svg)](https://circleci.com/gh/joellesenne/joellesenne.xyz/tree/master) [![Build Status](https://travis-ci.com/joellesenne/joellesenne.xyz.svg?style=for-the-badge&token=grPssqD9gpHqh7fqn8Ep&branch=master)](https://travis-ci.com/joellesenne/joellesenne.xyz) 
+
+[![GitHub license](https://img.shields.io/badge/Mit-License-blue.svg?style=flat-square)](https://github.com/joellesenne/https//joellesenne.xyz/blob/master/LICENSE) [![Joel Lesenne Homepage](https://img.shields.io/badge/joellesenne-HomePage-blue.svg?style=flat-square)](https//joellesenne.xyz) ![Maintenance](https://img.shields.io/maintenance/yes/2019.svg?style=flat-square)
 
 ## About
 
@@ -70,6 +73,8 @@ this is for you to share my code in the world.
 - Make a parallax effect
 - Use a CMS
 - ~~Deploy on [Netlify](https://www.netlifycms.org/)~~
+- ~~Social Shares~~
+- Comment Blog
 
 ## License
 
