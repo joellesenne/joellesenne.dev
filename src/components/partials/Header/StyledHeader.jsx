@@ -1,4 +1,18 @@
-import styled from 'styled-components'
+import styled, { keyframes, css } from 'styled-components'
+
+const slideDownFade = keyframes`
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -70%);
+  }
+  100% {
+    opacity: 1;
+  }
+`
+
+const slideDownFadeCover = length => css`
+  animation: ${slideDownFade} ${length} ease-in-out;
+`
 
 export const Header = styled.header`
   position: relative;
@@ -21,12 +35,15 @@ export const Heros = styled.div`
   margin-bottom: 7rem;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
+  transform: translate(-50%, -60%);
+  width: 80%;
   max-width: 800px;
   text-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  ${slideDownFadeCover('0.5s')};
+  animation-delay: 0s;
+  animation-iteration-count: 1;
   @media (max-width: ${props => props.theme.breakpoints.md}) {
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
     padding: 0;
   }
 `

@@ -1,9 +1,11 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
 
 // config
 import config from 'config/site'
+
+// utlis
+import useBuildTime from 'utils/useBuildTime'
 
 // elements
 import { Footer } from 'components/elements/Footer'
@@ -11,18 +13,6 @@ import { Paragraph, Link } from 'components/elements/Typographies'
 
 // partials
 import Wave from './Wave'
-
-const useBuildTime = () => {
-  const time = useStaticQuery(graphql`
-    query {
-      site {
-        buildTime(formatString: "DD-MM-YYYY")
-      }
-    }
-  `)
-
-  return time.site.buildTime
-}
 
 const FooterPages = () => {
   const dateCurrent = new Date().getFullYear()

@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 import config from 'config/site'
 
 const SEO = props => {
-  const { postNode, postPath, article, project, buildTime } = props
+  const { postNode, postPath, article, project, page, buildTime } = props
 
   let title
   let description
@@ -17,7 +17,7 @@ const SEO = props => {
   const URL = `${homeURL}${postPath || ''}`
   const image = `${homeURL}${config.siteBanner}`
 
-  if (article || project) {
+  if (article || project || page) {
     const postMeta = postNode.frontmatter
     title = `${postMeta.title} | ${config.siteTitle}`
     description = postNode.excerpt
@@ -185,6 +185,57 @@ const SEO = props => {
     })
   }
 
+  let schemaPage = null
+
+  if (page) {
+    schemaPage = {
+      '@context': 'http://schema.org',
+      '@type': 'Page',
+      author: {
+        '@type': 'Person',
+        name: config.author,
+      },
+      copyrightHolder: {
+        '@type': 'Person',
+        name: config.author,
+      },
+      copyrightYear: postNode.parent.birthtime,
+      creator: {
+        '@type': 'Person',
+        name: config.author,
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: config.author,
+        logo: {
+          '@type': 'ImageObject',
+          url: `${homeURL}${config.siteLogo}`,
+        },
+      },
+      datePublished: postNode.parent.birthtime,
+      dateModified: postNode.parent.mtime,
+      description,
+      headline: title,
+      inLanguage: 'fr',
+      url: URL,
+      name: title,
+      image: {
+        '@type': 'ImageObject',
+        url: image,
+      },
+      mainEntityOfPage: URL,
+    }
+    // Push current projectPost into breadcrumb list
+    itemListElement.push({
+      '@type': 'ListItem',
+      item: {
+        '@id': URL,
+        name: title,
+      },
+      position: 4,
+    })
+  }
+
   const breadcrumb = {
     '@context': 'http://schema.org',
     '@type': 'BreadcrumbList',
@@ -244,6 +295,7 @@ SEO.propTypes = {
   postPath: PropTypes.string,
   article: PropTypes.bool,
   project: PropTypes.bool,
+  page: PropTypes.bool,
   buildTime: PropTypes.string,
 }
 
@@ -252,6 +304,7 @@ SEO.defaultProps = {
   postPath: null,
   article: false,
   project: false,
+  page: false,
   buildTime: null,
 }
 

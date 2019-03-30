@@ -15,12 +15,15 @@ export const BigTitle = styled.h1`
   letter-spacing: 0.05em;
   line-height: 1.2;
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
-  @media (max-width: ${props => props.theme.breakpoints.md}) {
+  @media (max-width: ${props => props.theme.breakpoints.lg}) {
     margin-bottom: 0.5rem;
     font-size: 2rem;
   }
+  @media (max-width: ${props => props.theme.breakpoints.md}) {
+    font-size: 1.5rem;
+  }
   @media (max-width: ${props => props.theme.breakpoints.sm}) {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 `
 
@@ -30,11 +33,19 @@ export const Subtitle = styled.p`
   font-weight: 700;
   color: ${props => darken(0.1, props.theme.colors.base.color)};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  svg {
+    width: 20px;
+    height: 20px;
+  }
   @media (max-width: ${props => props.theme.breakpoints.md}) {
-    font-size: 1.15rem;
+    font-size: 1rem;
+    svg {
+      width: 12px;
+      height: 12px;
+    }
   }
   @media (max-width: ${props => props.theme.breakpoints.sm}) {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 `
 

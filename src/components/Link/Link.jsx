@@ -23,3 +23,10 @@ export const GatsbyLinkNav = styled(GatsbyLink)`
     border: none;
   }
 `
+
+export const GatsbyLinkPrevNext = styled(GatsbyLink)`
+  margin-right: 0;
+  &:hover {
+    border: 0;
+  }
+`

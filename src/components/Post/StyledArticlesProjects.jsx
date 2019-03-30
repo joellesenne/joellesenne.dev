@@ -4,7 +4,7 @@ import { lighten } from 'polished'
 export const Article = styled.article`
   margin-top: 2rem;
   padding: 2rem 4.5rem;
-  max-width: 960px;
+  max-width: 1200px;
   z-index: 9000;
   grid-column: 2;
   background-color: ${props => lighten(0.08, props.theme.colors.base.bg)};

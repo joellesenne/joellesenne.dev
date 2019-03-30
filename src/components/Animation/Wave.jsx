@@ -3,8 +3,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-// elements
-import { WaveWrapper, InnerWave } from 'components/elements/Animation'
+// styled
+import { WaveWrapper, InnerWave } from 'components/All/Animation'
 
 // components
 import { wave } from 'components/SVG'
@@ -13,10 +13,10 @@ const AnimationPage = ({ top }) => (
   <WaveWrapper>
     <InnerWave top={top}>
       <svg
-        viewBox={top ? wave.waveTop.viewBox : wave.waveBottom.viewBox}
-        preserveAspectRatio={top ? wave.waveBottom.preserveAspectRatio : wave.waveBottom.preserveAspectRatio}
+        viewBox={top ? wave.waveBlock.viewBox : wave.waveBlock.viewBox}
+        preserveAspectRatio={top ? wave.waveBlock.preserveAspectRatio : wave.waveBlock.preserveAspectRatio}
       >
-        {top ? wave.waveTop.shape : wave.waveBottom.shape}
+        {top ? wave.waveBlock.shape : wave.waveBlock.shape}
       </svg>
     </InnerWave>
   </WaveWrapper>
