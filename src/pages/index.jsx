@@ -1,4 +1,4 @@
-
+/* eslint-disable import/no-unresolved */
 import React from 'react'
 import { useWindowSize } from 'react-use'
 import PropTypes from 'prop-types'
@@ -11,15 +11,23 @@ import config from 'config/site'
 import Confetti from 'react-confetti'
 
 // components
-import { Header, Bio, Contact, Footer } from '../components/partials'
-import { Hand } from '../components/Animation'
-import { AllArticles, AllProjects } from '../components/All'
-import { ProjectsWrapper } from '../components/All/ProjectsCard/StyledProjectsCard'
-import { Button } from '../components'
-import { Title } from '../components/Typographies/StyledTypographies'
+import {
+  Hand,
+  ArticlesCard,
+  ProjectsCard,
+  Button,
+  Header,
+  Bio,
+  Contact,
+  Footer,
+  Layout,
+  Container,
+  Content,
+} from '../components'
 
-// views
-import { Layout, Container, Content } from '../components/views'
+// styles
+import { ProjectsWrapper } from '../components/All/ProjectsCard/StyledProjectsCard'
+import { Title } from '../components/Typographies/StyledTypographies'
 
 const indexPage = ({
   data: {
@@ -30,7 +38,15 @@ const indexPage = ({
   const { width, height } = useWindowSize()
   return (
     <Layout>
-      <Confetti confettiSource={{x: width / 2, y: height / 2, w: 0, h: 0 }} numberOfPieces={100} gravity={0.1} opacity={100} width={width} height={height} style={{ zIndex: -1 }} />
+      <Confetti
+        confettiSource={{ x: width / 2, y: height / 2, w: 0, h: 0 }}
+        numberOfPieces={100}
+        gravity={0.1}
+        opacity={100}
+        width={width}
+        height={height}
+        style={{ zIndex: -1 }}
+      />
       <Header
         big
         title={
@@ -46,7 +62,7 @@ const indexPage = ({
           <Title>Mes Projects</Title>
           <ProjectsWrapper>
             {projectEdges.map(project => (
-              <AllProjects
+              <ProjectsCard
                 title={project.node.frontmatter.title}
                 date={project.node.frontmatter.date}
                 excerpt={project.node.excerpt}
@@ -62,7 +78,7 @@ const indexPage = ({
         <Content>
           <Title>Mon Blog</Title>
           {postEdges.map(post => (
-            <AllArticles
+            <ArticlesCard
               title={post.node.frontmatter.title}
               date={post.node.frontmatter.date}
               excerpt={post.node.excerpt}

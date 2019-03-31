@@ -20,13 +20,15 @@ const FooterPages = () => {
   return (
     <Footer>
       <Paragraph>
-        &copy; 2018-{dateCurent} – Tout droits réservés –{' '}
-        <Link href="/conditions-de-service">Conditions</Link> –{' '}
+        &copy; 2018-{dateCurent} – Tout droits réservés – <Link href="/conditions-de-service">Conditions</Link> –{' '}
         <Link href="/politique-de-confidentialite">Confidentialité</Link>
         <br />
-        Mise à jour le {buildTime} – <Link href={`https://github.com/${config.userSlug}/joellesenne.xyz`} target="_blank" rel="noopener noreferrer">
+        Mise à jour le {buildTime} –{' '}
+        <Link href={`https://github.com/${config.userSlug}/joellesenne.xyz`} target="_blank" rel="noopener noreferrer">
           Github Repository
-        </Link> inspiré par <Link href="https://www.lekoarts.de/" target="_blank" rel="noopener noreferrer">
+        </Link>{' '}
+        inspiré par{' '}
+        <Link href="https://www.lekoarts.de/" target="_blank" rel="noopener noreferrer">
           LekoArts
         </Link>
       </Paragraph>

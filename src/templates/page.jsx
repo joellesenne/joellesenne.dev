@@ -8,11 +8,23 @@ import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 // config
 import config from 'config/site'
 
-// components
-import { Wave } from '../components/Animation'
-import { Layout, Container, Content } from '../components/views'
-import { Header, Contact, Footer } from '../components/partials'
-import { Navigation, SocialShares, Line, ApplauseButton } from '../components'
+// component
+import {
+  Wave,
+  ApplauseButton,
+  Navigation,
+  Line,
+  SocialShares,
+  Header,
+  Bio,
+  Contact,
+  Footer,
+  Layout,
+  Container,
+  Content,
+} from '../components'
+
+// styles
 import { Paragraph } from '../components/Typographies/StyledTypographies'
 import { Pages, PageContent } from '../components/All/Pages/StyledPages'
 import { ImgFilter } from '../components/elements/Images/StyledImage'
@@ -44,6 +56,7 @@ const Page = ({ pageContext: { slug }, data: { mdx: pageNode } }) => {
             <Paragraph>Merci de votre patience.</Paragraph>
           </Pages>
         </Content>
+        <Bio />
         <Contact />
       </Container>
       <Footer />

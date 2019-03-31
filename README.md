@@ -70,11 +70,12 @@ this is for you to share my code in the world.
 
 ## 🚧 Coming soon
 
-- Make a parallax effect
-- Use a CMS
-- ~~Deploy on [Netlify](https://www.netlifycms.org/)~~
-- ~~Social Shares~~
-- Comment Blog
+- ❌ Make a parallax effect
+- ❌ Use a CMS
+- ❌ ApplauseButton
+- ✔️ Deploy on [Netlify](https://www.netlifycms.org/)
+- ✔️ Social Shares
+- ✔️ Comment Blog
 
 ## License
 

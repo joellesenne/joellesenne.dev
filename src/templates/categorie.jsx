@@ -8,13 +8,24 @@ import kebabCase from 'lodash/kebabCase'
 // config
 import config from 'config/site'
 
-// components
-import { Wave } from '../components/Animation'
-import { Layout, Container, Content } from '../components/views'
-import { Header, Bio, Contact, Footer } from '../components/partials'
-import { Navigation, Button, Line } from '../components'
+// component
+import {
+  Wave,
+  TagCategory,
+  Navigation,
+  Button,
+  Line,
+  Header,
+  Bio,
+  Contact,
+  Footer,
+  Layout,
+  Container,
+  Content,
+} from '../components'
+
+// styles
 import { GatsbyLink } from '../components/elements/Link/StyledLink'
-import { ItemTagCategory } from '../components/All'
 
 const categoryPage = ({
   pageContext: { category },
@@ -40,7 +51,7 @@ const categoryPage = ({
     <Container>
       <Content>
         {edges.map(edge => (
-          <ItemTagCategory
+          <TagCategory
             type={edge.node.fields.sourceInstanceName}
             key={edge.node.frontmatter.title}
             title={edge.node.frontmatter.title}

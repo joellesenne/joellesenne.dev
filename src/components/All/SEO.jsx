@@ -232,7 +232,7 @@ const SEO = props => {
         '@id': URL,
         name: title,
       },
-      position: 4,
+      position: 5,
     })
   }
 

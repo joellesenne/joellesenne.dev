@@ -7,9 +7,9 @@ import { StyledApplauseButton } from './StyledApplauseButton'
 
 export default class Applause extends Component {
   componentDidMount() {
-    const Clap = require('react-clap-button/lib/index')
-    console.log(Clap)
-    return Clap
+    // const Clap = require('react-clap-button/lib/index')
+    // console.log(Clap)
+    // return Clap
   }
 
   componentWillUnmount() {
@@ -20,13 +20,13 @@ export default class Applause extends Component {
     return (
       <StyledApplauseButton>
         <div
-          count={0}
+        /* count={0}
           countTotal={0}
           isClicked={false}
           maxCount={50}
           theme={{
             secondaryColor: '#5f27ae',
-          }}
+          }} */
         />
       </StyledApplauseButton>
     )

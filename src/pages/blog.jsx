@@ -7,12 +7,8 @@ import { graphql } from 'gatsby'
 // config
 import config from 'config/site'
 
-// component
-import { Wave } from '../components/Animation'
-import { Header, Bio, Contact, Footer } from '../components/partials'
-import { Navigation } from '../components'
-import { Layout, Container, Content } from '../components/views'
-import { AllArticles } from '../components/All'
+// components
+import { Wave, ArticlesCard, Navigation, Header, Bio, Contact, Footer, Layout, Container, Content } from '../components'
 
 const blogPage = ({
   data: {
@@ -28,7 +24,7 @@ const blogPage = ({
     <Container>
       <Content>
         {postEdges.map(post => (
-          <AllArticles
+          <ArticlesCard
             title={post.node.frontmatter.title}
             date={post.node.frontmatter.date}
             excerpt={post.node.excerpt}

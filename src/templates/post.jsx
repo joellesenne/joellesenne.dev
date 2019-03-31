@@ -1,22 +1,39 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import kebabCase from 'lodash/kebabCase'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
-// import commentBox from 'commentbox.io'
 
-// components
-import { Wave } from '../components/Animation'
-import { Layout, Container, Content } from '../components/views'
-import { Header, Bio, Contact, Footer } from '../components/partials'
-import { Navigation, Pagination, SocialShares, Line, Tags, CommentBox, ApplauseButton } from '../components'
+// component
+import {
+  Wave,
+  ApplauseButton,
+  CommentBox,
+  Navigation,
+  Pagination,
+  Line,
+  SocialShares,
+  Tags,
+  Header,
+  Bio,
+  Contact,
+  Footer,
+  Layout,
+  Container,
+  Content,
+} from '../components'
+
+// styles
 import { Article, PostContent } from '../components/Post/StyledArticlesProjects'
 import { ImgFilter } from '../components/elements/Images/StyledImage'
 import { GatsbyLink } from '../components/elements/Link/StyledLink'
 import { Paragraph } from '../components/Typographies/StyledTypographies'
+
+// icons
 import SVG from '../components/Animation/SVG'
+
+// SEO
 import SEO from '../components/All/SEO'
 
 const Post = ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) => {

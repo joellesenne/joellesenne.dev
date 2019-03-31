@@ -1,18 +1,14 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react'
-import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 
 // config
 import config from 'config/site'
 
 // components
-import { Wave } from '../components/Animation'
-import { Navigation, Button } from '../components'
-import { Header, Bio, Contact, Footer } from '../components/partials'
-import { Layout, Container, Content } from '../components/views'
+import { Wave, Navigation, Button, Header, Bio, Contact, Footer, Layout, Container, Content } from '../components'
 
-const aboutPage = () => (
+const NoFoundPage = () => (
   <Layout>
     <Helmet title={`404: pas trouvé | ${config.siteTitle}`} />
     <Header bg title="404: pas trouvé" subtitle="vous venez de frapper un itinéraire qui n'éxiste pas !">
@@ -30,4 +26,4 @@ const aboutPage = () => (
   </Layout>
 )
 
-export default aboutPage
+export default NoFoundPage

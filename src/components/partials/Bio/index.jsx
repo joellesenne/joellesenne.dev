@@ -1,9 +1,8 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react'
 
 // components
 import Button from '../../elements/Button'
-import { Title, Paragraph } from '../../Typographies/StyledTypographies'
+import { Title } from '../../Typographies/StyledTypographies'
 import { Content } from '../../views'
 import { Grid, Col, Items, Item, Icon } from './StyledBio'
 import { StyledAvatar } from '../../elements/Avatar/StyledAvatar'

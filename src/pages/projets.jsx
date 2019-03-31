@@ -11,11 +11,7 @@ import config from 'config/site'
 import { ProjectsWrapper } from '../components/All/ProjectsCard/StyledProjectsCard'
 
 // component
-import { Wave } from '../components/Animation'
-import { Header, Bio, Contact, Footer } from '../components/partials'
-import { Navigation } from '../components'
-import { Layout, Container, Content } from '../components/views'
-import { AllProjects } from '../components/All'
+import { Wave, ProjectsCard, Navigation, Header, Bio, Contact, Footer, Layout, Container, Content } from '../components'
 
 const projectsPage = ({
   data: {
@@ -32,7 +28,7 @@ const projectsPage = ({
       <Content>
         <ProjectsWrapper>
           {projectEdges.map(project => (
-            <AllProjects
+            <ProjectsCard
               title={project.node.frontmatter.title}
               date={project.node.frontmatter.date}
               excerpt={project.node.excerpt}

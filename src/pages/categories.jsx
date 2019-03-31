@@ -10,10 +10,9 @@ import size from 'lodash/size'
 import config from 'config/site'
 
 // components
-import { Wave } from '../components/Animation'
-import { Layout, Container, Content } from '../components/views'
-import { Header, Bio, Contact, Footer } from '../components/partials'
-import { Navigation, Button, Line } from '../components'
+import { Wave, Navigation, Button, Line, Header, Bio, Contact, Footer, Layout, Container, Content } from '../components'
+
+// styles
 import { ButtonWrapper } from '../components/elements/Button/StyledButton'
 import { Number, TagButton } from '../components/elements/Tags/StyledTags'
 

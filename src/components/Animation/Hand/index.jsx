@@ -3,6 +3,6 @@ import React from 'react'
 // styled
 import { StyledHand } from './StyledHand'
 
-const HandAnimation = () => <StyledHand>👋</StyledHand>
+const Hand = () => <StyledHand>👋</StyledHand>
 
-export default HandAnimation
+export default Hand
