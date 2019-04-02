@@ -69,7 +69,7 @@ gatsby new <nameProject> https://github.com/joellesenne/joellesenne.xyz
 
 🎉 have fun
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/joellesenne/joellesenne.xyz)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/joellesenne/joellesenne.xyz) [![Greenkeeper badge](https://badges.greenkeeper.io/joellesenne/joellesenne.xyz.svg?token=c9a88108dc9440b5610801f22a4a06e8132cfd39554f28a30527aaa761baf3ae&ts=1554177468674)](https://greenkeeper.io/)
 
 ## 🚧 Coming soon
 
