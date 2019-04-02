@@ -10,10 +10,10 @@ const activeEnv = process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'deve
 console.log(`Using environment config: '${activeEnv}'`)
 
 require('dotenv').config({
-  path: `.env.${activeEnv}`,
+  path: `.env`,
 })
 
-// console.log(process.env)
+console.log(process.env)
 
 module.exports = {
   pathPrefix: config.pathPrefix,
