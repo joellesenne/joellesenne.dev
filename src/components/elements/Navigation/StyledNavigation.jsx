@@ -82,7 +82,6 @@ export const NavWrapper = styled.nav`
     -webkit-background-clip: text;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    color: #89103c !important;
     z-index: 1;
     transition: ${props => props.theme.transition.link};
     &:hover {

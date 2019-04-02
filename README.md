@@ -46,11 +46,14 @@ this is for you to share my code in the world.
 ~ $ git --version
 
 # gatsby-cli
-~ $ npm install -g gatsby-cli
+~ $ [sudo] npm install -g gatsby-cli
 
 # gatsby-cli version
 ~ $ gatsby-cli --version
 
+gatsby new <nameProject> https://github.com/joellesenne/joellesenne.xyz
+
+// or
 # Clone this repository
 ~ $ git clone  https://github.com/joellesenne/joellesenne.xyz.git
 
