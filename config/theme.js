@@ -3,6 +3,8 @@ const colors = {
     color: '#d4d4f7',
     gradientLeft: '#e41b64',
     gradientRight: '#89103c',
+    gradientLeftTo: '#fe1605',
+    gradientRightButton: '#fea04f',
     bg: '#0e0f4f',
     white: '#fff',
     black: '#000',
