@@ -23,7 +23,7 @@
     "editor.formatOnSave": false
   },
   // Workbench
-  "workbench.startupEditor": "newUntitledFile",
+  "workbench.startupEditor": "welcomePage",
   "workbench.activityBar.visible": true,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Night Owl",
