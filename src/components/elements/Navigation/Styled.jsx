@@ -3,7 +3,7 @@ import Headroom from 'react-headroom'
 import { lighten } from 'polished'
 
 // elements
-import { GatsbyLinkNav } from '../Link/StyledLink'
+import { GatsbyLinkNav } from '../Link/Styled'
 
 export const Nav = styled(Headroom)`
   .headroom-wrapper {
@@ -73,19 +73,18 @@ export const NavWrapper = styled.nav`
   justify-content: flex-end;
   flex-grow: 1;
   max-width: 15rem;
-  a {
-    display: flex;
-    align-self: center;
-    flex-grow: 1;
-    background: ${props => props.theme.gradient.link};
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    z-index: 1;
-    transition: ${props => props.theme.transition.link};
-    &:hover {
-      -webkit-text-fill-color: ${props => props.theme.colors.link.gradientLeft};
-    }
+`
+
+export const NavLink = styled(GatsbyLinkNav)`
+  align-self: center;
+  flex-grow: 1;
+  background: ${props => props.theme.gradient.link};
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: ${props => props.theme.transition.link};
+  &:hover {
+    -webkit-text-fill-color: ${props => props.theme.colors.link.gradientLeft};
   }
 `
