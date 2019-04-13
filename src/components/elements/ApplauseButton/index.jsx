@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unused-state */
 /* eslint-disable no-unused-vars */
 /* eslint-disable global-require */
 import React, { Component } from 'react'
@@ -6,10 +7,17 @@ import React, { Component } from 'react'
 import { StyledApplauseButton } from './StyledApplauseButton'
 
 export default class Applause extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { data: null }
+  }
+
   componentDidMount() {
-    // const Clap = require('react-clap-button/lib/index')
-    // console.log(Clap)
-    // return Clap
+    function clap() {
+      const Clap = require('react-clap-button/lib/index')
+      return Clap
+    }
+    console.log(clap())
   }
 
   componentWillUnmount() {
@@ -17,6 +25,7 @@ export default class Applause extends Component {
   }
 
   render() {
+    // const Clap = this.clap()
     return (
       <StyledApplauseButton>
         <div
