@@ -273,6 +273,8 @@ const SEO = props => {
       {article && <script type="application/ld+json">{JSON.stringify(schemaArticle)}</script>}
       {!project && <script type="application/ld+json">{JSON.stringify(schemaOrgWebPage)}</script>}
       {project && <script type="application/ld+json">{JSON.stringify(schemaProject)}</script>}
+      {!page && <script type="application/ld+json">{JSON.stringify(schemaOrgWebPage)}</script>}
+      {page && <script type="application/ld+json">{JSON.stringify(schemaPage)}</script>}
       <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
     </Helmet>
   )
