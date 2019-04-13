@@ -70,6 +70,14 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-crisp-chat',
+      options: {
+        websiteId: process.env.CRISP_WEBSITE_ID,
+        enableDuringDevelop: false, // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
+        defer: true, // Optional. Sets the Crisp loading script to defer instead of async. Defaults to false.
+      },
+    },
+    {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: process.env.GA_TRACKING_ID,
