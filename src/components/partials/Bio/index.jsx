@@ -4,8 +4,8 @@ import React from 'react'
 import Button from '../../elements/Button'
 import { Title } from '../../Typographies/StyledTypographies'
 import { Content } from '../../views'
-import { Grid, Col, Items, Item, Icon } from './StyledBio'
-import { StyledAvatar } from '../../elements/Avatar/StyledAvatar'
+import { Grid, Col, Items, Item, Icon } from './Styled'
+import { StyledAvatar } from '../../elements/Avatar/Styled'
 import avatarImg from '../../../medias/images/avatar.png'
 
 const SectionPage = () => (

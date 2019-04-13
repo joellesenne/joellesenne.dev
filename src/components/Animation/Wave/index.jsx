@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 // styled
-import { StyledWaveWrapper, StyledInnerWave } from './StyledWave'
+import { StyledWaveWrapper, StyledInnerWave } from './Styled'
 
 // icons SVG
-import { svg } from './SvgWave'
+import { svg } from './Svg'
 
 const Wave = ({ top }) => (
   <StyledWaveWrapper>

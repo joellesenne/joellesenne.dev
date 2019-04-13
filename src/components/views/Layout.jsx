@@ -28,9 +28,17 @@ const Layout = ({ children, buttonText }) => (
       <CookieConsent
         buttonText={buttonText}
         style={{
-          padding: '0 1.5rem',
+          display: 'block',
+          padding: '15px',
+          width: '200px',
+          maxWidth: '100%',
+          left: '20px',
+          transform: 'translateY(-20px)',
+          textAlign: 'center',
           color: theme.colors.base.color,
           background: lighten(0.08, theme.colors.base.bg),
+          borderRadius: '8px',
+          boxShadow: '0 2px 4px rgba(0, 0, 0, 0.6)',
         }}
         buttonStyle={{
           color: theme.colors.base.bg,

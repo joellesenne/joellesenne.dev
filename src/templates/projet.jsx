@@ -26,8 +26,8 @@ import {
 
 // styles
 import { Article, PostContent } from '../components/Post/StyledArticlesProjects'
-import { ImgFilter } from '../components/elements/Images/StyledImage'
-import { GatsbyLink } from '../components/elements/Link/StyledLink'
+import { ImgFilter } from '../components/elements/Images/Styled'
+import { GatsbyLink } from '../components/elements/Link/Styled'
 import { Paragraph } from '../components/Typographies/StyledTypographies'
 
 // icons

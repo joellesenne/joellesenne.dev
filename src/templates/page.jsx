@@ -27,7 +27,7 @@ import {
 // styles
 import { Paragraph } from '../components/Typographies/StyledTypographies'
 import { Pages, PageContent } from '../components/All/Pages/StyledPages'
-import { ImgFilter } from '../components/elements/Images/StyledImage'
+import { ImgFilter } from '../components/elements/Images/Styled'
 import SEO from '../components/All/SEO'
 
 const Page = ({ pageContext: { slug }, data: { mdx: pageNode } }) => {

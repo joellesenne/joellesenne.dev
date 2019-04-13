@@ -7,7 +7,7 @@ import upperFirst from 'lodash/upperFirst'
 
 // elements
 import { Post, Title, Information, Excerpt } from '../ArticlesCard/StyledArticlesCard'
-import { GatsbyLink } from '../../elements/Link/StyledLink'
+import { GatsbyLink } from '../../elements/Link/Styled'
 
 // icons
 import SVG from '../../Animation/SVG'

@@ -7,6 +7,6 @@ export const Footer = styled.footer`
   height: auto;
   text-align: center;
   @media (max-width: ${props => props.theme.breakpoints.md}) {
-    padding: 2rem 0 0.5rem;
+    padding: 2rem 1rem 0.5rem;
   }
 `

@@ -10,7 +10,7 @@ import more from 'socialshares/dist/icons/more'
 import config from '../../../../config/site'
 
 // Styled
-import { StyledSocialShares } from './StyledSocialShares'
+import { StyledSocialShares } from './Styled'
 
 const TWITTER_USERNAME = config.userSlug
 

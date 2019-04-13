@@ -1,7 +1,7 @@
 import React from 'react'
 
 // styled
-import { StyledAvatar } from './StyledAvatar'
+import { StyledAvatar } from './Styled'
 
 const Avatar = () => <StyledAvatar />
 

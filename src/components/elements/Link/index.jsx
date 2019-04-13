@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { StyledLink } from './StyledLink'
+import { StyledLink } from './Styled'
 
 const Link = ({ url, title }) => <StyledLink to={url}>{title}</StyledLink>
 

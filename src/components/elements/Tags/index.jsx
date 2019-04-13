@@ -4,7 +4,7 @@ import kebabCase from 'lodash/kebabCase'
 import PropTypes from 'prop-types'
 
 // Styled
-import { TagsContainer, TagButton } from './StyledTags'
+import { TagsContainer, TagButton } from './Styled'
 
 const Tags = ({ tags }) => (
   <TagsContainer>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const icons = {
+export const SVG = {
   blobHeader: {
     shape: (
       <g transform="translate(300,300)">

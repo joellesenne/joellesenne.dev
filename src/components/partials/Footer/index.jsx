@@ -9,23 +9,28 @@ import useBuildTime from '../../../hooks/useBuildTime'
 
 // styles
 import { Paragraph, Link } from '../../Typographies/StyledTypographies'
-import { Footer } from './StyledFooter'
+import { Footer } from './Styled'
 
-// partial
+// animation
 import Wave from '../../Animation/Wave'
+
+// elements
+import AddBackToTop from '../../elements/AbbBackToTop'
 
 const FooterPages = () => {
   const dateCurent = new Date().getFullYear()
   const buildTime = useBuildTime()
+
   return (
     <Footer>
+      <AddBackToTop />
       <Paragraph>
-        &copy; 2018-{dateCurent} – Tout droits réservés – <Link href="/conditions-de-service">Conditions</Link> –{' '}
-        <Link href="/politique-de-confidentialite">Confidentialité</Link>
+        &copy; 2018-{dateCurent} – Tout droits réservés – Mise à jour le {buildTime}
         <br />
-        Mise à jour le {buildTime} –{' '}
+        <Link href="/conditions-de-service">Conditions</Link> –{' '}
+        <Link href="/politique-de-confidentialite">Confidentialité</Link> –{' '}
         <Link href={`https://github.com/${config.userSlug}/joellesenne.xyz`} target="_blank" rel="noopener noreferrer">
-          Github Repository
+          Code source
         </Link>{' '}
         inspiré par{' '}
         <Link href="https://www.lekoarts.de/" target="_blank" rel="noopener noreferrer">

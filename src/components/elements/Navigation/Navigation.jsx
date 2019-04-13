@@ -8,8 +8,8 @@ import config from 'config/site'
 import Logo from 'src/medias/icons/Logo'
 
 // Styled
-import { GatsbyLinkNav } from '../Link/StyledLink'
-import { Nav, LogoWrapper, LogoText, NavWrapper } from './StyledNavigation'
+// import { GatsbyLinkNav } from '../Link/StyledLink'
+import { Nav, LogoWrapper, LogoText, NavWrapper, NavLink } from './Styled'
 
 const Navigation = () => (
   <Nav calcHeightOnResize disableInlineStyles>
@@ -18,8 +18,8 @@ const Navigation = () => (
       <LogoText>{config.siteTitle}</LogoText>
     </LogoWrapper>
     <NavWrapper>
-      <GatsbyLinkNav to="/projets">Projets</GatsbyLinkNav> <GatsbyLinkNav to="/blog">Blog</GatsbyLinkNav>{' '}
-      <GatsbyLinkNav to="/a-propos">A propos</GatsbyLinkNav>
+      <NavLink to="/projets">Projets</NavLink> <NavLink to="/blog">Blog</NavLink>{' '}
+      <NavLink to="/a-propos">A propos</NavLink>
     </NavWrapper>
   </Nav>
 )

@@ -3,8 +3,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 // styled
-import { GatsbyLinkPrevNext } from '../Link/StyledLink'
-import { Wrapper, Prev, Next } from './StylesPrevNext'
+import { GatsbyLinkPrevNext } from '../Link/Styled'
+import { Wrapper, Prev, Next } from './Styled'
 
 const PrevNext = ({ next, prev }) => (
   <Wrapper>

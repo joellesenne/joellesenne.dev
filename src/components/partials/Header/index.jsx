@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 // styled
 import { BigTitle, Subtitle } from 'components/Typographies/StyledTypographies'
-import { Header, Heros } from './StyledHeader'
+import { Header, Heros } from './Styled'
 
 const HeaderPage = ({ title, subtitle, children, big, bg }) => (
   <Header big={big} bg={bg}>

@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import kebabCase from 'lodash/kebabCase'
 
 // elements
-import { GatsbyLink } from '../../elements/Link/StyledLink'
+import { GatsbyLink } from '../../elements/Link/Styled'
 
 // icons
 import SVG from '../../Animation/SVG'

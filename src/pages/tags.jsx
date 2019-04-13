@@ -13,8 +13,8 @@ import config from 'config/site'
 import { Wave, Navigation, Button, Line, Header, Bio, Contact, Footer, Layout, Container, Content } from '../components'
 
 // styles
-import { ButtonWrapper } from '../components/elements/Button/StyledButton'
-import { Number, TagButton } from '../components/elements/Tags/StyledTags'
+import { ButtonWrapper } from '../components/elements/Button/Styled'
+import { Number, TagButton } from '../components/elements/Tags/Styled'
 
 const tagsPage = ({
   data: {

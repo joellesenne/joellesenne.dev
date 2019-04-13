@@ -2,14 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 // styled
-import { StyledBlob } from './StyledBlob'
+import { StyledBlob } from './Styled'
 
 // svg
-import SVG from '../SVG'
+import { SVG } from './SVG'
 
-const Blob = ({ positionTop, animationDelay, svgIcon, svgFill }) => (
+const Blob = ({ positionTop, animationDelay, svgBlob, svgFill }) => (
   <StyledBlob positionTop={positionTop} animationDelay={animationDelay}>
-    <SVG svgIcon={svgIcon} svgFill={svgFill} />
+    <SVG svgBlob={svgBlob} svgFill={svgFill} />
   </StyledBlob>
 )
 
@@ -18,7 +18,7 @@ export default Blob
 Blob.propTypes = {
   positionTop: PropTypes.number,
   animationDelay: PropTypes.string,
-  svgIcon: PropTypes.string.isRequired,
+  svgBlob: PropTypes.string.isRequired,
   svgFill: PropTypes.string.isRequired,
 }
 

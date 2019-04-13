@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ImgFilter } from './StyledImage'
+import { ImgFilter } from './Styled'
 
 const Image = () => <ImgFilter />
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import commentBox from 'commentbox.io'
 
 // styled
-import { StyledCommentBox } from './StyledCommentBox'
+import { StyledCommentBox } from './Styled'
 
 export default class CommentBox extends Component {
   componentDidMount() {

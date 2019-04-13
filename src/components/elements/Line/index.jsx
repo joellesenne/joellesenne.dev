@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { StyledLine } from './StyledLine'
+import { StyledLine } from './Styled'
 
 const Line = () => <StyledLine />
 

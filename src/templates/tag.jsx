@@ -25,7 +25,7 @@ import {
 } from '../components'
 
 // styles
-import { GatsbyLink } from '../components/elements/Link/StyledLink'
+import { GatsbyLink } from '../components/elements/Link/Styled'
 
 const tagPage = ({
   pageContext: { tag },

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 // styled
-import { ButtonWrapper, StyledButton } from './StyledButton'
+import { ButtonWrapper, StyledButton } from './Styled'
 
 const Button = ({ url, title }) => (
   <ButtonWrapper>
