@@ -94,7 +94,7 @@
     "gatsby-plugin-root-import": "^2.0.5",
     "prettier": "^1.17.0",
     "snyk": "^1.150.0",
-    "start-server-and-test": "^1.7.13"
+    "start-server-and-test": "^1.9.1"
   },
   "repository": {
     "type": "git",
