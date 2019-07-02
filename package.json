@@ -92,7 +92,7 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "gatsby-plugin-root-import": "^2.0.5",
-    "prettier": "^1.17.0",
+    "prettier": "^1.18.2",
     "snyk": "^1.150.0",
     "start-server-and-test": "^1.7.13"
   },
