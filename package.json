@@ -93,7 +93,7 @@
     "eslint-plugin-react": "^7.12.4",
     "gatsby-plugin-root-import": "^2.0.5",
     "prettier": "^1.17.0",
-    "snyk": "^1.150.0",
+    "snyk": "^1.186.0",
     "start-server-and-test": "^1.7.13"
   },
   "repository": {
