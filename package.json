@@ -35,7 +35,9 @@
     "now-build": "npm run build",
     "serve": "gatsby serve",
     "sort:package": "npx sort-package-json",
-    "test:cy": "start-server-and-test develop http://localhost:8000 cy:open"
+    "test:cy": "start-server-and-test develop http://localhost:8000 cy:open",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@hot-loader/react-dom": "^16.8.6",
@@ -84,7 +86,8 @@
     "react-use": "^9.8.1",
     "rebound": "^0.1.0",
     "socialshares": "^2.0.5",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "snyk": "^1.192.4"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
@@ -101,7 +104,7 @@
     "eslint-plugin-react": "^7.14.2",
     "gatsby-plugin-root-import": "^2.0.5",
     "prettier": "^1.18.2",
-    "snyk": "^1.192.0",
     "start-server-and-test": "^1.9.1"
-  }
+  },
+  "snyk": true
 }
