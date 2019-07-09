@@ -1,19 +1,33 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.3
+version: v1.13.5
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   SNYK-JS-LODASHMERGE-173732:
     - gatsby-mdx > static-site-generator-webpack-plugin > cheerio > lodash.merge:
         reason: None given
         expires: '2019-04-10T06:50:42.290Z'
-      gatsby > react-hot-loader > lodash.merge:
-        reason: None
-        expires: '2019-04-10T10:01:29.083Z'
     - gatsby-mdx > static-site-generator-webpack-plugin > cheerio > lodash.merge:
         reason: None given
+        expires: '2019-04-10T10:01:29.083Z'
+    - gatsby > react-hot-loader > lodash.merge:
+        reason: None
         expires: '2019-04-10T10:01:29.083Z'
   'npm:mem:20180117':
     - gatsby > @gatsbyjs/relay-compiler > yargs > os-locale > mem:
         reason: None
         expires: '2019-04-10T06:50:42.291Z'
-patch: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - gatsby > gatsby-telemetry > lodash:
+        patched: '2019-07-09T14:57:40.197Z'
+    - styled-components > @babel/traverse > lodash:
+        patched: '2019-07-09T14:57:40.197Z'
+    - gatsby > gatsby-plugin-page-creator > gatsby-page-utils > lodash:
+        patched: '2019-07-09T14:57:40.197Z'
+    - gatsby > gatsby-cli > gatsby-telemetry > lodash:
+        patched: '2019-07-09T14:57:40.197Z'
+    - styled-components > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-09T14:57:40.197Z'
+    - styled-components > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-09T14:57:40.197Z'
