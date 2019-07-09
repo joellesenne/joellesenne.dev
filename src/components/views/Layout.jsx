@@ -9,6 +9,7 @@ import { lighten } from 'polished'
 // config
 import theme from 'config/theme'
 
+// Style
 import GlobalStyle from 'src/styles/global'
 
 // components
@@ -16,8 +17,6 @@ import SEO from '../All/SEO'
 
 // views
 import Wrapper from './Wrapper'
-
-// styles
 
 const Layout = ({ children, buttonText }) => (
   <ThemeProvider theme={theme}>

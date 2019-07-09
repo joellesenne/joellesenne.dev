@@ -3,7 +3,6 @@ const path = require('path')
 const config = require('./config/site')
 
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
-// require('dotenv').config()
 
 const activeEnv = process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'development'
 
@@ -188,6 +187,14 @@ module.exports = {
         icon: config.favicon,
       },
     },
-    'gatsby-plugin-offline',
+    // 'gatsby-plugin-offline',
+    'gatsby-plugin-netlify',
+    // https://github.com/LoicMahieu/gatsby-styled-components-test-bug-global/blob/master/gatsby-config.js
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
   ],
 }

@@ -73,9 +73,7 @@ gatsby new <nameProject> https://github.com/joellesenne/joellesenne.xyz
 
 ## 🚧 Coming soon
 
-- ❌ Make a parallax effect
 - ❌ Use a CMS
-- ❌ ApplauseButton
 - ✔️ Deploy on [Netlify](https://www.netlifycms.org/)
 - ✔️ Social Shares
 - ✔️ Comment Blog

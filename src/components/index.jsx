@@ -9,7 +9,6 @@ export { default as ProjectsCard } from './All/ProjectsCard'
 export { default as TagCategory } from './All/TagCategory'
 
 // elements
-export { default as ApplauseButton } from './elements/ApplauseButton'
 export { default as Avatar } from './elements/Avatar'
 export { default as Button } from './elements/Button'
 export { default as CommentBox } from './elements/CommentBox'

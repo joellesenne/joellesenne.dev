@@ -11,7 +11,6 @@ import config from 'config/site'
 // component
 import {
   Wave,
-  ApplauseButton,
   Navigation,
   Line,
   SocialShares,
@@ -50,7 +49,6 @@ const Page = ({ pageContext: { slug }, data: { mdx: pageNode } }) => {
             <PageContent>
               <MDXRenderer>{pageNode.code.body}</MDXRenderer>
             </PageContent>
-            <ApplauseButton />
             <SocialShares />
             <Line />
             <Paragraph>Merci de votre patience.</Paragraph>

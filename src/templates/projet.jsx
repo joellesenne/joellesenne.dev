@@ -8,7 +8,6 @@ import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 // component
 import {
   Wave,
-  ApplauseButton,
   CommentBox,
   Navigation,
   Pagination,
@@ -67,7 +66,6 @@ const Project = ({ pageContext: { slug, prev, next }, data: { mdx: projectNode }
             <PostContent>
               <MDXRenderer>{projectNode.code.body}</MDXRenderer>
             </PostContent>
-            <ApplauseButton />
             <SocialShares />
             <Line />
             <Tags tags={project.tags} />

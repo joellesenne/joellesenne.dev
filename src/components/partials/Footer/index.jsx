@@ -14,16 +14,12 @@ import { Footer } from './Styled'
 // animation
 import Wave from '../../Animation/Wave'
 
-// elements
-import AddBackToTop from '../../elements/AbbBackToTop'
-
 const FooterPages = () => {
   const dateCurent = new Date().getFullYear()
   const buildTime = useBuildTime()
 
   return (
     <Footer>
-      <AddBackToTop />
       <Paragraph>
         &copy; 2018-{dateCurent} – Tout droits réservés – Mise à jour le {buildTime}
         <br />

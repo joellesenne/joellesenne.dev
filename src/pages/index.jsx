@@ -59,7 +59,7 @@ const indexPage = ({
       />
       <Container>
         <Content>
-          <Title>Mes Projects</Title>
+          <Title>Côté projet</Title>
           <ProjectsWrapper>
             {projectEdges.map(project => (
               <ProjectsCard
@@ -76,7 +76,7 @@ const indexPage = ({
           <Button url="/projets" title="Voir mes projets" />
         </Content>
         <Content>
-          <Title>Mon Blog</Title>
+          <Title>Côté blog</Title>
           {postEdges.map(post => (
             <ArticlesCard
               title={post.node.frontmatter.title}
