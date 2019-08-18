@@ -11293,10 +11293,10 @@ react-confetti@^3.1.0:
   dependencies:
     tween-functions "^1.2.0"
 
-react-cookie-consent@^2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/react-cookie-consent/-/react-cookie-consent-2.3.2.tgz#e665bd52c51064a4ab991b6e36f73a51e4e7b7dc"
-  integrity sha512-Fi2QGsTg/kfg2wYBDzGkv7Tkeijv9RTZM7uW6yqfW7Fz3r9nEGYDuUxT8crpv/wrCTjU+AqrPFmAOQh96lQhUA==
+react-cookie-consent@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/react-cookie-consent/-/react-cookie-consent-2.4.0.tgz#f3bb26256ce3a61732b04fb10c5ed442e8bad26a"
+  integrity sha512-i3l7IGFWj3a4edy4gpqjPZexjQzxVvogWGdYvVpJiltZysE22KgcP8qlShO0i/D8U0aJr9hV14ZSHMV3y6+sKA==
   dependencies:
     js-cookie "^2.2.0"
 
