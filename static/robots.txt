@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /
 Disallow: /public
 
-// sitemap: https://joellesenne.xyz/sitemap.xml
+sitemap: https://joellesenne.xyz/sitemap.xml
