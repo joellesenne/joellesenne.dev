@@ -267,6 +267,7 @@ const SEO = props => {
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
       <meta name="twitter:image:alt" content={description} />
+      <meta name="p:domain_verify" content="fc561625197c61d125e1eeb14e801388" />
       <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Spectral:400,500,700,800" rel="stylesheet" />
       {/* Insert schema.org data conditionally (webpage/article || webpage/project) + everytime (breadcrumbs) */}
       {!article && <script type="application/ld+json">{JSON.stringify(schemaOrgWebPage)}</script>}
