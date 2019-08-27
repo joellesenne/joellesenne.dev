@@ -25,7 +25,7 @@ const FooterPages = () => {
         <br />
         <Link href="/conditions-de-service">Conditions</Link> –{' '}
         <Link href="/politique-de-confidentialite">Confidentialité</Link> –{' '}
-        <Link href={`https://github.com/${config.userSlug}/joellesenne.xyz`} target="_blank" rel="noopener noreferrer">
+        <Link href={`https://github.com/${config.userSlug}/joellesenne.dev`} target="_blank" rel="noopener noreferrer">
           Code source
         </Link>{' '}
         inspiré par{' '}
