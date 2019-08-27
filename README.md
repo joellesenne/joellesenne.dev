@@ -1,6 +1,6 @@
 # My personal site
 
-[![CircleCI](https://circleci.com/gh/joellesenne/joellesenne.xyz.svg?style=svg&circle-token=fa213778258e89aa83decb6696fc02683fd3b1aa)](https://circleci.com/gh/joellesenne/joellesenne.xyz) [![Build Status](https://travis-ci.com/joellesenne/joellesenne.xyz.svg?style=for-the-badge&token=grPssqD9gpHqh7fqn8Ep&branch=master)](https://travis-ci.com/joellesenne/joellesenne.xyz)
+[![CircleCI](https://circleci.com/gh/joellesenne/joellesenne.dev.svg?style=svg&circle-token=fa213778258e89aa83decb6696fc02683fd3b1aa)](https://circleci.com/gh/joellesenne/joellesenne.dev) [![Build Status](https://travis-ci.com/joellesenne/joellesenne.dev.svg?branch=master)](https://travis-ci.com/joellesenne/joellesenne.dev)
 
 [![GitHub license](https://img.shields.io/badge/Mit-License-blue.svg?style=flat-square)](https://github.com/joellesenne/https//joellesenne.dev/blob/master/LICENSE) [![Joel Lesenne Homepage](https://img.shields.io/badge/joellesenne-HomePage-blue.svg?style=flat-square)](https//joellesenne.dev) ![Maintenance](https://img.shields.io/maintenance/yes/2019.svg?style=flat-square)
 
