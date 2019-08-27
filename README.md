@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/joellesenne/joellesenne.xyz.svg?style=svg&circle-token=fa213778258e89aa83decb6696fc02683fd3b1aa)](https://circleci.com/gh/joellesenne/joellesenne.xyz) [![Build Status](https://travis-ci.com/joellesenne/joellesenne.xyz.svg?style=for-the-badge&token=grPssqD9gpHqh7fqn8Ep&branch=master)](https://travis-ci.com/joellesenne/joellesenne.xyz)
 
-[![GitHub license](https://img.shields.io/badge/Mit-License-blue.svg?style=flat-square)](https://github.com/joellesenne/https//joellesenne.xyz/blob/master/LICENSE) [![Joel Lesenne Homepage](https://img.shields.io/badge/joellesenne-HomePage-blue.svg?style=flat-square)](https//joellesenne.xyz) ![Maintenance](https://img.shields.io/maintenance/yes/2019.svg?style=flat-square)
+[![GitHub license](https://img.shields.io/badge/Mit-License-blue.svg?style=flat-square)](https://github.com/joellesenne/https//joellesenne.dev/blob/master/LICENSE) [![Joel Lesenne Homepage](https://img.shields.io/badge/joellesenne-HomePage-blue.svg?style=flat-square)](https//joellesenne.dev) ![Maintenance](https://img.shields.io/maintenance/yes/2019.svg?style=flat-square)
 
 ## About
 
@@ -11,11 +11,11 @@
 If you look at this page here,
 this is for you to share my code in the world.
 
-👀 [Looking at my work](https://joellesenne.xyz)
+👀 [Looking at my work](https://joellesenne.dev)
 
 💡 [Inspiration](https://www.lekoarts.de/en/)
 
-📦 [Git project](https://github.com/joellesenne/joellesenne.xyz)
+📦 [Git project](https://github.com/joellesenne/joellesenne.dev)
 
 ## 🛠 Built with :
 
@@ -55,9 +55,9 @@ gatsby new <nameProject> https://github.com/joellesenne/joellesenne.xyz
 
 // or
 # Clone this repository
-~ $ git clone  https://github.com/joellesenne/joellesenne.xyz.git
+~ $ git clone  https://github.com/joellesenne/joellesenne.dev.git
 
-~ $ cd <PATH>/joellesenne.xyz/
+~ $ cd <PATH>/joellesenne.dev/
 
 ~ $ npm install
 
