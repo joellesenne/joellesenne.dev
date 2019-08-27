@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import kebabCase from 'lodash/kebabCase'
-import MDXRenderer from 'gatsby-mdx/mdx-renderer'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 // component
 import {
@@ -64,7 +64,7 @@ const Project = ({ pageContext: { slug, prev, next }, data: { mdx: projectNode }
           <SEO postPath={slug} postNode={projectNode} project />
           <Article>
             <PostContent>
-              <MDXRenderer>{projectNode.code.body}</MDXRenderer>
+              <MDXRenderer>{projectNode.body}</MDXRenderer>
             </PostContent>
             <SocialShares />
             <Line />
@@ -108,9 +108,7 @@ Project.defaultProps = {
 export const projectQuery = graphql`
   query projectBySlug($slug: String!) {
     mdx(fields: { slug: { eq: $slug } }) {
-      code {
-        body
-      }
+      body
       excerpt
       frontmatter {
         title

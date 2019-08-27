@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable import/no-unresolved */
 import React from 'react'
 import Helmet from 'react-helmet'
@@ -18,12 +19,12 @@ import { Number, TagButton } from '../components/elements/Tags/Styled'
 
 const categoriesPage = ({
   data: {
-    allMdx: { group, edges },
+    allMdx: { group, nodes },
   },
 }) => (
   <Layout>
     <Helmet title={`Catégories | ${config.siteTitle}`} />
-    <Header bg title="Catégories" subtitle={`${size(edges)} articles divisés en ${size(group)} categories`}>
+    <Header bg title="Catégories" subtitle={`${size(nodes)} articles divisés en ${size(group)} categories`}>
       <Navigation />
       <Wave top />
     </Header>
@@ -54,7 +55,7 @@ categoriesPage.propTypes = {
   data: PropTypes.shape({
     Mdx: PropTypes.shape({
       group: PropTypes.array.isRequired,
-      edges: PropTypes.array.isRequired,
+      nodes: PropTypes.array.isRequired,
     }),
   }).isRequired,
 }
@@ -68,10 +69,8 @@ export const pageQuery = graphql`
         fieldValue
         totalCount
       }
-      edges {
-        node {
-          id
-        }
+      nodes {
+        id
       }
     }
   }

@@ -15,7 +15,7 @@ import { Wave, ProjectsCard, Navigation, Header, Bio, Contact, Footer, Layout, C
 
 const projectsPage = ({
   data: {
-    allMdx: { edges: projectEdges },
+    allMdx: { nodes: projects },
   },
 }) => (
   <Layout>
@@ -27,15 +27,15 @@ const projectsPage = ({
     <Container>
       <Content>
         <ProjectsWrapper>
-          {projectEdges.map(project => (
+          {projects.map(project => (
             <ProjectsCard
-              title={project.node.frontmatter.title}
-              date={project.node.frontmatter.date}
-              excerpt={project.node.excerpt}
-              timeToRead={project.node.timeToRead}
-              slug={project.node.fields.slug}
-              category={project.node.frontmatter.category}
-              key={project.node.fields.slug}
+              title={project.frontmatter.title}
+              date={project.frontmatter.date}
+              excerpt={project.excerpt}
+              timeToRead={project.timeToRead}
+              slug={project.fields.slug}
+              category={project.frontmatter.category}
+              key={project.fields.slug}
             />
           ))}
         </ProjectsWrapper>
@@ -52,7 +52,7 @@ export default projectsPage
 projectsPage.propTypes = {
   data: PropTypes.shape({
     allMdx: PropTypes.shape({
-      edges: PropTypes.array.isRequired,
+      nodes: PropTypes.array.isRequired,
     }),
   }).isRequired,
 }
@@ -64,26 +64,24 @@ export const PageQuery = graphql`
       limit: 1000
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            date(formatString: "MM/DD/YYYY")
-            category
-            cover {
-              childImageSharp {
-                fluid(maxWidth: 800, quality: 90, traceSVG: { color: "#2B2B2F" }) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                }
+      nodes {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          date(formatString: "MM/DD/YYYY")
+          category
+          cover {
+            childImageSharp {
+              fluid(maxWidth: 800, quality: 90, traceSVG: { color: "#2B2B2F" }) {
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
               }
             }
           }
-          excerpt(pruneLength: 30)
-          timeToRead
         }
+        excerpt(pruneLength: 30)
+        timeToRead
       }
     }
   }

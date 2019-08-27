@@ -12,7 +12,7 @@ import { Wave, ArticlesCard, Navigation, Header, Bio, Contact, Footer, Layout, C
 
 const blogPage = ({
   data: {
-    allMdx: { edges: postEdges },
+    allMdx: { nodes: posts },
   },
 }) => (
   <Layout>
@@ -23,15 +23,15 @@ const blogPage = ({
     </Header>
     <Container>
       <Content>
-        {postEdges.map(post => (
+        {posts.map(post => (
           <ArticlesCard
-            title={post.node.frontmatter.title}
-            date={post.node.frontmatter.date}
-            excerpt={post.node.excerpt}
-            timeToRead={post.node.timeToRead}
-            slug={post.node.fields.slug}
-            category={post.node.frontmatter.category}
-            key={post.node.fields.slug}
+            title={post.frontmatter.title}
+            date={post.frontmatter.date}
+            excerpt={post.excerpt}
+            timeToRead={post.timeToRead}
+            slug={post.fields.slug}
+            category={post.frontmatter.category}
+            key={post.fields.slug}
           />
         ))}
       </Content>
@@ -47,7 +47,7 @@ export default blogPage
 blogPage.propTypes = {
   data: PropTypes.shape({
     allMdx: PropTypes.shape({
-      edges: PropTypes.array.isRequired,
+      nodes: PropTypes.array.isRequired,
     }),
   }).isRequired,
 }
@@ -59,26 +59,24 @@ export const PageQuery = graphql`
       limit: 1000
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            date(formatString: "MM/DD/YYYY")
-            category
-            cover {
-              childImageSharp {
-                fluid(maxWidth: 800, quality: 90, traceSVG: { color: "#2B2B2F" }) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                }
+      nodes {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          date(formatString: "MM/DD/YYYY")
+          category
+          cover {
+            childImageSharp {
+              fluid(maxWidth: 800, quality: 90, traceSVG: { color: "#2B2B2F" }) {
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
               }
             }
           }
-          excerpt(pruneLength: 200)
-          timeToRead
         }
+        excerpt(pruneLength: 200)
+        timeToRead
       }
     }
   }

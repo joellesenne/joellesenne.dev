@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable import/no-unresolved */
 import React from 'react'
 import { useWindowSize } from 'react-use'
@@ -31,8 +33,8 @@ import { Title } from '../components/Typographies/StyledTypographies'
 
 const indexPage = ({
   data: {
-    projects: { edges: projectEdges },
-    posts: { edges: postEdges },
+    projects: { nodes: projects },
+    posts: { nodes: posts },
   },
 }) => {
   const { width, height } = useWindowSize()
@@ -61,15 +63,15 @@ const indexPage = ({
         <Content>
           <Title>Côté projet</Title>
           <ProjectsWrapper>
-            {projectEdges.map(project => (
+            {projects.map(project => (
               <ProjectsCard
-                title={project.node.frontmatter.title}
-                date={project.node.frontmatter.date}
-                excerpt={project.node.excerpt}
-                timeToRead={project.node.timeToRead}
-                slug={project.node.fields.slug}
-                category={project.node.frontmatter.category}
-                key={project.node.fields.slug}
+                title={project.frontmatter.title}
+                date={project.frontmatter.date}
+                excerpt={project.excerpt}
+                timeToRead={project.timeToRead}
+                slug={project.fields.slug}
+                category={project.frontmatter.category}
+                key={project.fields.slug}
               />
             ))}
           </ProjectsWrapper>
@@ -77,15 +79,15 @@ const indexPage = ({
         </Content>
         <Content>
           <Title>Côté blog</Title>
-          {postEdges.map(post => (
+          {posts.map(post => (
             <ArticlesCard
-              title={post.node.frontmatter.title}
-              date={post.node.frontmatter.date}
-              excerpt={post.node.excerpt}
-              timeToRead={post.node.timeToRead}
-              slug={post.node.fields.slug}
-              category={post.node.frontmatter.category}
-              key={post.node.fields.slug}
+              title={post.frontmatter.title}
+              date={post.frontmatter.date}
+              excerpt={post.excerpt}
+              timeToRead={post.timeToRead}
+              slug={post.fields.slug}
+              category={post.frontmatter.category}
+              key={post.fields.slug}
             />
           ))}
           <Button url="/blog" title="Voir mes articles" />
@@ -103,10 +105,10 @@ export default indexPage
 indexPage.propTypes = {
   data: PropTypes.shape({
     projects: PropTypes.shape({
-      edges: PropTypes.array.isRequired,
+      nodes: PropTypes.array.isRequired,
     }),
     posts: PropTypes.shape({
-      edges: PropTypes.array.isRequired,
+      nodes: PropTypes.array.isRequired,
     }),
   }).isRequired,
 }
@@ -118,19 +120,17 @@ export const pageQuery = graphql`
       limit: 2
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            date(formatString: "DD/MM/YYYY")
-            category
-          }
-          excerpt(pruneLength: 30)
-          timeToRead
+      nodes {
+        fields {
+          slug
         }
+        frontmatter {
+          title
+          date(formatString: "DD/MM/YYYY")
+          category
+        }
+        excerpt(pruneLength: 30)
+        timeToRead
       }
     }
     posts: allMdx(
@@ -138,19 +138,17 @@ export const pageQuery = graphql`
       limit: 2
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            date(formatString: "DD/MM/YYYY")
-            category
-          }
-          excerpt(pruneLength: 200)
-          timeToRead
+      nodes {
+        fields {
+          slug
         }
+        frontmatter {
+          title
+          date(formatString: "DD/MM/YYYY")
+          category
+        }
+        excerpt(pruneLength: 200)
+        timeToRead
       }
     }
   }

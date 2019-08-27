@@ -61,23 +61,21 @@ exports.createPages = async ({ graphql, actions }) => {
           filter: { fields: { sourceInstanceName: { eq: "blog" } }, frontmatter: { publish: { eq: true } } }
           sort: { fields: [frontmatter___date], order: DESC }
         ) {
-          edges {
-            node {
-              fileAbsolutePath
-              frontmatter {
-                tags
-                category
-                title
-                cover {
-                  childImageSharp {
-                    resize(width: 600) {
-                      src
-                    }
+          nodes {
+            fields {
+              slug
+            }
+            fileAbsolutePath
+            frontmatter {
+              tags
+              category
+              title
+              cover {
+                childImageSharp {
+                  resize(width: 600) {
+                    src
                   }
                 }
-              }
-              fields {
-                slug
               }
             }
           }
@@ -86,21 +84,19 @@ exports.createPages = async ({ graphql, actions }) => {
           filter: { fields: { sourceInstanceName: { eq: "projects" } }, frontmatter: { publish: { eq: true } } }
           sort: { fields: [frontmatter___date], order: DESC }
         ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              fileAbsolutePath
-              frontmatter {
-                tags
-                category
-                title
-                cover {
-                  childImageSharp {
-                    resize(width: 600) {
-                      src
-                    }
+          nodes {
+            fields {
+              slug
+            }
+            fileAbsolutePath
+            frontmatter {
+              tags
+              category
+              title
+              cover {
+                childImageSharp {
+                  resize(width: 600) {
+                    src
                   }
                 }
               }
@@ -111,19 +107,17 @@ exports.createPages = async ({ graphql, actions }) => {
           filter: { fields: { sourceInstanceName: { eq: "pages" } }, frontmatter: { publish: { eq: true } } }
           sort: { fields: [frontmatter___date], order: DESC }
         ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              fileAbsolutePath
-              frontmatter {
-                title
-                cover {
-                  childImageSharp {
-                    resize(width: 600) {
-                      src
-                    }
+          nodes {
+            fields {
+              slug
+            }
+            fileAbsolutePath
+            frontmatter {
+              title
+              cover {
+                childImageSharp {
+                  resize(width: 600) {
+                    src
                   }
                 }
               }
@@ -134,31 +128,31 @@ exports.createPages = async ({ graphql, actions }) => {
     `)
   )
 
-  const postsList = result.data.posts.edges
-  const projectsList = result.data.projects.edges
+  const postsList = result.data.posts.nodes
+  const projectsList = result.data.projects.nodes
 
   const tagSet = new Set()
   const categorySet = new Set()
 
   postsList.forEach((post, index) => {
-    if (post.node.frontmatter.tags) {
-      post.node.frontmatter.tags.forEach(tag => {
+    if (post.frontmatter.tags) {
+      post.frontmatter.tags.forEach(tag => {
         tagSet.add(tag)
       })
     }
 
-    if (post.node.frontmatter.category) {
-      categorySet.add(post.node.frontmatter.category)
+    if (post.frontmatter.category) {
+      categorySet.add(post.frontmatter.category)
     }
 
-    const prev = index === postsList.length - 1 ? null : postsList[index + 1].node
-    const next = index === 0 ? null : postsList[index - 1].node
+    const prev = index === postsList.length - 1 ? null : postsList[index + 1]
+    const next = index === 0 ? null : postsList[index - 1]
 
     createPage({
-      path: post.node.fields.slug,
+      path: post.fields.slug,
       component: postPage,
       context: {
-        slug: post.node.fields.slug,
+        slug: post.fields.slug,
         prev,
         next,
       },
@@ -166,36 +160,36 @@ exports.createPages = async ({ graphql, actions }) => {
   })
 
   projectsList.forEach((project, index) => {
-    if (project.node.frontmatter.tags) {
-      project.node.frontmatter.tags.forEach(tag => {
+    if (project.frontmatter.tags) {
+      project.frontmatter.tags.forEach(tag => {
         tagSet.add(tag)
       })
     }
 
-    if (project.node.frontmatter.category) {
-      categorySet.add(project.node.frontmatter.category)
+    if (project.frontmatter.category) {
+      categorySet.add(project.frontmatter.category)
     }
 
-    const prev = index === projectsList.length - 1 ? null : projectsList[index + 1].node
-    const next = index === 0 ? null : projectsList[index - 1].node
+    const prev = index === projectsList.length - 1 ? null : projectsList[index + 1]
+    const next = index === 0 ? null : projectsList[index - 1]
 
     createPage({
-      path: project.node.fields.slug,
+      path: project.fields.slug,
       component: projectPage,
       context: {
-        slug: project.node.fields.slug,
+        slug: project.fields.slug,
         prev,
         next,
       },
     })
   })
 
-  result.data.pages.edges.forEach(page => {
+  result.data.pages.nodes.forEach(page => {
     createPage({
-      path: page.node.fields.slug,
+      path: page.fields.slug,
       component: pagesPage,
       context: {
-        slug: page.node.fields.slug,
+        slug: page.fields.slug,
       },
     })
   })

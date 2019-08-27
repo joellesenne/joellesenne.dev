@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable import/no-unresolved */
 import React from 'react'
 import PropTypes from 'prop-types'
@@ -30,7 +31,7 @@ import { GatsbyLink } from '../components/elements/Link/Styled'
 const categoryPage = ({
   pageContext: { category },
   data: {
-    allMdx: { edges, totalCount },
+    allMdx: { nodes, totalCount },
   },
 }) => (
   <Layout>
@@ -50,17 +51,17 @@ const categoryPage = ({
     </Header>
     <Container>
       <Content>
-        {edges.map(edge => (
+        {nodes.map(post => (
           <TagCategory
-            type={edge.node.fields.sourceInstanceName}
-            key={edge.node.frontmatter.title}
-            title={edge.node.frontmatter.title}
-            category={edge.node.frontmatter.category}
-            path={edge.node.fields.slug}
-            date={edge.node.frontmatter.date}
-            timeToRead={edge.node.timeToRead}
-            tags={edge.node.frontmatter.tags}
-            excerpt={edge.node.excerpt}
+            type={post.fields.sourceInstanceName}
+            key={post.frontmatter.title}
+            title={post.frontmatter.title}
+            category={post.frontmatter.category}
+            path={post.fields.slug}
+            date={post.frontmatter.date}
+            timeToRead={post.timeToRead}
+            tags={post.frontmatter.tags}
+            excerpt={post.excerpt}
           />
         ))}
         <Line />
@@ -81,7 +82,7 @@ categoryPage.propTypes = {
   }).isRequired,
   data: PropTypes.shape({
     Mdx: PropTypes.shape({
-      edges: PropTypes.array.isRequired,
+      nodes: PropTypes.array.isRequired,
     }),
   }).isRequired,
 }
@@ -94,20 +95,18 @@ export const pageQuery = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       totalCount
-      edges {
-        node {
-          fields {
-            sourceInstanceName
-            slug
-          }
-          excerpt(pruneLength: 300)
-          timeToRead
-          frontmatter {
-            title
-            tags
-            date(formatString: "DD/MM/YYYY")
-            category
-          }
+      nodes {
+        fields {
+          sourceInstanceName
+          slug
+        }
+        excerpt(pruneLength: 300)
+        timeToRead
+        frontmatter {
+          title
+          tags
+          date(formatString: "DD/MM/YYYY")
+          category
         }
       }
     }
