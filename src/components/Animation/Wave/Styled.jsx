@@ -25,6 +25,9 @@ export const StyledWaveWrapper = styled.div`
   right: 0;
   z-index: -1;
   transform: matrix(3.5, 0, 0, 1, 0, 0);
+  @media (max-width: ${props => props.theme.breakpoints.lg}) {
+    display: none;
+  }
 `
 export const StyledInnerWave = styled.div`
   position: relative;

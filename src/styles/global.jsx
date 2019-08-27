@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
     h3 {
       font-size: 1.563rem;
     }
-     h4 {
+    h4 {
       font-size: 1.25rem;
     }
     h5 {
