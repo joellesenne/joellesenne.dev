@@ -51,7 +51,7 @@ this is for you to share my code in the world.
 # gatsby-cli version
 ~ $ gatsby-cli --version
 
-gatsby new <nameProject> https://github.com/joellesenne/joellesenne.xyz
+gatsby new <nameProject> https://github.com/joellesenne/joellesenne.dev
 
 // or
 # Clone this repository
