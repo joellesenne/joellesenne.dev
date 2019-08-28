@@ -1,5 +1,6 @@
 # My personal site
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/554dbae558f245cd882888d0d415a482)](https://app.codacy.com/app/joellesenne/joellesenne.dev_2?utm_source=github.com&utm_medium=referral&utm_content=joellesenne/joellesenne.dev&utm_campaign=Badge_Grade_Dashboard)
 [![CircleCI](https://circleci.com/gh/joellesenne/joellesenne.dev.svg?style=svg&circle-token=fa213778258e89aa83decb6696fc02683fd3b1aa)](https://circleci.com/gh/joellesenne/joellesenne.dev) [![Build Status](https://travis-ci.com/joellesenne/joellesenne.dev.svg?branch=master)](https://travis-ci.com/joellesenne/joellesenne.dev)
 
 [![GitHub license](https://img.shields.io/badge/Mit-License-blue.svg?style=flat-square)](https://github.com/joellesenne/https//joellesenne.dev/blob/master/LICENSE) [![Joel Lesenne Homepage](https://img.shields.io/badge/joellesenne-HomePage-blue.svg?style=flat-square)](https//joellesenne.dev) ![Maintenance](https://img.shields.io/maintenance/yes/2019.svg?style=flat-square)
