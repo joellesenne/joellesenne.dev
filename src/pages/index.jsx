@@ -5,12 +5,10 @@ import React from 'react'
 import { useWindowSize } from 'react-use'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import Particles from 'react-particles-js'
 
 // config
 import config from 'config/site'
-
-// animation <https://github.com/alampros/react-confetti>
-import Confetti from 'react-confetti'
 
 // components
 import {
@@ -40,15 +38,6 @@ const indexPage = ({
   const { width, height } = useWindowSize()
   return (
     <Layout>
-      <Confetti
-        confettiSource={{ x: width / 2, y: height / 2, w: 0, h: 0 }}
-        numberOfPieces={100}
-        gravity={0.1}
-        opacity={100}
-        width={width}
-        height={height}
-        style={{ zIndex: -1 }}
-      />
       <Header
         big
         title={
@@ -58,7 +47,33 @@ const indexPage = ({
           </>
         }
         subtitle={config.siteDescription}
-      />
+      >
+        <Particles
+          height="80vh"
+          params={{
+            particles: {
+              number: {
+                value: 80,
+                density: {
+                  enable: true,
+                  value_area: 800,
+                },
+              },
+              size: {
+                value: 3,
+              },
+            },
+            interactivity: {
+              events: {
+                onhover: {
+                  enable: true,
+                  mode: 'repulse',
+                },
+              },
+            },
+          }}
+        />
+      </Header>
       <Container>
         <Content>
           <Title>Côté projet</Title>
