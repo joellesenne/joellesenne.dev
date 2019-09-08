@@ -1114,23 +1114,23 @@
   dependencies:
     core-js "^2.5.7"
 
-"@mdx-js/mdx@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-1.4.0.tgz#465218fd9d2479b745eeccb4875601b4f0537cb6"
-  integrity sha512-JV7lBmc4GXu/g6ATIjBBe9iovLnMFP6Ka6ZAIeiZHBRrhec1oj9iYTTShmRY+w2MsMfk0vBIxJxQSiorf4pGYw==
+"@mdx-js/mdx@^1.4.4":
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-1.4.4.tgz#4482eab3447d1958ac6d2308c10f88cbbaf85528"
+  integrity sha512-7oDVba/KOr4PM3AN3AMp6rpLwO2lAUKtt5cFaZ/lmW5yBAph9TYW0/Y89lkRbQ8SoyUWj85URTgSg7qJ0ECx5w==
   dependencies:
     "@babel/core" "7.5.5"
     "@babel/plugin-syntax-jsx" "7.2.0"
     "@babel/plugin-syntax-object-rest-spread" "7.2.0"
-    "@mdx-js/util" "^1.4.0"
-    babel-plugin-apply-mdx-type-prop "^1.4.0"
-    babel-plugin-extract-import-names "^1.4.0"
+    "@mdx-js/util" "^1.4.4"
+    babel-plugin-apply-mdx-type-prop "^1.4.4"
+    babel-plugin-extract-import-names "^1.4.4"
     camelcase-css "2.0.1"
     detab "2.0.2"
     hast-util-raw "5.0.1"
     lodash.uniq "4.5.0"
     mdast-util-to-hast "6.0.2"
-    remark-mdx "^1.4.0"
+    remark-mdx "^1.4.4"
     remark-parse "7.0.1"
     remark-squeeze-paragraphs "3.0.4"
     style-to-object "0.2.3"
@@ -1138,20 +1138,20 @@
     unist-builder "1.0.4"
     unist-util-visit "2.0.0"
 
-"@mdx-js/react@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-1.4.0.tgz#b389684b4b5fbfb6770a6cc0d620fca82b8a8549"
-  integrity sha512-UHPG74qvLM8wO+evIKzNQqSw3PzgPei4oEFPuFGee15rK0cYNDKL+utzQLM1Ngv2gmjU/WN9BYrpJxyFh8xOCg==
+"@mdx-js/react@^1.4.4":
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-1.4.4.tgz#244c0ec706e9441054e1a1eac23ef8b607b26be8"
+  integrity sha512-R3qI6ghWSgQw/Y/vtzRnHFnSqmsVdtLv9S6HFNYz3z9H04UachPpnWoCXRcW6RdBdRHIt1gYiRADGpPDh2Yciw==
 
 "@mdx-js/tag@^0.20.3":
   version "0.20.3"
   resolved "https://registry.yarnpkg.com/@mdx-js/tag/-/tag-0.20.3.tgz#9e2306040b6469248c45a5f5baf44d0014db0493"
   integrity sha512-Co3gUFmNDv9z2LjuvLTpTj2NaOSHFxuoZjohcG0YK/KfECO+Ns9idzThMYjfEDe1vAf4c824rqlBYseedJdFNw==
 
-"@mdx-js/util@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.4.0.tgz#93d0d78ba0520d162796bb94156b399bd26e9394"
-  integrity sha512-idIFyiYzVr3kNOGtIZzx2n9V0iJdTn06hYmJ05miktP4bHdrTJeonp/6wfLtDxfsfx00mkCxxX0YymvnrqozeA==
+"@mdx-js/util@^1.4.4":
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.4.4.tgz#ed63c83d986731814b81fd4275196cfc3d79c9cf"
+  integrity sha512-/mczKmKul33/Um6WZ3UYKKXQJg6MuHg6/WkZzndC2z5Geclbai3COLrcono7KQ6rstu3kKRmzkQLJfUB+cu8Pg==
 
 "@mikaelkristiansson/domready@^1.0.9":
   version "1.0.9"
@@ -2154,13 +2154,13 @@ babel-plugin-add-module-exports@^0.3.3:
   optionalDependencies:
     chokidar "^2.0.4"
 
-babel-plugin-apply-mdx-type-prop@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-apply-mdx-type-prop/-/babel-plugin-apply-mdx-type-prop-1.4.0.tgz#73e16d8e9cb26d8ed5f7d9acfefbc7afab8bcee6"
-  integrity sha512-yeLqZ9HinXo0EiV4dUxpwxXswQzya2YhgGw4FErYxD/dQxtPMGnBXNxxudCBvoCThjxclFXU2IDfpfMbJR2UFQ==
+babel-plugin-apply-mdx-type-prop@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-apply-mdx-type-prop/-/babel-plugin-apply-mdx-type-prop-1.4.4.tgz#233a2e6e7012b9ab14c09150e844fd03d365ee24"
+  integrity sha512-K4CUJcyOnH9p7sXUVQzRZljEESzVt7IoxRIS/qY2IQKAcjFxEB4xCsD96/oEDuM2evyHFn8vInhuUphlOW3YWQ==
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0"
-    "@mdx-js/util" "^1.4.0"
+    "@mdx-js/util" "^1.4.4"
 
 babel-plugin-dynamic-import-node@^1.2.0:
   version "1.2.0"
@@ -2176,10 +2176,10 @@ babel-plugin-dynamic-import-node@^2.3.0:
   dependencies:
     object.assign "^4.1.0"
 
-babel-plugin-extract-import-names@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-extract-import-names/-/babel-plugin-extract-import-names-1.4.0.tgz#4f3a5b3237311e83e8b52161993bd9e5a50652b1"
-  integrity sha512-tPGjqJj44L1saGZ2GGeKKLlaqLYV9oNYawE5nAFMF2umfKv3krXz8ANmsnS5EoagC96fvjo0JBOiMlifUZTiZA==
+babel-plugin-extract-import-names@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-extract-import-names/-/babel-plugin-extract-import-names-1.4.4.tgz#9b153a955e2fdb1747b022fefd04148d032ee3ab"
+  integrity sha512-kI0ujH0X7UGwCV+/P19/b6AQ8/SyLTmUdRT/D2ur+C8FEWxil+yXEKaZyNbCRsdPikDv8Ul6YIvUlmxbCSnhhg==
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0"
 
@@ -4447,6 +4447,11 @@ doctrine@^3.0.0:
   integrity sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==
   dependencies:
     esutils "^2.0.2"
+
+dom-confetti@0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/dom-confetti/-/dom-confetti-0.1.1.tgz#f53c355301286430e9f500567adac5041c827468"
+  integrity sha512-cyTs35FOqOlm+9rC8C5p0BFo0aHR2t6VWHdXmvgUEFHsF/P7tZeS5nw71oX6NifJrlxOmZ6VcmCH/hn99mqaAA==
 
 dom-converter@^0.2:
   version "0.2.0"
@@ -11458,6 +11463,13 @@ react-dev-utils@^4.2.3:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
+react-dom-confetti@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/react-dom-confetti/-/react-dom-confetti-0.1.1.tgz#f9d611110413faed8da72de1f47fbce78df637b9"
+  integrity sha512-QT2orDvHChdhIUU7HZtx0kiEMiBtZKDfPqzfoku7bftvLM5t7d1fbQX0JO8sw+tDVWJFgceNJtkq6bv9V/eXQQ==
+  dependencies:
+    dom-confetti "0.1.1"
+
 react-dom@^16.9.0:
   version "16.9.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.9.0.tgz#5e65527a5e26f22ae3701131bcccaee9fb0d3962"
@@ -11844,16 +11856,16 @@ relay-runtime@2.0.0:
     "@babel/runtime" "^7.0.0"
     fbjs "^1.0.0"
 
-remark-mdx@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/remark-mdx/-/remark-mdx-1.4.0.tgz#f50c2b47bdb61e71aa0e15e976277e568ae0d486"
-  integrity sha512-wheABifW7zegJ9ASCbHJ6SlKp5ZF2YgWB62kU9zLR6SE2wSfipk3yK1tgXKmBTpXLrRuxPY/VEaV7YcO8dLLgg==
+remark-mdx@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/remark-mdx/-/remark-mdx-1.4.4.tgz#0e6d3c5ecbdfe4b133a85310fd19e76b1ee3ea82"
+  integrity sha512-yz/kvkczimzJ3AT1ZbDPBw2V2TQd9D+0RM30kUi2NMW1CElYcMey1DtmAb0V2xJzjHtAIdh6qi2+uXyBH7lBJw==
   dependencies:
     "@babel/core" "7.5.5"
     "@babel/helper-plugin-utils" "7.0.0"
     "@babel/plugin-proposal-object-rest-spread" "7.5.5"
     "@babel/plugin-syntax-jsx" "7.2.0"
-    "@mdx-js/util" "^1.4.0"
+    "@mdx-js/util" "^1.4.4"
     is-alphabetical "1.0.3"
     remark-parse "7.0.1"
     unified "8.3.2"
@@ -12862,10 +12874,10 @@ snyk-resolve@1.0.1, snyk-resolve@^1.0.0, snyk-resolve@^1.0.1:
     debug "^3.1.0"
     then-fs "^2.0.0"
 
-snyk-sbt-plugin@2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/snyk-sbt-plugin/-/snyk-sbt-plugin-2.7.0.tgz#2b28cf5742b52bf38c76c1973324835adaf947e7"
-  integrity sha512-qQSPkiyd/WNfo0z8MDK+87iIIT2wCn+k6tl9mx0VoNJo/z5jJLAoIc41zkGt/K8TjxA7VF1PV5B3tHqBp1xAVA==
+snyk-sbt-plugin@2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/snyk-sbt-plugin/-/snyk-sbt-plugin-2.8.0.tgz#6812e1df1c311e99a7aa565559032c7511d1e4d4"
+  integrity sha512-ZzyBdND5CsaO0xkv05geZXu8Dd6Llvr/5oTj811U7h7UmrvljrAiABW4RGjRJPrPVuuJaDej2p633sgGtK9UsA==
   dependencies:
     semver "^6.1.2"
     tmp "^0.1.0"
@@ -12889,10 +12901,10 @@ snyk-try-require@1.3.1, snyk-try-require@^1.1.1, snyk-try-require@^1.3.1:
     lru-cache "^4.0.0"
     then-fs "^2.0.0"
 
-snyk@^1.222.1:
-  version "1.222.1"
-  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.222.1.tgz#63539c50e047c42df0032760ef6672d52a9ef54f"
-  integrity sha512-vs8MSTpmaByofBMP5E/qeTfY9hPz5xkxOM0EaMkV/vgMP8F28Vcewdf6X9N4qfza7t2qGC3nwDTYvaXg6bOXxg==
+snyk@^1.219.0:
+  version "1.226.0"
+  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.226.0.tgz#ca456ccee59c788c1ae97a0ded13f9b4d1cd91a2"
+  integrity sha512-AzzHr8kZKTfK20aC7M4t9NYw2uq+oZg6v8sPZ2lbvrrPwh2fGPaHZeFebRJbSZm1eCgFef4wHGO5Uu4lp9yEWg==
   dependencies:
     "@snyk/dep-graph" "1.12.0"
     "@snyk/gemfile" "1.2.0"
@@ -12927,7 +12939,7 @@ snyk@^1.222.1:
     snyk-python-plugin "^1.13.2"
     snyk-resolve "1.0.1"
     snyk-resolve-deps "4.4.0"
-    snyk-sbt-plugin "2.7.0"
+    snyk-sbt-plugin "2.8.0"
     snyk-tree "^1.0.0"
     snyk-try-require "1.3.1"
     source-map-support "^0.5.11"
