@@ -80,7 +80,7 @@
     "react-dom-confetti": "^0.1.1",
     "react-headroom": "^2.2.8",
     "react-helmet": "^5.2.1",
-    "react-live": "^2.2.0",
+    "react-live": "^2.2.1",
     "react-particles-js": "^2.7.0",
     "react-use": "^11.3.2",
     "snyk": "^1.228.5",
