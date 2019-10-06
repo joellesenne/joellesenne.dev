@@ -85,7 +85,7 @@
     "react-use": "^11.3.2",
     "snyk": "^1.231.0",
     "socialshares": "^2.0.5",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.4.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
