@@ -2,10 +2,13 @@
 .cache
 node_modules
 .git
+.github
 .env
 .env.development
 .env.production
 .env.local
+hint-report
+browser.info
 
 # Edit code
 .vscode/*
