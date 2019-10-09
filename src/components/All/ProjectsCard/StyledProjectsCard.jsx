@@ -28,6 +28,7 @@ export const LinkWrapper = styled(Link)`
   background: linear-gradient(to right, #d4145a 0%, #fbb03b 100%);
   box-shadow: rgba(0, 0, 0, 0.11) 0px 15px 30px 0px, rgba(0, 0, 0, 0.08) 0px 5px 15px 0px;
   border-radius: 0.5rem;
+  mix-blend-mode: screen;
   transition: transform 0.4s cubic-bezier(0.6, 4, 0.3, 0.8);
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     padding-top: 3rem;
