@@ -26,7 +26,10 @@ module.exports = {
     'gatsby-plugin-remove-serviceworker',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
-    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-catch-links',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-lodash',
     {
       resolve: 'gatsby-plugin-root-import',
       options: {
@@ -38,34 +41,6 @@ module.exports = {
         medias: path.join(__dirname, 'src/medias'),
         utils: path.join(__dirname, 'src/utils'),
         pages: path.join(__dirname, 'src/pages'),
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/src/medias/`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'blog',
-        path: `${__dirname}/contents/${config.blogPostDir}`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'projects',
-        path: `${__dirname}/contents/${config.projectPostDir}`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'pages',
-        path: `${__dirname}/contents/${config.pagesDir}`,
       },
     },
     {
@@ -124,12 +99,8 @@ module.exports = {
         plugins: [`gatsby-remark-images`, `gatsby-remark-autolink-headers`],
       },
     },
-    'gatsby-plugin-sharp',
-    'gatsby-plugin-catch-links',
-    'gatsby-plugin-sitemap',
-    'gatsby-plugin-lodash',
     {
-      resolve: `gatsby-plugin-feed`,
+      resolve: 'gatsby-plugin-feed',
       options: {
         query: `
 					{
@@ -197,9 +168,38 @@ module.exports = {
     'gatsby-plugin-netlify',
     // https://github.com/LoicMahieu/gatsby-styled-components-test-bug-global/blob/master/gatsby-config.js
     {
-      resolve: `gatsby-plugin-styled-components`,
+      resolve: 'gatsby-plugin-styled-components',
       options: {
         // Add any options here
+      },
+    },
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/medias/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'blog',
+        path: `${__dirname}/contents/${config.blogPostDir}`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'projects',
+        path: `${__dirname}/contents/${config.projectPostDir}`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'pages',
+        path: `${__dirname}/contents/${config.pagesDir}`,
       },
     },
   ],

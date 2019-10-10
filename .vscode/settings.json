@@ -1,6 +1,6 @@
 {
   "npm-scripts.showStartNotification": false,
-  "cSpell.language": "fr",
+  "cSpell.language": "fr, en",
   // "graphqlForVSCode.nodePath": "ui/node_modules"
 
   // Editor
