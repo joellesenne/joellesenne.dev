@@ -78,7 +78,7 @@
     "react-cookie-consent": "^2.5.0",
     "react-dom": "^16.10.2",
     "react-dom-confetti": "^0.1.1",
-    "react-headroom": "^2.2.8",
+    "react-headroom": "^3.0.0",
     "react-helmet": "^5.2.1",
     "react-live": "^2.2.1",
     "react-particles-js": "^2.7.0",
