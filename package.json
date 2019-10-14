@@ -40,7 +40,7 @@
     "test:cy": "start-server-and-test develop http://localhost:8000 cy:open"
   },
   "dependencies": {
-    "@hot-loader/react-dom": "^16.9.0",
+    "@hot-loader/react-dom": "^16.10.2",
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
     "@mdx-js/tag": "^0.20.3",
