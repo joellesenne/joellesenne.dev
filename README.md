@@ -17,7 +17,7 @@ this is for you to share my code in the world.
 
 📦 [Git project](https://github.com/joellesenne/joellesenne.dev)
 
-## 🛠 Built with :
+## 🛠 Built with
 
 - Front-End
   - [React](https://reactjs.org/)
@@ -29,14 +29,13 @@ this is for you to share my code in the world.
 
 ## 🖥 Good started
 
-- 1 – Install JavaScript runtime built [nodejs](https://nodejs.org/en/)
-- 2 – Install [Gatsby CLI](https://www.gatsbyjs.org/packages/gatsby-cli/)
-- 3 – Install [node-gyp](https://github.com/nodejs/node-gyp#installation)
+1. – Install JavaScript runtime built [nodejs](https://nodejs.org/en/)
+2. – Install [Gatsby CLI](https://www.gatsbyjs.org/packages/gatsby-cli/)
+3. – Install [node-gyp](https://github.com/nodejs/node-gyp#installation)
 
-- 4 – Downloads [git-scm.com](https://git-scm.com/downloads) – [Docs](https://git-scm.com/docs) for config
+4. – Downloads [git-scm.com](https://git-scm.com/downloads) – [Docs](https://git-scm.com/docs) for config
 
-### 💻 Command bash :
-
+### 💻 Command bash
 ### Prerequisites
 
 ```bash
@@ -95,8 +94,8 @@ this is for you to share my code in the world.
 
 👤 **Joël Lesenne &lt;contact@joellesenne.dev&gt;**
 
-- Twitter: [@joellesenne](https://twitter.com/joellesenne)
-- Github: [@joellesenne](https://github.com/joellesenne)
+- Twitter : [@joellesenne](https://twitter.com/joellesenne)
+- Github : [@joellesenne](https://github.com/joellesenne)
 - Codepen : [@joellesenne](https://codepen.io/joellesenne)
 
 ### 🏠 [Homepage](https://joellesenne.dev)
