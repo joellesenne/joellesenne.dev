@@ -10402,9 +10402,9 @@ react-simple-code-editor@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/react-simple-code-editor/-/react-simple-code-editor-0.10.0.tgz#73e7ac550a928069715482aeb33ccba36efe2373"
 
-react-use@^12.7.1:
-  version "12.7.1"
-  resolved "https://registry.yarnpkg.com/react-use/-/react-use-12.7.1.tgz#eb77f7d3241bdf5e19b382a9787189487602dfbc"
+react-use@^12.9.0:
+  version "12.9.0"
+  resolved "https://registry.yarnpkg.com/react-use/-/react-use-12.9.0.tgz#75ac145960dd44ca1c8e5c054ee2b1cda43538b9"
   dependencies:
     "@types/react-wait" "^0.3.0"
     copy-to-clipboard "^3.1.0"
@@ -10413,7 +10413,7 @@ react-use@^12.7.1:
     react-wait "^0.3.0"
     resize-observer-polyfill "^1.5.1"
     screenfull "^5.0.0"
-    set-harmonic-interval "^1.0.0"
+    set-harmonic-interval "^1.0.1"
     throttle-debounce "^2.0.1"
     ts-easing "^0.2.0"
     tslib "^1.10.0"
@@ -11212,9 +11212,9 @@ set-blocking@^2.0.0, set-blocking@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/set-blocking/-/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
 
-set-harmonic-interval@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/set-harmonic-interval/-/set-harmonic-interval-1.0.0.tgz#2759658395579fc336b9cd026eefe1ad9e742f9b"
+set-harmonic-interval@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/set-harmonic-interval/-/set-harmonic-interval-1.0.1.tgz#e1773705539cdfb80ce1c3d99e7f298bb3995249"
 
 set-immediate-shim@~1.0.1:
   version "1.0.1"
