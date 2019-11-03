@@ -10482,9 +10482,9 @@ react-simple-code-editor@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/react-simple-code-editor/-/react-simple-code-editor-0.10.0.tgz#73e7ac550a928069715482aeb33ccba36efe2373"
 
-react-use@^12.9.0:
-  version "12.9.0"
-  resolved "https://registry.yarnpkg.com/react-use/-/react-use-12.9.0.tgz#75ac145960dd44ca1c8e5c054ee2b1cda43538b9"
+react-use@^12.13.0:
+  version "12.13.0"
+  resolved "https://registry.yarnpkg.com/react-use/-/react-use-12.13.0.tgz#dfefd8145552841f1c2213c2e79966b505a264ba"
   dependencies:
     "@types/react-wait" "^0.3.0"
     copy-to-clipboard "^3.1.0"
