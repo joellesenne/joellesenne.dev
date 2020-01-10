@@ -32,7 +32,6 @@ export const Initial = styled.span`
   transform: translate(-50%, -50%);
   opacity: 0.08;
   user-select: none;
-  z-index: -1;
 `
 
 export const Information = styled.div`
