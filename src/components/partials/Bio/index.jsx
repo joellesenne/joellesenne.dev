@@ -19,11 +19,11 @@ const SectionPage = () => (
         <Items>
           <Item>
             <Icon>👨‍💻</Icon>
-            Bonjour, je suis un développeur et créateur Web
+            Je suis un développeur et intégrateur Web
           </Item>
           <Item>
             <Icon>🇫🇷</Icon>
-            Je suis né près de Lille(59), je vis près de Lyon(69) France.
+            Je suis né près de Lille(59), je vis à Lyon(69) France.
           </Item>
           <Item>
             <Icon>💻</Icon>
