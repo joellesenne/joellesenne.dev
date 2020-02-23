@@ -46,7 +46,7 @@
     "@mdx-js/tag": "^0.20.3",
     "babel-plugin-styled-components": "^1.10.7",
     "commentbox.io": "^2.0.0",
-    "gatsby": "^2.19.17",
+    "gatsby": "^2.19.19",
     "gatsby-image": "^2.2.41",
     "gatsby-plugin-catch-links": "^2.1.25",
     "gatsby-plugin-crisp-chat": "^3.2.2",
