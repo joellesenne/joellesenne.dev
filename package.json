@@ -88,7 +88,7 @@
     "styled-components": "^4.4.1"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
+    "babel-eslint": "^10.1.0",
     "cypress": "^3.8.3",
     "cypress-testing-library": "^4.0.0",
     "dotenv": "^8.2.0",
