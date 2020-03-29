@@ -82,7 +82,7 @@
     "react-helmet": "^5.2.1",
     "react-live": "^2.2.2",
     "react-particles-js": "^2.7.1",
-    "react-use": "^13.27.0",
+    "react-use": "^13.27.1",
     "snyk": "^1.303.0",
     "socialshares": "^2.0.5",
     "styled-components": "^5.0.1"
