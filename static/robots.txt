@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /
-Disallow: /public
+Disallow: 
 
-sitemap: https://joellesenne.xyz/sitemap.xml
+sitemap: https://joellesenne.devxyz/sitemap.xml

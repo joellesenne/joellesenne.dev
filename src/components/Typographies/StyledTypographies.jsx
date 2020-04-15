@@ -38,14 +38,14 @@ export const Subtitle = styled.p`
     height: 20px;
   }
   @media (max-width: ${props => props.theme.breakpoints.md}) {
-    font-size: 1rem;
+    font-size: 1.2rem;
     svg {
       width: 12px;
       height: 12px;
     }
   }
   @media (max-width: ${props => props.theme.breakpoints.sm}) {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 `
 
