@@ -14095,7 +14095,7 @@ snyk-try-require@1.3.1, snyk-try-require@^1.1.1, snyk-try-require@^1.3.1:
     lru-cache "^4.0.0"
     then-fs "^2.0.0"
 
-snyk@^1.305.1:
+snyk@^1.306.0:
   version "1.306.0"
   resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.306.0.tgz#a4fafcdfc593cbc5f8201fbe5cfea2a2f417ee99"
   integrity sha512-YwfJED2TxC7O0aWygpXzXs8IXzEQBAOTpFT/rXt9UuizKEPftzHE2EoV3Xp0O1yGwYS8wtAqRUqLedN6YKf0AA==
