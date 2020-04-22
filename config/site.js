@@ -1,7 +1,10 @@
 // Basics
 const basics = {
   siteName: 'Joël Lesenne',
-  siteDescription: 'Je crée des sites d’expériences web pour vos activités personnelles ou professionnelles...',
+  siteJob: 'Développeur Web',
+  siteBusiness: 'Freelance sur Lyon',
+  siteDescription:
+    'Développeur web freelance sur Lyon, je crée des sites d’expériences web pour vos activités personnelles ou professionnelles...',
   siteLang: 'fr',
 }
 
@@ -9,6 +12,8 @@ const basics = {
 const meta = {
   siteTitle: basics.siteName,
   siteTitleAlt: basics.siteName,
+  siteJob: basics.siteJob,
+  siteBusiness: basics.siteBusiness,
   siteDescription: basics.siteDescription,
   siteHeadline: basics.siteDescription,
   siteTitleManifest: basics.siteName,

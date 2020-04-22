@@ -1,12 +1,12 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 
 // config
 import config from 'config/site'
 
-const SEO = props => {
+const SEO = (props) => {
   const { postNode, postPath, article, project, page, buildTime } = props
 
   let title
@@ -19,10 +19,10 @@ const SEO = props => {
 
   if (article || project || page) {
     const postMeta = postNode.frontmatter
-    title = `${postMeta.title} | ${config.siteTitle}`
+    title = `${postMeta.title} | ${config.siteTitle} – ${config.siteJob} – ${config.siteBusiness}`
     description = postNode.excerpt
   } else {
-    title = config.siteTitleAlt
+    title = `${config.siteTitleAlt} – ${config.siteJob} – ${config.siteBusiness}`
     description = config.siteDescription
   }
 
