@@ -14,8 +14,16 @@ const SectionPage = () => (
   <Content>
     <Title>Entrer en contact</Title>
     <Paragraph>
-      M’écrire pour parler de votre projet <Link href="mailto:contact@joellesenne.dev">contact@joellesenne.dev</Link> ou
-      me trouver sur d'autres plateformes :{' '}
+      M’écrire pour parler de votre projet <Link href="mailto:contact@joellesenne.dev">contact@joellesenne.dev</Link>,{' '}
+      voir mon{' '}
+      <Link href="http://cv.joellesenne.dev/" target="_blank" rel="noopener noreferrer">
+        CV
+      </Link>
+      , mon{' '}
+      <Link href="http://lab.joellesenne.dev/" target="_blank" rel="noopener noreferrer">
+        Laboratoire
+      </Link>{' '}
+      ou me trouver sur d'autres plateformes :{' '}
       <Link href={`https://dribbble.com/${config.userSlug}`} target="_blank" rel="noopener noreferrer">
         Dribbble
       </Link>{' '}
