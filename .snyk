@@ -42,3 +42,22 @@ patch:
   'npm:hoek:20180212':
     - gatsby > joi2gql > hoek:
         patched: '2020-04-16T04:35:47.084Z'
+  SNYK-JS-LODASH-567746:
+    - gatsby > gatsby-plugin-typescript > @babel/core > lodash:
+        patched: '2020-05-12T04:35:58.956Z'
+    - gatsby > gatsby-plugin-typescript > @babel/core > @babel/traverse > lodash:
+        patched: '2020-05-12T04:35:58.956Z'
+    - gatsby > gatsby-plugin-typescript > @babel/core > @babel/helpers > @babel/traverse > lodash:
+        patched: '2020-05-12T04:35:58.956Z'
+    - gatsby > gatsby-plugin-typescript > @babel/core > @babel/helpers > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-12T04:35:58.956Z'
+    - gatsby > gatsby-plugin-typescript > @babel/preset-typescript > @babel/plugin-transform-typescript > @babel/helper-create-class-features-plugin > @babel/helper-replace-supers > @babel/traverse > lodash:
+        patched: '2020-05-12T04:35:58.956Z'
+    - gatsby > gatsby-plugin-typescript > @babel/preset-typescript > @babel/plugin-transform-typescript > @babel/helper-create-class-features-plugin > @babel/helper-replace-supers > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-12T04:35:58.956Z'
+    - gatsby > gatsby-plugin-typescript > @babel/preset-typescript > @babel/plugin-transform-typescript > @babel/helper-create-class-features-plugin > @babel/helper-replace-supers > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2020-05-12T04:35:58.956Z'
+    - gatsby > gatsby-plugin-typescript > @babel/preset-typescript > @babel/plugin-transform-typescript > @babel/helper-create-class-features-plugin > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2020-05-12T04:35:58.956Z'
+    - gatsby > gatsby-cli > gatsby-recipes > @mdx-js/mdx > remark-mdx > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2020-05-12T04:35:58.956Z'
