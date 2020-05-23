@@ -12850,10 +12850,10 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-cookie-consent@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/react-cookie-consent/-/react-cookie-consent-4.1.0.tgz#1d7d54560f00ece8abdd1e115f75fec5b56aad7d"
-  integrity sha512-ULyE/qfoCIamPinhUbj1YB2A/1kQU/9+dWqqWT5uglZPqmj3YIHmLTpsj4t4+SoxRYmdgduP62IbMjNPT8ASOQ==
+react-cookie-consent@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/react-cookie-consent/-/react-cookie-consent-5.0.0.tgz#63288cb1d356844ba570edd0d7f7dda19a6ef7f5"
+  integrity sha512-m3eoDaJW6mZIGbf8SbbuV2H01uDDw6WghWSKSirnCIhKx+QPOYsgwz91/DsCQFxUUmyldDHRUZoaHN6A4EmqTw==
   dependencies:
     js-cookie "^2.2.1"
 
