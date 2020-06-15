@@ -13026,10 +13026,15 @@ react-simple-code-editor@^0.10.0:
   resolved "https://registry.yarnpkg.com/react-simple-code-editor/-/react-simple-code-editor-0.10.0.tgz#73e7ac550a928069715482aeb33ccba36efe2373"
   integrity sha512-bL5W5mAxSW6+cLwqqVWY47Silqgy2DKDTR4hDBrLrUqC5BXc29YVx17l2IZk5v36VcDEq1Bszu2oHm1qBwKqBA==
 
-react-use@^14.2.0:
-  version "14.2.0"
-  resolved "https://registry.yarnpkg.com/react-use/-/react-use-14.2.0.tgz#abac033fae5e358599b7e38084ff11b02e5d4868"
-  integrity sha512-vwC7jsBsiDENLrXGPqIH3W4mMS2j24h5jp4ol3jiiUQzZhCaG+ihumrShJxBI59hXso1pLHAePRQAg/fJjDcaQ==
+react-universal-interface@^0.6.0:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/react-universal-interface/-/react-universal-interface-0.6.2.tgz#5e8d438a01729a4dbbcbeeceb0b86be146fe2b3b"
+  integrity sha512-dg8yXdcQmvgR13RIlZbTRQOoUrDciFVoSBZILwjE2LFISxZZ8loVJKAkuzswl5js8BHda79bIb2b84ehU8IjXw==
+
+react-use@^14.3.0:
+  version "14.3.0"
+  resolved "https://registry.yarnpkg.com/react-use/-/react-use-14.3.0.tgz#aa794db42108e15363be5c04db35a57acf8ecb6b"
+  integrity sha512-Jx7Zl0k8dHA0UKpTVwYUThC5/V+Dt6JzCGiMHPNIhsxJGkiKuB1AQ7J7pNq4zj3l37ABd/RF+jRGThw0czrJXA==
   dependencies:
     "@types/js-cookie" "2.2.6"
     "@xobotyi/scrollbar-width" "1.9.5"
@@ -13038,6 +13043,7 @@ react-use@^14.2.0:
     fast-shallow-equal "^1.0.0"
     js-cookie "^2.2.1"
     nano-css "^5.2.1"
+    react-universal-interface "^0.6.0"
     resize-observer-polyfill "^1.5.1"
     screenfull "^5.0.0"
     set-harmonic-interval "^1.0.1"
