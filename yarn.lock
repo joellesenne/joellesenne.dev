@@ -14114,10 +14114,10 @@ react-clientside-effect@^1.2.2:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-react-cookie-consent@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/react-cookie-consent/-/react-cookie-consent-5.0.1.tgz#35b9cfe51185faa2b493b991298e0f926a31a710"
-  integrity sha512-2aqrRomONFu8mij1TjRKQKfMNhSihRR/yig4/V/ZEY4E/zzEI6RJGINLbSd6VXSM3etXiZequiBCOfVmlDeZ7w==
+react-cookie-consent@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/react-cookie-consent/-/react-cookie-consent-5.1.2.tgz#553c4851f8be1e3a91f40f36f350e99b47276731"
+  integrity sha512-FsTLsypqJpg2VjBa6nMT0jNMrk+4C/TUQkRm6mtDFnR6HNPrzMCWi3OHRXVptyL4h8ZbJLk74qZcL0VDUS1+cQ==
   dependencies:
     js-cookie "^2.2.1"
 
