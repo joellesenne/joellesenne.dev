@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable import/no-unresolved */
 import React from 'react'
@@ -78,7 +78,7 @@ const indexPage = ({
         <Content>
           <Title>Côté projet</Title>
           <ProjectsWrapper>
-            {projects.map(project => (
+            {projects.map((project) => (
               <ProjectsCard
                 title={project.frontmatter.title}
                 date={project.frontmatter.date}
@@ -94,7 +94,7 @@ const indexPage = ({
         </Content>
         <Content>
           <Title>Côté blog</Title>
-          {posts.map(post => (
+          {posts.map((post) => (
             <ArticlesCard
               title={post.frontmatter.title}
               date={post.frontmatter.date}

@@ -5,7 +5,7 @@ export const Grid = styled.div`
   grid-template-columns: 150px auto;
   align-items: center;
   justify-content: center;
-  @media (max-width: ${props => props.theme.breakpoints.md}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.md}) {
     grid-template-columns: 1fr;
   }
 `
@@ -14,7 +14,7 @@ export const Col = styled.div`
 `
 export const Items = styled.ul`
   font-size: 1.35rem;
-  @media (max-width: ${props => props.theme.breakpoints.md}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.md}) {
     font-size: 1.15rem;
   }
 `

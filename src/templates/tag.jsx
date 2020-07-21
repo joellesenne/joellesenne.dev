@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable import/no-unresolved */
 import React from 'react'
 import PropTypes from 'prop-types'
@@ -50,7 +51,7 @@ const tagPage = ({
     </Header>
     <Container>
       <Content>
-        {edges.map(edge => (
+        {edges.map((edge) => (
           <TagCategory
             type={edge.node.fields.sourceInstanceName}
             key={edge.node.frontmatter.title}

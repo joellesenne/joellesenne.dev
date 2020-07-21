@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.5;
     text-rendering: optimizeLegibility;
     scrollbar-width: 20px;
-    scrollbar-color: ${props => props.theme.colors.base.bg};
+    scrollbar-color: ${(props) => props.theme.colors.base.bg};
     overflow-x: hidden;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -38,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
     h5 {
       font-size: 1rem;
     }
-    @media (max-width: ${props => props.theme.breakpoints.lg}), (max-device-width: ${props =>
+    @media (max-width: ${(props) => props.theme.breakpoints.lg}), (max-device-width: ${(props) =>
   props.theme.breakpoints.lg}) {
       font-size: 18px !important;
       h1 {
@@ -54,7 +54,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.2rem;
       }
     }
-    @media (max-width: ${props => props.theme.breakpoints.sm}), (max-device-width: ${props =>
+    @media (max-width: ${(props) => props.theme.breakpoints.sm}), (max-device-width: ${(props) =>
   props.theme.breakpoints.md}) {
     font-size: 16px !important;
       h1 {
@@ -72,13 +72,13 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   body {
-    font-family: ${props => props.theme.fontFamily.sansSerif};
-    color: ${props => props.theme.colors.base.color};
-    background-color: ${props => props.theme.colors.base.bg};
+    font-family: ${(props) => props.theme.fontFamily.sansSerif};
+    color: ${(props) => props.theme.colors.base.color};
+    background-color: ${(props) => props.theme.colors.base.bg};
   }
   h1, h2, h3 {
-    font-family: ${props => props.theme.fontFamily.serif};
-    color: ${props => props.theme.colors.base.white};
+    font-family: ${(props) => props.theme.fontFamily.serif};
+    color: ${(props) => props.theme.colors.base.white};
   }
   p {
     word-wrap: break-word;
@@ -87,10 +87,10 @@ const GlobalStyle = createGlobalStyle`
   }
   a {
     text-decoration: none;
-    color: ${props => props.theme.colors.link.gradientRight};
+    color: ${(props) => props.theme.colors.link.gradientRight};
   }
   a:hover {
-    color: ${props => props.theme.colors.link.gradientLeft};
+    color: ${(props) => props.theme.colors.link.gradientLeft};
   }
   button {
     text-decoration: none;
@@ -116,19 +116,19 @@ const GlobalStyle = createGlobalStyle`
     display: none !important;
   }
   ::-moz-selection {
-    color: ${props => props.theme.colors.base.white};
-    background-color: ${props => props.theme.colors.link.gradientRight};
+    color: ${(props) => props.theme.colors.base.white};
+    background-color: ${(props) => props.theme.colors.link.gradientRight};
   }
   ::selection {
-    color: ${props => props.theme.colors.base.white};
-    background-color: ${props => props.theme.colors.link.gradientLeft};
+    color: ${(props) => props.theme.colors.base.white};
+    background-color: ${(props) => props.theme.colors.link.gradientLeft};
   }
   html::-webkit-scrollbar {
     width: 20px;
     height: 20px
   }
   html::-webkit-scrollbar-track {
-    background: ${props => props.theme.colors.base.bg};
+    background: ${(props) => props.theme.colors.base.bg};
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
   }

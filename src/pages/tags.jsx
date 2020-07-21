@@ -31,7 +31,7 @@ const tagsPage = ({
     <Container>
       <Content>
         <ButtonWrapper>
-          {group.map(tag => (
+          {group.map((tag) => (
             <TagButton key={tag.id} to={`/tag/${kebabCase(tag.fieldValue)}`}>
               <span>
                 {tag.fieldValue} <Number>{tag.totalCount}</Number>

@@ -1,6 +1,6 @@
 const words = require('lodash/words')
 
-const timeToRead = content => {
+const timeToRead = (content) => {
   let timeRead = null
   const totalWords = words(content).length
   const timeInterval = 240

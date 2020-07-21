@@ -7,24 +7,24 @@ export const Article = styled.article`
   max-width: 1200px;
   z-index: 9000;
   grid-column: 2;
-  background-color: ${props => lighten(0.08, props.theme.colors.base.bg)};
+  background-color: ${(props) => lighten(0.08, props.theme.colors.base.bg)};
   box-shadow: 0 4px 120px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
-  @media (max-width: ${props => props.theme.breakpoints.md}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.md}) {
     padding: 1rem;
   }
 `
 
 export const PostContent = styled.section`
   margin-top: 4rem;
-  @media (max-width: ${props => props.theme.breakpoints.md}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.md}) {
     margin-top: 1rem;
   }
   blockquote {
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 0 1rem 0;
-    border-left: 3px solid ${props => props.theme.colors.base.gradientRight};
+    border-left: 3px solid ${(props) => props.theme.colors.base.gradientRight};
   }
   h2 {
     & a {
@@ -37,7 +37,7 @@ export const PostContent = styled.section`
     line-height: 1.58;
     --baseline-multiplier: 0.179;
     --x-height-multiplier: 0.35;
-    @media (max-width: ${props => props.theme.breakpoints.md}) {
+    @media (max-width: ${(props) => props.theme.breakpoints.md}) {
       font-size: 1rem;
     }
   }
@@ -48,15 +48,15 @@ export const PostContent = styled.section`
     font-size: 16px;
   }
   a {
-    background: ${props => props.theme.gradient.link};
+    background: ${(props) => props.theme.gradient.link};
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     transition: all 0.35s ease-in-out;
     &:hover {
-      -webkit-text-fill-color: ${props => props.theme.colors.link.gradientLeft};
-      border-bottom: 2px solid ${props => props.theme.colors.link.gradientLeft};
+      -webkit-text-fill-color: ${(props) => props.theme.colors.link.gradientLeft};
+      border-bottom: 2px solid ${(props) => props.theme.colors.link.gradientLeft};
     }
   }
   ul li {

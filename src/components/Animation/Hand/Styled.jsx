@@ -10,7 +10,7 @@ const hand = keyframes`
   }
 `
 
-export const handAnimation = length => css`
+export const handAnimation = (length) => css`
   animation: ${hand} ${length} alternate infinite;
   animation-duration: 400ms;
   animation-timing-function: ease-in-out;

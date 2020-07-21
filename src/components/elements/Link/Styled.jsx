@@ -4,30 +4,30 @@ import styled from 'styled-components'
 export const StyledLink = styled(Link)`
   margin-right: 0.5rem;
   padding: 2px 0;
-  background-color: ${props => props.theme.gradient.link};
+  background-color: ${(props) => props.theme.gradient.link};
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  transition: ${props => props.theme.transition.link};
+  transition: ${(props) => props.theme.transition.link};
   &:hover {
-    border-bottom: 2px solid ${props => props.theme.colors.link.gradientLeft};
-    -webkit-text-fill-color: ${props => props.theme.colors.link.gradientLeft};
+    border-bottom: 2px solid ${(props) => props.theme.colors.link.gradientLeft};
+    -webkit-text-fill-color: ${(props) => props.theme.colors.link.gradientLeft};
   }
 `
 
 export const GatsbyLink = styled(Link)`
   margin-right: 0.5rem;
   padding: 2px 0;
-  background: ${props => props.theme.gradient.link};
+  background: ${(props) => props.theme.gradient.link};
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  transition: ${props => props.theme.transition.link};
+  transition: ${(props) => props.theme.transition.link};
   &:hover {
-    border-bottom: 2px solid ${props => props.theme.colors.link.gradientLeft};
-    -webkit-text-fill-color: ${props => props.theme.colors.link.gradientLeft};
+    border-bottom: 2px solid ${(props) => props.theme.colors.link.gradientLeft};
+    -webkit-text-fill-color: ${(props) => props.theme.colors.link.gradientLeft};
   }
 `
 
