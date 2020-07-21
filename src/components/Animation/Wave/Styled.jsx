@@ -13,7 +13,7 @@ const waveBlock = keyframes`
   }
 `
 
-const waveAnimationBlock = length => css`
+const waveAnimationBlock = (length) => css`
   animation: ${waveBlock} ${length} cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite alternate;
 `
 
@@ -25,7 +25,7 @@ export const StyledWaveWrapper = styled.div`
   right: 0;
   z-index: -1;
   transform: matrix(3.5, 0, 0, 1, 0, 0);
-  @media (max-width: ${props => props.theme.breakpoints.lg}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.lg}) {
     display: none;
   }
 `
@@ -39,8 +39,8 @@ export const StyledInnerWave = styled.div`
     position: absolute;
     width: 100%;
     height: 200px;
-    fill: ${props => (props.top ? props.theme.colors.base.bg : lighten(0.08, props.theme.colors.base.bg))};
-    @media (max-width: ${props => props.theme.breakpoints.md}) {
+    fill: ${(props) => (props.top ? props.theme.colors.base.bg : lighten(0.08, props.theme.colors.base.bg))};
+    @media (max-width: ${(props) => props.theme.breakpoints.md}) {
       height: 200px;
     }
   }

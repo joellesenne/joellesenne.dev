@@ -15,7 +15,7 @@ export const Prev = styled.p`
   span {
     text-transform: uppercase;
     font-size: 0.8rem;
-    color: ${props => darken(0.1, props.theme.colors.base.color)};
+    color: ${(props) => darken(0.1, props.theme.colors.base.color)};
   }
 `
 
@@ -25,6 +25,6 @@ export const Next = styled.p`
   span {
     text-transform: uppercase;
     font-size: 0.8rem;
-    color: ${props => darken(0.1, props.theme.colors.base.color)};
+    color: ${(props) => darken(0.1, props.theme.colors.base.color)};
   }
 `

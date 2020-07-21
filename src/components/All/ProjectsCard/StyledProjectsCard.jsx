@@ -10,7 +10,7 @@ export const ProjectsWrapper = styled.section`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 4rem;
-    @media (max-width: ${props => props.theme.breakpoints.lg}) {
+    @media (max-width: ${(props) => props.theme.breakpoints.lg}) {
       grid-gap: 3rem;
     }
     @media (max-width: 900px) {
@@ -30,7 +30,7 @@ export const LinkWrapper = styled(Link)`
   border-radius: 0.5rem;
   mix-blend-mode: screen;
   transition: transform 0.4s cubic-bezier(0.6, 4, 0.3, 0.8);
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
+  @media (min-width: ${(props) => props.theme.breakpoints.md}) {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }

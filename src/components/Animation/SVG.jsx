@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const SVG = styled.svg`
-  stroke: ${props => props.stroke};
-  stroke-width: ${props => props.strokeWidth};
-  fill: ${props => props.fill};
-  width: ${props => props.width};
-  height: ${props => props.height};
+  stroke: ${(props) => props.stroke};
+  stroke-width: ${(props) => props.strokeWidth};
+  fill: ${(props) => props.fill};
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
   transform: translateY(-2px);
 `
 

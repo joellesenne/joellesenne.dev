@@ -31,7 +31,7 @@ const categoriesPage = ({
     <Container>
       <Content>
         <ButtonWrapper>
-          {group.map(category => (
+          {group.map((category) => (
             <TagButton key={category.id} to={`/categorie/${kebabCase(category.fieldValue)}`}>
               <span>
                 {category.fieldValue} <Number>{category.totalCount}</Number>

@@ -23,7 +23,7 @@ const blogPage = ({
     </Header>
     <Container>
       <Content>
-        {posts.map(post => (
+        {posts.map((post) => (
           <ArticlesCard
             title={post.frontmatter.title}
             date={post.frontmatter.date}

@@ -21,7 +21,7 @@ const move = keyframes`
   }
 `
 
-export const blobAnimation = length => css`
+export const blobAnimation = (length) => css`
   animation: ${move} ${length} ease-in-out infinite alternate;
 `
 
@@ -36,9 +36,9 @@ const moveBlob = () => css`
 `
 
 export const StyledBlob = styled.div`
-  top: ${props => props.positionTop};
+  top: ${(props) => props.positionTop};
   ${moveBlob}
-  animation-delay: ${props => props.animatioDelay}
+  animation-delay: ${(props) => props.animatioDelay}
 `
 
 export const BlobHeader = styled.div`

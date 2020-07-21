@@ -24,7 +24,6 @@ const Logo = () => (
         ry="262.655"
         style={{ fill: 'rgb(14,15,79)', stroke: 'rgb(235,235,235)', strokeWidth: '23.98px' }}
       />
-      />
     </g>
     <g transform="matrix(1.21518,0,0,1.2478,-145.205,-84.8221)">
       <ellipse

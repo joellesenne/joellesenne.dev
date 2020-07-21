@@ -10,7 +10,7 @@ const rotate = keyframes`
   }
 `
 
-export const rotateAnimation = length => css`
+export const rotateAnimation = (length) => css`
   animation: ${rotate} ${length} linear infinite;
 `
 
@@ -45,6 +45,6 @@ const sky = keyframes`
 }
 `
 
-export const skyAnimation = length => css`
+export const skyAnimation = (length) => css`
   animation: ${sky} ${length} linear infinite alternate;
 `

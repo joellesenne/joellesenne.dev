@@ -17,15 +17,15 @@ export const Nav = styled(Headroom)`
     flex-direction: row;
     width: 100%;
     padding: 1rem 2rem;
-    background: ${props => props.theme.colors.base.bg};
+    background: ${(props) => props.theme.colors.base.bg};
   }
   .headroom--unfixed {
     position: relative;
     transform: translateY(0);
-    transition: ${props => props.theme.transition.headroom};
+    transition: ${(props) => props.theme.transition.headroom};
   }
   .headroom--scrolled {
-    transition: ${props => props.theme.transition.headroom};
+    transition: ${(props) => props.theme.transition.headroom};
   }
   .headroom--unpinned {
     position: fixed;
@@ -33,7 +33,7 @@ export const Nav = styled(Headroom)`
   }
   .headroom--pinned {
     position: fixed;
-    background: ${props => lighten(0.08, props.theme.colors.base.bg)};
+    background: ${(props) => lighten(0.08, props.theme.colors.base.bg)};
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
     transform: translateY(0%);
   }
@@ -54,16 +54,16 @@ export const LogoText = styled.span`
   margin-left: 0.75rem;
   font-size: 1.25rem;
   text-transform: uppercase;
-  background: ${props => props.theme.gradient.link};
+  background: ${(props) => props.theme.gradient.link};
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  transition: ${props => props.theme.transition.link};
+  transition: ${(props) => props.theme.transition.link};
   &:hover {
-    -webkit-text-fill-color: ${props => props.theme.colors.link.gradientLeft};
+    -webkit-text-fill-color: ${(props) => props.theme.colors.link.gradientLeft};
   }
-  @media (max-width: ${props => props.theme.breakpoints.md}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.md}) {
     display: none;
   }
 `
@@ -78,13 +78,13 @@ export const NavWrapper = styled.nav`
 export const NavLink = styled(GatsbyLinkNav)`
   align-self: center;
   flex-grow: 1;
-  background: ${props => props.theme.gradient.link};
+  background: ${(props) => props.theme.gradient.link};
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  transition: ${props => props.theme.transition.link};
+  transition: ${(props) => props.theme.transition.link};
   &:hover {
-    -webkit-text-fill-color: ${props => props.theme.colors.link.gradientLeft};
+    -webkit-text-fill-color: ${(props) => props.theme.colors.link.gradientLeft};
   }
 `

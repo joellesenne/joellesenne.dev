@@ -51,7 +51,7 @@ const categoryPage = ({
     </Header>
     <Container>
       <Content>
-        {nodes.map(post => (
+        {nodes.map((post) => (
           <TagCategory
             type={post.fields.sourceInstanceName}
             key={post.frontmatter.title}

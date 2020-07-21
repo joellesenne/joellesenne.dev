@@ -9,7 +9,7 @@ import { TagsContainer, TagButton } from './Styled'
 const Tags = ({ tags }) => (
   <TagsContainer>
     {tags &&
-      tags.map(tag => (
+      tags.map((tag) => (
         <TagButton key={tag} to={`/tag/${kebabCase(tag)}`}>
           {tag}
         </TagButton>

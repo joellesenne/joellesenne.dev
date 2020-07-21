@@ -9,8 +9,8 @@ const pathPrefixes = {
 }
 
 // Tuto <https://www.lekoarts.de/en/blog/tips-and-tricks-for-gatsby>
-const wrapper = promise =>
-  promise.then(result => {
+const wrapper = (promise) =>
+  promise.then((result) => {
     if (result.errors) {
       throw result.errors
     }
@@ -26,11 +26,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const fileNode = getNode(node.parent)
     const pathPrefix = pathPrefixes[fileNode.sourceInstanceName]
     if (Object.prototype.hasOwnProperty.call(node, 'fileAbsolutePath')) {
-      slug = `/${_.kebabCase(
-        _.split(node.fileAbsolutePath, '/')
-          .slice(-2, -1)
-          .join('/')
-      )}`
+      slug = `/${_.kebabCase(_.split(node.fileAbsolutePath, '/').slice(-2, -1).join('/'))}`
     }
     createNodeField({
       node,
@@ -136,7 +132,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   postsList.forEach((post, index) => {
     if (post.frontmatter.tags) {
-      post.frontmatter.tags.forEach(tag => {
+      post.frontmatter.tags.forEach((tag) => {
         tagSet.add(tag)
       })
     }
@@ -161,7 +157,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   projectsList.forEach((project, index) => {
     if (project.frontmatter.tags) {
-      project.frontmatter.tags.forEach(tag => {
+      project.frontmatter.tags.forEach((tag) => {
         tagSet.add(tag)
       })
     }
@@ -184,7 +180,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  result.data.pages.nodes.forEach(page => {
+  result.data.pages.nodes.forEach((page) => {
     createPage({
       path: page.fields.slug,
       component: pagesPage,
@@ -195,7 +191,7 @@ exports.createPages = async ({ graphql, actions }) => {
   })
 
   const tagList = Array.from(tagSet)
-  tagList.forEach(tag => {
+  tagList.forEach((tag) => {
     createPage({
       path: `/tag/${_.kebabCase(tag)}/`,
       component: tagPage,
@@ -206,7 +202,7 @@ exports.createPages = async ({ graphql, actions }) => {
   })
 
   const categoryList = Array.from(categorySet)
-  categoryList.forEach(category => {
+  categoryList.forEach((category) => {
     createPage({
       path: `/categorie/${_.kebabCase(category)}/`,
       component: categoryPage,
