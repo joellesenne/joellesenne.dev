@@ -48,8 +48,7 @@ const Project = ({ pageContext: { slug, prev, next }, data: { mdx: projectNode }
             <SVG icon="category" stroke="#a9a9ef" strokeWidth="3" width={14} height={14} />{' '}
             <GatsbyLink to={`/categorie/${kebabCase(project.category)}`}>{project.category}</GatsbyLink>{' '}
             <SVG icon="calendar" stroke="#a9a9ef" strokeWidth="3" width={24} height={24} /> {project.date} —{' '}
-            <SVG icon="clock" stroke="#a9a9ef" strokeWidth="3" width={24} height={24} /> {projectNode.timeToRead} min de
-            lecture
+            <SVG icon="clock" stroke="#a9a9ef" strokeWidth="3" width={24} height={24} /> {projectNode.timeToRead} min
           </>
         }
       >

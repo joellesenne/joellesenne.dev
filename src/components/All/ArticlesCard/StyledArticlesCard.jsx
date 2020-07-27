@@ -18,10 +18,10 @@ export const Title = styled.h2`
   text-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   margin-bottom: 0.75rem;
   a {
-    color: ${props => darken(0.01, props.theme.colors.base.color)};
-    transition: ${props => props.theme.transition.link};
+    color: ${(props) => darken(0.01, props.theme.colors.base.color)};
+    transition: ${(props) => props.theme.transition.link};
     &:hover {
-      color: ${props => lighten(0.1, props.theme.colors.base.color)};
+      color: ${(props) => lighten(0.1, props.theme.colors.base.color)};
     }
   }
 `
@@ -37,12 +37,12 @@ export const Initial = styled.span`
 export const Information = styled.div`
   margin-top: -0.5rem;
   margin-bottom: 0.5rem;
-  color: ${props => darken(0.1, props.theme.colors.base.color)};
+  color: ${(props) => darken(0.1, props.theme.colors.base.color)};
 `
 
 export const IconSvg = styled.img`
   svg {
-    stroke: ${props => darken(0.1, props.theme.colors.base.color)};
+    stroke: ${(props) => darken(0.1, props.theme.colors.base.color)};
   }
 `
 

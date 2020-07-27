@@ -33,9 +33,9 @@
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
     "next:update": "next-update -k true --tldr",
     "now-build": "npm run build",
+    "prepublish": "npm run snyk-protect && yarn run snyk-protect",
     "serve": "gatsby serve",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect && yarn run snyk-protect",
     "sort:package": "npx sort-package-json",
     "test:cy": "start-server-and-test develop http://localhost:8000 cy:open"
   },
@@ -102,6 +102,7 @@
     "eslint-plugin-react-hooks": "^4.0.8",
     "gatsby-plugin-root-import": "^2.0.5",
     "prettier": "^2.0.5",
+    "prettier-standard": "^16.4.1",
     "start-server-and-test": "^1.11.2"
   },
   "snyk": true

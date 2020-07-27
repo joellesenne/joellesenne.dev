@@ -17,7 +17,7 @@ const TWITTER_USERNAME = config.userSlug
 export default class ShareButtons extends Component {
   componentDidMount() {
     // Load socialshares on client side only to prevent SSR issues <https://sunnysingh.io/blog/share-buttons>.
-    import('socialshares/dist/socialshares.noicons').then(module => {
+    import('socialshares/dist/socialshares.noicons').then((module) => {
       this.socialshares = module.default
       this.socialshares.configure({ icons: { twitter, facebook, linkedin, more } })
       this.socialshares.mount()
