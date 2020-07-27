@@ -1,9 +1,13 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import kebabCase from 'lodash/kebabCase'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
+
+// config
+import config from 'config/site'
 
 // component
 import {
@@ -27,7 +31,7 @@ import {
 import { Article, PostContent } from '../components/Post/StyledArticlesProjects'
 import { ImgFilter } from '../components/elements/Images/Styled'
 import { GatsbyLink } from '../components/elements/Link/Styled'
-import { Paragraph } from '../components/Typographies/StyledTypographies'
+import { Paragraph, Link } from '../components/Typographies/StyledTypographies'
 
 // icons
 import SVG from '../components/Animation/SVG'
@@ -48,8 +52,7 @@ const Post = ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) =>
             <SVG icon="category" stroke="#a9a9ef" strokeWidth="3" width={14} height={14} />{' '}
             <GatsbyLink to={`/categorie/${kebabCase(post.category)}`}>{post.category}</GatsbyLink>{' '}
             <SVG icon="calendar" stroke="#a9a9ef" strokeWidth="3" width={24} height={24} /> {post.date} —{' '}
-            <SVG icon="clock" stroke="#a9a9ef" strokeWidth="3" width={24} height={24} /> {postNode.timeToRead} min de
-            lecture
+            <SVG icon="clock" stroke="#a9a9ef" strokeWidth="3" width={24} height={24} /> {postNode.timeToRead} min
           </>
         }
       >
@@ -70,7 +73,12 @@ const Post = ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) =>
             <Line />
             <Tags tags={post.tags} />
             <Paragraph>
-              Merci de votre patience. Voir d'autres articles dans la catégorie{' '}
+              Merci de votre patience. J’ai créé ce site pour partager ma passion du Web en proposant à la fois des
+              projets personnels ou professionnels et parler code sur mon blog. Vous pouvez me retrouver sur{' '}
+              <Link href={`https://twitter.com/${config.userSlug}`} target="_blank" rel="noopener noreferrer">
+                Twitter
+              </Link>
+              . Voir d'autres articles dans la catégorie{' '}
               <GatsbyLink to={`/categorie/${kebabCase(post.category)}`}>{post.category}</GatsbyLink>
             </Paragraph>
             <Pagination prev={prev} next={next} />

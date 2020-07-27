@@ -36,6 +36,7 @@ this is for you to share my code in the world.
 4. – Downloads [git-scm.com](https://git-scm.com/downloads) – [Docs](https://git-scm.com/docs) for config
 
 ### 💻 Command bash
+
 ### Prerequisites
 
 ```bash
@@ -90,7 +91,6 @@ this is for you to share my code in the world.
 - ✔️ Comment Blog
 
 ## Author
-
 
 👤 **Joël Lesenne &lt;contact@joellesenne.dev&gt;**
 

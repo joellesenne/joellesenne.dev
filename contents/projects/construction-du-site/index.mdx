@@ -1,13 +1,14 @@
 ---
 publish: true
-date: '2019-07-13'
-title: 'Construction du site'
-cover: 'construction-du-site.jpg'
-category: 'WebSite'
+date: "2019-07-13"
+title: "Construction du site"
+cover: "construction-du-site.jpg"
+category: "Amélioration du site"
 tags:
-  - GatsbyJs
-  - ReactJs
-  - Static
+  - gatsby
+  - react
+  - typescript
+  - graphQL
 ---
 
 > J’ai choisi [Gatsby.js](https://www.gatsbyjs.org/) (un générateur de site statique basé sur [React.js](https://reactjs.org/)) pour la création du [site](https://joellesenne.xyz).
@@ -26,13 +27,13 @@ Il y a beaucoup de développeurs qui utilisent [React.js](https://reactjs.org/) 
 
 Il est vrai que depuis la sortie de [TypeScript](https://www.typescriptlang.org/), le développement [Front-end](https://en.wikipedia.org/wiki/Front-end_web_development) s’est beaucoup simplifié. Le compilateur [Babel.js](https://babeljs.io/) transforme des fichiers écrits en TypeScript vers JavaScript compatibles avec tous les navigateurs anciens.[Webpack](https://webpack.js.org/) est un compilateur moderne de fichier JS vers HTML.
 
-Autre aspect intéressant du Framework, l’écriture du [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) (Cascading Style Sheets) directement dans les fichiers JavaScript. J’ai par exemple écris du CSS en [CSS-in-JS](<[CSS-in-JS](https://cssinjs.org/)>) (une nouveauté du moment qui crée beaucoup de débats sur le Web). Ce que j’ai trouvé intéressant dans le CSS-in-JS est l'approche du style CSS écrit directement dans les balises HTML : il apporte un chargement plus rapide des pages HTML (ce qui reste bien évidemment relatif avec tout le JavaScript que le Framework comporte) et charge uniquement le style de la page courante.
+Autre aspect intéressant du Framework, l’écriture du [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) (Cascading Style Sheets) directement dans les fichiers JavaScript. J’ai par exemple écris du CSS en [CSS-in-JS](https://cssinjs.org/) (une nouveauté du moment qui crée beaucoup de débats sur le Web). Ce que j’ai trouvé intéressant dans le CSS-in-JS est l'approche du style CSS écrit directement dans les balises HTML : il apporte un chargement plus rapide des pages HTML (ce qui reste bien évidemment relatif avec tout le JavaScript que le Framework comporte) et charge uniquement le style de la page courante.
 
 Puisque l’ont en vient à parler du chargement, parlons de l’optimisation des appareils mobiles. Le Framework Gatsby crée automatiquement une [PWA](https://en.wikipedia.org/wiki/Progressive_web_applications) (Progressive Web App). le principe est assez simple : pendant que vous visionnez une page qui vient de se charger, PWA se charge de terminer le chargement de toutes les vues des autres pages (images et fichiers HTML), ce qui apporte une vraie rapidité sur le chargement du site complet. Les images sont aussi optimisées grâce au plug-in [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/) qui redimensionne les images en fonction de la taille des écrans et permet surtout de visiter le site sans recharger le serveur distant, ce qui est une vraie révolution dans le domaine du Front-End.
 
 Enfin, le déploiement du site peut être automatisé grâce à l’utilisation d’un [dépôt Github](https://github.com/), avec [Netlify](https://www.netlify.com/) et [OVH](https://www.ovh.com/fr/) par exemple (j’en parlerais prochainement)
 
-## Liens utiles (en anglais) :
+## Liens utiles :
 
 - [React.js](https://reactjs.org/) — site officiel
 - [Gatsby.js](https://www.gatsbyjs.org/) — générateur de sites statiques
@@ -48,4 +49,4 @@ Enfin, le déploiement du site peut être automatisé grâce à l’utilisation 
 - [Netlify](https://www.netlify.com/) — Déploiement (gratuit) et CMS (payant)
 - [OVH](https://www.ovh.com/fr/) — Hébergeur populaire des noms de domaine en France
 
-Retrouver le site sur mon dépôt [Github](https://github.com/joellesenne/joellesenne.xyz) pour en apprendre plus. J’espère que cet article vous a plu, en espérant vous revoir prochainement.
+Retrouver le site sur mon dépôt [Github](https://github.com/joellesenne/joellesenne.dev) pour en apprendre plus. J’espère que cet article vous a plu, en espérant vous revoir prochainement.

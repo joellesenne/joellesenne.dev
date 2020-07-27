@@ -10,7 +10,8 @@ import triangle from '../../medias/images/triangle.svg'
 
 export const BigTitle = styled.h1`
   position: relative;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
   font-size: 3rem;
   letter-spacing: 0.05em;
   line-height: 1.2;

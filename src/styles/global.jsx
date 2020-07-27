@@ -115,6 +115,16 @@ const GlobalStyle = createGlobalStyle`
   [hidden] {
     display: none !important;
   }
+  pre {
+    white-space: pre;
+    word-wrap: break-word;
+    overflow: auto;
+  }
+  code {
+    padding: 4px 8px;
+    border-radius: 6px;
+    background-color: ${(props) => props.theme.colors.link.gradientLeft};
+  }
   ::-moz-selection {
     color: ${(props) => props.theme.colors.base.white};
     background-color: ${(props) => props.theme.colors.link.gradientRight};
