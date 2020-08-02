@@ -1,0 +1,154 @@
+---
+publish: true
+date: "2020-07-31"
+title: "Ligne originale utilisant les propriétés CSS3"
+cover: "banner.jpg"
+category: "Code"
+tags:
+  - css3
+  - démo
+  - astuces
+  - tutoriel
+---
+
+import CodePenEmbed from "components/CodePenEmbed";
+
+> Récemment, j'ai participé à une formation sur [OpenClassRooms](https://openclassrooms.com/fr/paths/185-developpeur-web?version=new&utm_expid=.jh3uivJmQRu0VGd295tFiQ.1&utm_referrer=https%3A%2F%2Fopenclassrooms.com%2Ffr%2Fpaths%2Ftopics%2F18-developpement) où on devait réaliser un projet avec un soulignement uniquement sur le début du texte et je voulais vous montrer trois techniques possibles
+
+Voici un exemple sur [Codepen.io](https://codepen.io/joellesenne/pen/rNxEeqX) avec trois façon de faire, vous voulez encore plus de façons de faire ça avec [CSS TRICKS](https://css-tricks.com/styling-underlines-web/)
+
+<CodePenEmbed id="rNxEeqX" title="rNxEeqX" height="700" preview="" />
+
+Le code HTML ressemble à ceci en utilisant la balise `<span>`.
+
+```html
+<main>
+  <div>
+    <h1 class="demo-1">
+      <span>Demo 1</span> – Underlines with pseudo-elements
+    </h1>
+    <h1 class="demo-2"><span>Demo 2</span> – Underlines with border-bottom</h1>
+    <h1 class="demo-3">
+      <span>Demo 3</span> – Underlines with background-image
+    </h1>
+  </div>
+</main>
+```
+
+Tout d'abord, je dois mettre un style général.
+
+```css
+/* Reset style */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  box-sizing: inherit;
+  font-size: 100%;
+}
+
+/* Common style*/
+body {
+  padding: 40px;
+
+  font-family: "Fredoka One", cursive;
+  font-size: 80%;
+
+  background: Yellow;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+
+  background: black;
+
+  overflow: auto;
+}
+
+main div {
+  padding: 40px;
+  width: 80%;
+  color: white;
+
+  background: blue;
+
+  resize: both;
+  overflow: auto;
+}
+
+h1 {
+  margin-bottom: 1.5em;
+  line-height: 1.8;
+}
+
+h1:nth-child(1) {
+  margin-top: 1em;
+}
+
+h1 span {
+  position: relative;
+}
+```
+
+Remarquez la valeur pour `line-height: 1.8` sur `<h1>` ce qui donne de l'espace au texte qui ce place au dessous quand je réduit la fenêtre du navigateur et la `position: relative` sur le `<span>` qui me servira pour le `pseudo-elements` dans le premier exemple
+
+Exemple avec `pseudo-elements` :
+
+```css
+/* DEMO 1 */
+.demo-1 span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 6px;
+
+  background: red;
+}
+```
+
+Exemple avec `border-bottom` :
+
+```css
+/* DEMO 2 */
+.demo-2 span {
+  padding-bottom: 4px;
+
+  border-bottom: solid 6px green;
+}
+```
+
+Exemple avec `background-image` :
+
+```css
+/* DEMO 3 */
+.demo-3 span {
+  padding-bottom: 10px;
+
+  background-image: linear-gradient(to bottom, orange 33%, transparent 33%);
+  background-position: 0 1.35em;
+  background-repeat: repeat-x;
+  background-size: 2px;
+}
+```
+
+Pour ma part, je préférée avec `pseudo-elements` surtout quand on comprend l'importance du `position: absolute` de la balise enfant et pour la balise parent `position: relative` après, ce n'ai n'y plus n'y moins de dessiner une forme (un trait dans cet exemple) et le positionnée.
+
+Sur la démo 3 avec `background-image` est un peut plus compliquer à mettre en place et demande un peut plus de techniques mais fonctionne tout aussi bien. Toutefois, vérifier la compatibilité du navigateur et idem avec `box-shadow`.
+
+OK, maintenant vous savez faire des lignes originales en utilisant les propriétés du CSS3, il y a d'autres façons de faire, je pense au `SVG` avec un exemple sur [CSS-TRICKS](https://css-tricks.com/styling-underlines-web/#svg-filters).
+
+À très bientôt pour d'autres démos.
