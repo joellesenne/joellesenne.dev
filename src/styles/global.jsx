@@ -121,7 +121,7 @@ const GlobalStyle = createGlobalStyle`
     overflow: auto;
   }
   code {
-    padding: 4px 8px;
+    padding: 2px 8px 4px;
     border-radius: 6px;
     background-color: ${(props) => props.theme.colors.link.gradientLeft};
   }

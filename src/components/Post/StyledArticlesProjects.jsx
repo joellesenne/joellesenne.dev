@@ -34,7 +34,7 @@ export const PostContent = styled.section`
   p {
     font-size: 1.1rem;
     letter-spacing: -0.003em;
-    line-height: 1.58;
+    line-height: 1.7;
     --baseline-multiplier: 0.179;
     --x-height-multiplier: 0.35;
     @media (max-width: ${(props) => props.theme.breakpoints.md}) {

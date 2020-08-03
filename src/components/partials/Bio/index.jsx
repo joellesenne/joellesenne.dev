@@ -19,7 +19,7 @@ const SectionPage = () => (
         <Items>
           <Item>
             <Icon>👨‍💻</Icon>
-            Je suis un développeur et intégrateur Web
+            Je suis un développeur et intégrateur Web.
           </Item>
           <Item>
             <Icon>🇫🇷</Icon>
@@ -27,7 +27,7 @@ const SectionPage = () => (
           </Item>
           <Item>
             <Icon>💻</Icon>
-            Je crée des interfaces UX/UI originale et moderne
+            Je crée des interfaces UX/UI originale et moderne.
           </Item>
         </Items>
       </Col>

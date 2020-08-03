@@ -10,13 +10,13 @@ const Iframe = styled.iframe`
   width: 100%;
 `
 
-const CodePenEmbed = ({ id, title, theme, height }) => (
+const CodePenEmbed = ({ id, title, theme, height, preview }) => (
   <>
     <Iframe
       height={height}
       scrolling="no"
       title={title}
-      src={`//codepen.io/${config.userSlug}/embed/preview/${id}/?height=${height}&theme-id=${theme}&default-tab=result`}
+      src={`//codepen.io/${config.userSlug}/embed/${preview}/${id}/?height=${height}&theme-id=${theme}&default-tab=result`}
       frameBorder="no"
       allowTransparency="true"
       allowFullScreen="true"
@@ -35,9 +35,11 @@ CodePenEmbed.propTypes = {
   title: PropTypes.string.isRequired,
   theme: PropTypes.any,
   height: PropTypes.string,
+  preview: PropTypes.string,
 }
 
 CodePenEmbed.defaultProps = {
-  theme: '5406',
+  theme: 'light',
   height: '400',
+  preview: 'preview'
 }

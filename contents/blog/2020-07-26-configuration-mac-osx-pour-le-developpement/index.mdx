@@ -14,7 +14,7 @@ tags:
 
 > Je viens de remplacer mon vieux MacBook (2015) et pourquoi ne pas partager ma configuration de développement nouvellement installé !
 
-La configuration de votre outil de travail et bien souvent stoker dans des fichiers [dot](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory) (fichiers dont le nom commence par un point et ce trouve caché sur votre hôte). Vous retrouverez sur Github mon [dotfiles](https://github.com/joellesenne/dotfiles), vous pouvez me laisser une [issue](https://github.com/joellesenne/dotfiles/issues) ou j'essayerais d'y répondre. J'ai trouvé l'inspiration avec [Simon Owen](https://css-tricks.com/using-dotfiles-for-managing-development-and-many-other-magical-things/), [Mathias Bynens](https://github.com/mathiasbynens/dotfiles) et une très jolie configuration chez [Tania Rascia](https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/). En voir plus sur les [dotfiles](https://dotfiles.github.io/).
+La configuration de votre outil de travail et bien souvent stoker dans des fichiers [dot](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory) (fichiers dont le nom commence par un point et se trouve caché sur votre hôte). Vous retrouverez sur Github mon [dotfiles](https://github.com/joellesenne/dotfiles), vous pouvez me laisser une [issue](https://github.com/joellesenne/dotfiles/issues) ou j'essayerais d'y répondre. J'ai trouvé l'inspiration avec [Simon Owen](https://css-tricks.com/using-dotfiles-for-managing-development-and-many-other-magical-things/), [Mathias Bynens](https://github.com/mathiasbynens/dotfiles) et une très jolie configuration chez [Tania Rascia](https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/). En voir plus sur les [dotfiles](https://dotfiles.github.io/).
 
 Tout d'abord, je dois installer [les outils de développement](https://developer.apple.com/library/archive/technotes/tn2339/_index.html) avec l'installation de [Xcode](https://developer.apple.com/xcode/) puis ouvrons l'application `Terminal.app` dans le dossier `~/Application` du Finder, installer [Homebrew](https://brew.sh/) pour la gestion des paquets dans Mac OS en tapant la ligne de commandes suivantes :
 
@@ -42,9 +42,9 @@ node -v
 npm -v
 ```
 
-Une liste est à disposition pour l'installation d'autres formules [brew formula](https://formulae.brew.sh/formula/)
+Une liste est à disposition pour l'installation d'autres formules – [brew formula](https://formulae.brew.sh/formula/)
 
-Vous pouvez aussi, installer les logiciels de votre choix pour vos applications de développement Web
+Vous pouvez aussi, installer les logiciels de votre choix pour vos applications de développement Web.
 
 ```bash
 # brew.sh
@@ -63,15 +63,15 @@ brew cask install alfred
 brew cleanup
 ```
 
-Une liste est à disposition pour l'installation d'autres logiciels [brew cask](https://formulae.brew.sh/cask/)
+Une liste est à disposition pour l'installation d'autres logiciels – [brew cask](https://formulae.brew.sh/cask/)
 
-Ensuite je crée un fichier `~/.gitconfig` à la racine de l'utilisateur `/Users/<username>` (remarquez le point au début du fichier qui indique que c'est un fichier "dot" caché)
+Ensuite, je crée un fichier `~/.gitconfig` à la racine de l'utilisateur `/Users/<username>` (remarquez le point au début du fichier qui indique que c'est un fichier "dot" caché)
 
 ```bash
 touch .gitconfig
 ```
 
-Toutefois pour visualiser les fichiers cachés ou dossiers cachés vous devez taper cette ligne de commandes à retrouver sur le fichier `~/.macos`
+Toutefois pour visualiser les fichiers cachés ou dossiers cachés, vous devez taper cette ligne de commandes à retrouver sur le fichier `~/.macos`
 
 ```bash
 # .macos
@@ -117,7 +117,7 @@ Je peux aussi me créer des raccourcis clavier pour Git
 ...
 ```
 
-Exemple tapez sur le Terminal `git a` au lieu de `git add .`
+Exemple tapé sur le Terminal `git a` au lieu de `git add .`
 
 J'ai ajouté ce fichier `~/.aliases` toujours à la racine, pour créer des raccourcis supplémentaires
 
