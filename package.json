@@ -68,7 +68,7 @@
     "gatsby-remark-images": "^3.3.23",
     "gatsby-source-filesystem": "^2.3.23",
     "gatsby-transformer-sharp": "^2.5.12",
-    "keyboardjs": "^2.6.3",
+    "keyboardjs": "^2.6.4",
     "lodash": "^4.17.19",
     "mdx-utils": "0.2.0",
     "polished": "^3.6.5",
