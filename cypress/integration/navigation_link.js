@@ -1,4 +1,4 @@
-describe('The Home Page', function() {
+describe('The Home Page', () => {
   it('Link page Home "a"', () => {
     cy.visit('/')
     cy.contains('a').click({ force: true })

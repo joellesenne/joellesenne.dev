@@ -1,5 +1,5 @@
-describe('The allProjects Page', function() {
-  it('successfully loads page allProjects', function() {
+describe('The allProjects Page', () => {
+  it('successfully loads page allProjects', () => {
     cy.visit('/projets')
   })
   it('Button page About "a"', () => {
@@ -23,11 +23,11 @@ describe('The allProjects Page', function() {
     cy.contains('a').click({ force: true })
   })
   it('Extern: Link footer webSite "a"', () => {
-    cy.visit('https://joellesenne.xyz')
+    cy.visit('https://joellesenne.dev')
     cy.contains('a').click({ force: true })
   })
   it('Extern: Link footer Github repository "a"', () => {
-    cy.visit('https://github.com/joellesenne/joellesenne.xyz')
+    cy.visit('https://github.com/joellesenne/joellesenne.dev')
     cy.contains('a').click({ force: true })
   })
   it('Extern: Link footer Inspiration "a"', () => {

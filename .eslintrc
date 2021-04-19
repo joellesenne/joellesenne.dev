@@ -85,5 +85,5 @@
       }
     ]
   },
-  "plugins": ["prettier", "prettier-standard", "react-hooks"]
+  "plugins": ["prettier", "react-hooks"]
 }

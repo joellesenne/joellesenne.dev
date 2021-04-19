@@ -1,11 +1,10 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 // config
-import config from 'config/site'
+import config from '../../config/site'
 
 // components
 import { Wave, ArticlesCard, Navigation, Header, Bio, Contact, Footer, Layout, Container, Content } from '../components'

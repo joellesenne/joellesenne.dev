@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
@@ -6,22 +5,10 @@ import Img from 'gatsby-image'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 // config
-import config from 'config/site'
+import config from '../../config/site'
 
 // component
-import {
-  Wave,
-  Navigation,
-  Line,
-  SocialShares,
-  Header,
-  Bio,
-  Contact,
-  Footer,
-  Layout,
-  Container,
-  Content,
-} from '../components'
+import { Wave, Navigation, Line, Header, Bio, Contact, Footer, Layout, Container, Content } from '../components'
 
 // styles
 import { Paragraph } from '../components/Typographies/StyledTypographies'
@@ -49,7 +36,6 @@ const Page = ({ pageContext: { slug }, data: { mdx: pageNode } }) => {
             <PageContent>
               <MDXRenderer>{pageNode.body}</MDXRenderer>
             </PageContent>
-            <SocialShares />
             <Line />
             <Paragraph>Merci de votre patience.</Paragraph>
           </Pages>

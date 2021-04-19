@@ -1,10 +1,9 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 
 // config
-import config from 'config/site'
+import config from '../../../config/site'
 
 const SEO = (props) => {
   const { postNode, postPath, article, project, page, buildTime } = props
@@ -30,7 +29,7 @@ const SEO = (props) => {
   // https://developers.google.com/search/docs/guides/intro-structured-data
   // You can fill out the 'author', 'creator' with more data or another type (e.g. 'Organization')
   const schemaOrgWebPage = {
-    '@context': 'http://schema.org',
+    '@context': 'https://schema.org/',
     '@type': 'WebPage',
     url: URL,
     headline: config.siteHeadline,
@@ -87,7 +86,7 @@ const SEO = (props) => {
 
   if (article) {
     schemaArticle = {
-      '@context': 'http://schema.org',
+      '@context': 'https://schema.org/',
       '@type': 'Article',
       author: {
         '@type': 'Person',
@@ -138,7 +137,7 @@ const SEO = (props) => {
 
   if (project) {
     schemaProject = {
-      '@context': 'http://schema.org',
+      '@context': 'https://schema.org/',
       '@type': 'Project',
       author: {
         '@type': 'Person',
@@ -189,7 +188,7 @@ const SEO = (props) => {
 
   if (page) {
     schemaPage = {
-      '@context': 'http://schema.org',
+      '@context': 'https://schema.org/',
       '@type': 'Page',
       author: {
         '@type': 'Person',
@@ -237,7 +236,7 @@ const SEO = (props) => {
   }
 
   const breadcrumb = {
-    '@context': 'http://schema.org',
+    '@context': 'https://schema.org/',
     '@type': 'BreadcrumbList',
     description: 'Breadcrumbs list',
     name: 'Breadcrumbs',

@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ThemeProvider } from 'styled-components'
@@ -6,10 +5,10 @@ import CookieConsent from 'react-cookie-consent'
 import { lighten } from 'polished'
 
 // config
-import theme from 'config/theme'
+import theme from '../../../config/theme'
 
 // Style
-import GlobalStyle from 'src/styles/global'
+import GlobalStyle from '../../styles/global'
 
 // components
 import SEO from '../All/SEO'

@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable import/no-unresolved */
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
@@ -8,7 +6,7 @@ import kebabCase from 'lodash/kebabCase'
 import size from 'lodash/size'
 
 // config
-import config from 'config/site'
+import config from '../../config/site'
 
 // components
 import { Wave, Navigation, Button, Line, Header, Bio, Contact, Footer, Layout, Container, Content } from '../components'

@@ -1,5 +1,5 @@
-describe('The Home Page', function() {
-  it('successfully loads page Blog', function() {
+describe('The Home Page', () => {
+  it('successfully loads page Blog', () => {
     cy.visit('/blog')
   })
   it('Button page About "a"', () => {
@@ -23,11 +23,11 @@ describe('The Home Page', function() {
     cy.contains('a').click({ force: true })
   })
   it('Extern: Link footer webSite "a"', () => {
-    cy.visit('https://joellesenne.xyz')
+    cy.visit('https://joellesenne.dev')
     cy.contains('a').click({ force: true })
   })
   it('Extern: Link footer Github repository "a"', () => {
-    cy.visit('https://github.com/joellesenne/joellesenne.xyz')
+    cy.visit('https://github.com/joellesenne/joellesenne.dev')
     cy.contains('a').click({ force: true })
   })
   it('Extern: Link footer Inspiration "a"', () => {

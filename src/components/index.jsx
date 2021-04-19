@@ -9,7 +9,7 @@ export { default as ProjectsCard } from './All/ProjectsCard'
 export { default as TagCategory } from './All/TagCategory'
 
 // elements
-export { default as Avatar } from './elements/Avatar'
+export { default as Profile } from './elements/Profile'
 export { default as Button } from './elements/Button'
 export { default as CommentBox } from './elements/CommentBox'
 export { default as Images } from './elements/Images'
@@ -17,7 +17,6 @@ export { default as Line } from './elements/Line'
 export { default as Link } from './elements/Link'
 export { default as Navigation } from './elements/Navigation'
 export { default as Pagination } from './elements/Pagination'
-export { default as SocialShares } from './elements/SocialShares'
 export { default as Tags } from './elements/Tags'
 
 // partials

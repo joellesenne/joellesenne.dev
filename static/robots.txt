@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-sitemap: https://joellesenne.devxyz/sitemap.xml
+sitemap: https://joellesenne.dev/sitemap.xml

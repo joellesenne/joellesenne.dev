@@ -13,7 +13,6 @@ browser.info
 # Edit code
 .vscode/*
 .vscode/settings.json
-.idea/*
 
 #Build directory
 /public
@@ -50,9 +49,8 @@ coverage
 build/Release
 
 # Dependency directories
-node_modules
 jspm_packages
-.idea
+.idea/*
 
 # Optional npm cache directory
 .npm
@@ -74,3 +72,6 @@ jspm_packages
 
 # Bundle stats
 bundle-stats.json
+
+# Draft coming soon
+draft/*

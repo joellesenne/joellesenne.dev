@@ -1,9 +1,8 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react'
 import PropTypes from 'prop-types'
 
 // styled
-import { BigTitle, Subtitle } from 'components/Typographies/StyledTypographies'
+import { BigTitle, Subtitle } from '../../Typographies/StyledTypographies'
 import { Header, Heros } from './Styled'
 
 const HeaderPage = ({ title, subtitle, children, big, bg }) => (
