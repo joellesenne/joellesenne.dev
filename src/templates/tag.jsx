@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable import/no-unresolved */
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
@@ -7,7 +5,7 @@ import { graphql } from 'gatsby'
 import kebabCase from 'lodash/kebabCase'
 
 // config
-import config from 'config/site'
+import config from '../../config/site'
 
 // component
 import {

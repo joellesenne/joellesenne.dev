@@ -1,5 +1,5 @@
-describe('The allTags Page', function() {
-  it('successfully loads page allTags', function() {
+describe('The allTags Page', () => {
+  it('successfully loads page allTags', () => {
     cy.visit('/tags')
   })
   it('Button page allCategories "a"', () => {

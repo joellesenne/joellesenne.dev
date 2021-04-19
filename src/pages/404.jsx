@@ -1,9 +1,8 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react'
 import Helmet from 'react-helmet'
 
 // config
-import config from 'config/site'
+import config from '../../config/site'
 
 // components
 import { Wave, Navigation, Button, Header, Bio, Contact, Footer, Layout, Container, Content } from '../components'

@@ -1,11 +1,10 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react'
 
 // config
-import config from 'config/site'
+import config from '../../../../config/site'
 
 // icons
-import Logo from 'src/medias/icons/Logo'
+import Logo from '../../../medias/icons/Logo'
 
 // Styled
 // import { GatsbyLinkNav } from '../Link/StyledLink'

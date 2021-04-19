@@ -1,6 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react-hooks/rules-of-hooks */
-/* eslint-disable import/no-unresolved */
 import React from 'react'
 import { useWindowSize } from 'react-use'
 import PropTypes from 'prop-types'
@@ -8,7 +5,7 @@ import { graphql } from 'gatsby'
 import Particles from 'react-particles-js'
 
 // config
-import config from 'config/site'
+import config from '../../config/site'
 
 // components
 import {

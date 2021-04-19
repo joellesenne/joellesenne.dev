@@ -1,6 +1,17 @@
 {
   "plugins": ["cypress"],
   "env": {
-    "cypress/globals": true
+    "browser": true
+  },
+  "globals": {
+    "cy": false,
+    "Cypress": true,
+    "describe": false,
+    "context": false,
+    "beforeEach": false,
+    "afterEach": false,
+    "it": false,
+    "assert": false,
+    "expect": false
   }
 }

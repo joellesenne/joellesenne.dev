@@ -1,8 +1,7 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react'
 
 // config
-import config from 'config/site'
+import config from '../../../../config/site'
 
 // elements
 import { Title, Paragraph, Link } from '../../Typographies/StyledTypographies'
@@ -16,11 +15,11 @@ const SectionPage = () => (
     <Paragraph>
       M’écrire pour parler de votre projet <Link href="mailto:contact@joellesenne.dev">contact@joellesenne.dev</Link>,{' '}
       voir mon{' '}
-      <Link href="http://cv.joellesenne.dev/" target="_blank" rel="noopener noreferrer">
+      <Link href="https://cv.joellesenne.dev/" target="_blank" rel="noopener noreferrer">
         CV
       </Link>
       , mon{' '}
-      <Link href="http://lab.joellesenne.dev/" target="_blank" rel="noopener noreferrer">
+      <Link href="https://lab.joellesenne.dev/" target="_blank" rel="noopener noreferrer">
         Laboratoire
       </Link>{' '}
       ou me trouver sur d'autres plateformes :{' '}

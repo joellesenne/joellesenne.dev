@@ -5,15 +5,15 @@ import Button from '../../elements/Button'
 import { Title } from '../../Typographies/StyledTypographies'
 import { Content } from '../../views'
 import { Grid, Col, Items, Item, Icon } from './Styled'
-import { StyledAvatar } from '../../elements/Avatar/Styled'
-import avatarImg from '../../../medias/images/avatar.png'
+import { StyledProfile } from '../../elements/Profile/Styled'
+import profileImg from '../../../medias/images/profile.jpg'
 
 const SectionPage = () => (
   <Content>
     <Title>Biographie</Title>
     <Grid>
       <Col>
-        <StyledAvatar src={avatarImg} alt="Joël Lesenne" />
+        <StyledProfile src={profileImg} alt="Joël Lesenne" />
       </Col>
       <Col>
         <Items>

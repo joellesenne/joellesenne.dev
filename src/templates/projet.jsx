@@ -12,7 +12,6 @@ import {
   Navigation,
   Pagination,
   Line,
-  SocialShares,
   Tags,
   Header,
   Bio,
@@ -65,7 +64,6 @@ const Project = ({ pageContext: { slug, prev, next }, data: { mdx: projectNode }
             <PostContent>
               <MDXRenderer>{projectNode.body}</MDXRenderer>
             </PostContent>
-            <SocialShares />
             <Line />
             <Tags tags={project.tags} />
             <Paragraph>
