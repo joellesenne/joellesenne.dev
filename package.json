@@ -84,7 +84,7 @@
     "react-particles-js": "^3.3.0",
     "react-use": "^15.3.8",
     "snyk": "^1.518.0",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.3"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
