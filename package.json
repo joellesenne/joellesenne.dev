@@ -81,7 +81,7 @@
     "react-headroom": "^3.0.0",
     "react-helmet": "^6.1.0",
     "react-live": "^2.2.3",
-    "react-particles-js": "^3.3.0",
+    "react-particles-js": "^3.4.1",
     "react-use": "^15.3.8",
     "snyk": "^1.518.0",
     "styled-components": "^5.2.1"
