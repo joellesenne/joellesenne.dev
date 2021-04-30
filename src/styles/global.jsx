@@ -3,24 +3,24 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyle = createGlobalStyle`
   *, *:before, *:after {
     box-sizing: inherit;
-  }
-  html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
     vertical-align: baseline;
+    border: none;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
   }
-  html {
+  html, body {
     box-sizing: border-box;
     font-size: 18px;
     line-height: 1.5;
-    text-rendering: optimizeLegibility;
     scrollbar-width: 20px;
     scrollbar-color: ${(props) => props.theme.colors.base.bg};
     overflow-x: hidden;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
     h1 {
@@ -28,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
     }
     h2 {
       font-size: 1.953rem;
+      line-height: 2.5;
     }
     h3 {
       font-size: 1.563rem;

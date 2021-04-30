@@ -5,13 +5,18 @@ const colors = {
     gradientRight: '#89103c',
     gradientLeftTo: '#fe1605',
     gradientRightButton: '#fea04f',
-    bg: '#0e0f4f',
+    bg: '#050663',
     white: '#fff',
     black: '#000',
-    bgLight: '#171982',
+    bgLight: '#1519d3',
+  },
+  heros: {
+    subtitle: {
+      color: '#b6b7e5',
+    },
   },
   nav: {
-    bg: '#171982',
+    bg: '#1519d3',
   },
   link: {
     gradientRight: '#da8725',

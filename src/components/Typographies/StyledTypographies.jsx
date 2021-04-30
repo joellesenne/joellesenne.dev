@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { darken } from 'polished'
 
 // animation
 import { rotateAnimation } from '../Animation/Animation'
@@ -29,9 +28,10 @@ export const BigTitle = styled.h1`
 
 export const Subtitle = styled.p`
   max-width: 650px;
+  margin-top: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
-  color: ${(props) => darken(0.1, props.theme.colors.base.color)};
+  color: ${(props) => props.theme.colors.heros.subtitle.color};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   svg {
     width: 20px;

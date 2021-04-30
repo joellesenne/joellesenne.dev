@@ -45,31 +45,34 @@ const indexPage = ({
         }
         subtitle={config.siteDescription}
       >
-        <Particles
-          height="50vh"
-          params={{
-            particles: {
-              number: {
-                value: 50,
-                density: {
-                  enable: true,
-                  value_area: 500,
+        <div>
+          <Particles
+            style={{ position: 'relative' }}
+            height="50vh"
+            params={{
+              particles: {
+                number: {
+                  value: 50,
+                  density: {
+                    enable: true,
+                    value_area: 500,
+                  },
+                },
+                size: {
+                  value: 3,
                 },
               },
-              size: {
-                value: 3,
-              },
-            },
-            interactivity: {
-              events: {
-                onhover: {
-                  enable: true,
-                  mode: 'repulse',
+              interactivity: {
+                events: {
+                  onhover: {
+                    enable: true,
+                    mode: 'repulse',
+                  },
                 },
               },
-            },
-          }}
-        />
+            }}
+          />
+        </div>
       </Header>
       <Container>
         <Content>
