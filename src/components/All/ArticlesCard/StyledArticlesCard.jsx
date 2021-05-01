@@ -29,7 +29,7 @@ export const Title = styled.h2`
 export const Initial = styled.span`
   position: absolute;
   font-size: 7rem;
-  transform: translate(-50%, -50%);
+  transform: translate(-45%, -45%);
   opacity: 0.08;
   user-select: none;
 `
