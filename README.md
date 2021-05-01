@@ -1,119 +1,113 @@
-<h1 align="center">Welcome to my Personal Website 👋</h1>
+<h1 align="center">Welcome to joellesenne.dev 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.1-blue.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/node-%3E%3D14.15.4-blue.svg" />
+  <img src="https://img.shields.io/badge/npm-%3E%3D6.14.10-blue.svg" />
+  <a href="https://github.com/joellesenne/joellesenne.dev#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/joellesenne/joellesenne.dev/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/joellesenne/joellesenne.dev/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/joellesenne/joellesenne.dev" />
+  </a>
+  <a href="https://twitter.com/joellesenne" target="_blank">
+    <img alt="Twitter: joellesenne" src="https://img.shields.io/twitter/follow/joellesenne.svg?style=social" />
+  </a>
+</p>
 
-[![GitHub license](https://img.shields.io/badge/Mit-License-blue.svg?style=flat-square)](LICENSE) [![Joel Lesenne Homepage](https://img.shields.io/badge/Site-homePage-red.svg?style=flat-square)](https://joellesenne.dev) ![Maintenance](https://img.shields.io/maintenance/yes/2021.svg?style=flat-square) [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/joellesenne/joellesenne.dev) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/554dbae558f245cd882888d0d415a482)](https://app.codacy.com/app/joellesenne/joellesenne.dev_2?utm_source=github.com&utm_medium=referral&utm_content=joellesenne/joellesenne.dev&utm_campaign=Badge_Grade_Dashboard) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+> My Web Site
 
-[![CircleCI](https://circleci.com/gh/joellesenne/joellesenne.dev.svg?style=svg&circle-token=fa213778258e89aa83decb6696fc02683fd3b1aa)](https://circleci.com/gh/joellesenne/joellesenne.dev) [![Build Status](https://travis-ci.com/joellesenne/joellesenne.dev.svg?style=flat-square&branch=master)](https://travis-ci.com/joellesenne/joellesenne.dev) [![Greenkeeper badge](https://badges.greenkeeper.io/joellesenne/joellesenne.dev.svg?style=flat-square&&token=c9a88108dc9440b5610801f22a4a06e8132cfd39554f28a30527aaa761baf3ae&ts=1554177468674)](https://greenkeeper.io/)
+### 🏠 [Homepage](https://github.com/joellesenne/joellesenne.dev)
 
-[![Twitter: joellesenne](https://img.shields.io/twitter/follow/joellesenne.svg?style=social)](https://twitter.com/joellesenne)
+### ✨ [Demo](https://joellesenne.dev)
 
-## About
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
->If you look at this page here,
-this is for you to share my code in the world.
+- [Prerequisites](#prerequisites)
+- [Install](#install)
+- [Usage](#usage)
+- [Run tests](#run-tests)
+- [Author](#author)
+- [🤝 Contributing](#-contributing)
+- [Show your support](#show-your-support)
+- [📝 License](#-license)
 
-👀 [Looking at my work](https://joellesenne.dev)
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-💡 [Inspiration](https://www.lekoarts.de/en/)
+## Prerequisites
 
-📦 [Git project](https://github.com/joellesenne/joellesenne.dev)
+- node >=14.15.4
+- npm >=6.14.10
 
-## 🛠 Built with
+## Install
 
-- Front-End
-  - [React](https://reactjs.org/)
-  - [Gatsby](https://www.gatsbyjs.org/)
-  - [styled-components](https://www.styled-components.com/)
-  - [MDX](https://mdxjs.com/)
+```sh
+# Install gatsby-clie <https://www.gatsbyjs.com/docs/reference/gatsby-cli>
+npm install -g gatsby-cli
 
-- Look [package.json](package.json)
+# Use node-gyp <https://github.com/nodejs/node-gyp#installation>
+npm install -g node-gyp
 
-## 🖥 Good started
-
-1. – Install JavaScript runtime built [nodejs](https://nodejs.org/en/)
-2. – Install [Gatsby CLI](https://www.gatsbyjs.org/packages/gatsby-cli/)
-3. – Install [node-gyp](https://github.com/nodejs/node-gyp#installation)
-
-4. – Downloads [git-scm.com](https://git-scm.com/downloads) – [Docs](https://git-scm.com/docs) for config
-
-### 💻 Command bash
-
-### Prerequisites
-
-```bash
-# Node version
-~ $ node --version
-
-# NPM version
-~ $ npm --version
-
-# Git version
-~ $ git --version
-
-# gatsby-cli
-~ $ [sudo] npm install -g gatsby-cli
-
-# gatsby-cli version
-~ $ gatsby-cli --version
-```
-
-### Installing
-
-```bash
-~ $ gatsby new <nameProject> https://github.com/joellesenne/joellesenne.dev
-
-# // or
 # Clone this repository
-~ $ git clone  https://github.com/joellesenne/joellesenne.dev.git
+git clone  https://github.com/joellesenne/joellesenne.dev.git
 
-~ $ cd joellesenne.dev
+cd joellesenne.dev
 
-~ $ npm install
+npm install
+
+# OR
+yarn install
 ```
 
-### Usage
+## Usage
 
-```bash
+```sh
 # Run Gatsby develop
-~ $ gatsby develop -o
+gatsby develop -o
 ```
 
-=> browse to [http://localhost:8000/](http://localhost:8000/)
+=> browse to http://localhost:8000/
 
 🎉 have fun
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/joellesenne/joellesenne.dev)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://joellesenne.netlify.app/)
 
-## 🚧 Coming soon
+## Run tests
 
-- ❌ Use a CMS
-- ✔️ Deploy on [Netlify](https://www.netlifycms.org/)
-- ✔️ Social Shares
-- ✔️ Comment Blog
+```sh
+start-server-and-test develop http://localhost:8000 cy:open
+```
 
 ## Author
 
-👤 **Joël Lesenne &lt;contact@joellesenne.dev&gt;**
+👤 **Joël Lesenne**
 
-- Twitter : [@joellesenne](https://twitter.com/joellesenne)
-- Github : [@joellesenne](https://github.com/joellesenne)
-- Codepen : [@joellesenne](https://codepen.io/joellesenne)
-
-### 🏠 [Homepage](https://joellesenne.dev)
+* Website: https://joellesenne.dev
+* Twitter: [@joellesenne](https://twitter.com/joellesenne)
+* Github: [@joellesenne](https://github.com/joellesenne)
+* Codepen : [@joellesenne](https://codepen.io/joellesenne)
+* LinkedIn: [@joellesenne](https://linkedin.com/in/joellesenne)
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
-
-Feel free to check [issues page](https://github.com/joellesenne/joellesenne.dev/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/joellesenne/joellesenne.dev/issues). You can also take a look at the [contributing guide](https://github.com/joellesenne/joellesenne.dev/blob/master/CONTRIBUTING.md).
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
-[![support us](https://img.shields.io/badge/Patreon-Donate-red?style=flat-square)](https://www.patreon.com/joellesenne)
+<a href="https://www.patreon.com/joellesenne">
+  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
 
 ## 📝 License
 
-Copyright © 2019 [Joël Lesenne](https://github.com/joellesenne).
+Copyright © 2021 [Joël Lesenne](https://github.com/joellesenne).<br />
+This project is [MIT](https://github.com/joellesenne/joellesenne.dev/blob/master/LICENSE) licensed.
 
-This project is [MIT](LICENSE) licensed.
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
