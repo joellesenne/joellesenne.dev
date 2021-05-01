@@ -8,7 +8,7 @@ const colors = {
     bg: '#050663',
     white: '#fff',
     black: '#000',
-    bgLight: '#1519d3',
+    bgLight: '#0030f0',
   },
   heros: {
     subtitle: {
@@ -16,12 +16,12 @@ const colors = {
     },
   },
   nav: {
-    bg: '#1519d3',
+    bg: '#0030f0',
   },
   link: {
     gradientRight: '#da8725',
     gradientLeft: '#da1a60',
-    border: '#08082b',
+    border: '#0030f0',
   },
 }
 
