@@ -71,12 +71,12 @@
     "keyboardjs": "^2.6.4",
     "lodash": "^4.17.21",
     "mdx-utils": "0.2.0",
-    "polished": "^3.7.1",
+    "polished": "^4.1.2",
     "prism-react-renderer": "^1.2.0",
     "prop-types": "^15.7.2",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-cookie-consent": "^5.2.0",
-    "react-dom": "^16.13.1",
+    "react-dom": "^16.14.0",
     "react-dom-confetti": "^0.2.0",
     "react-headroom": "^3.1.1",
     "react-helmet": "^6.1.0",
@@ -84,7 +84,7 @@
     "react-particles-js": "^3.4.1",
     "react-use": "^15.3.8",
     "snyk": "^1.564.0",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.3"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
