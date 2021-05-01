@@ -117,6 +117,7 @@ const GlobalStyle = createGlobalStyle`
     display: none !important;
   }
   pre {
+  margin-top: 1rem;
     white-space: pre;
     word-wrap: break-word;
     overflow: auto;
