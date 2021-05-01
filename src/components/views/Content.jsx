@@ -21,7 +21,7 @@ const Content = styled.section`
   grid-column: 2;
   position: relative;
   border-radius: 1rem;
-  padding: 2rem 6rem;
+  padding: 4rem 6rem;
   background-color: ${(props) => lighten(0.08, props.theme.colors.base.bg)};
   box-shadow: 0 4px 120px rgba(0, 0, 0, 0.15);
   ${slideUpFadeCover('1s')};
@@ -31,7 +31,7 @@ const Content = styled.section`
     padding: 2.5rem 4rem;
   }
   @media (max-width: ${(props) => props.theme.breakpoints.md}) {
-    padding: 1.5rem 1.5rem;
+    padding: 1.5rem;
   }
   overflow: hidden;
 `

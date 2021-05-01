@@ -12,7 +12,7 @@ import config from '../../config/site'
 import { Wave, Navigation, Button, Line, Header, Bio, Contact, Footer, Layout, Container, Content } from '../components'
 
 // styles
-import { ButtonWrapper } from '../components/elements/Button/Styled'
+import { Wrapperbtn } from '../components/elements/Button/Styled'
 import { Number, TagButton } from '../components/elements/Tags/Styled'
 
 const tagsPage = ({
@@ -28,7 +28,7 @@ const tagsPage = ({
     </Header>
     <Container>
       <Content>
-        <ButtonWrapper>
+        <Wrapperbtn>
           {group.map((tag) => (
             <TagButton key={tag.id} to={`/tag/${kebabCase(tag.fieldValue)}`}>
               <span>
@@ -36,7 +36,7 @@ const tagsPage = ({
               </span>
             </TagButton>
           ))}
-        </ButtonWrapper>
+        </Wrapperbtn>
         <Line />
         <Button url="/categories" title="Voir les catégories" />
       </Content>

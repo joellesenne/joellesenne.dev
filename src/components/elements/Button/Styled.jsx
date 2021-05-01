@@ -2,14 +2,13 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { lighten } from 'polished'
 
-export const wrapperBTN = styled.div`
+export const Wrapperbtn = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 3rem;
 `
 
-export const linkdBTN = styled(Link)`
+export const Linkdbtn = styled(Link)`
   margin-top: 2rem;
   padding: 10px 25px;
   font-size: 20px;

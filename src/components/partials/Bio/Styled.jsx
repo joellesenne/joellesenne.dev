@@ -2,9 +2,11 @@ import styled from 'styled-components'
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: 150px auto;
+  grid-template-columns: 1fr auto;
+  grid-gap: 2rem;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  margin: 2rem 0 1rem;
   @media (max-width: ${(props) => props.theme.breakpoints.md}) {
     grid-template-columns: 1fr;
   }

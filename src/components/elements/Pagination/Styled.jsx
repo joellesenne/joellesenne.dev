@@ -3,7 +3,7 @@ import { darken } from 'polished'
 
 export const Wrapper = styled.section`
   display: flex;
-  margin: 6rem auto 0 auto;
+  margin: 3rem auto 0;
   a {
     display: flex;
     align-items: center;

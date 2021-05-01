@@ -56,8 +56,8 @@ export const Title = styled.h2`
     &:before {
       content: url(${triangle});
       position: absolute;
-      left: -60px;
-      top: 5px;
+      left: -70px;
+      top: 25px;
       width: 40px;
       height: 40px;
       background-size: 40px;

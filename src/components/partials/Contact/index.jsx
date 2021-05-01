@@ -11,7 +11,7 @@ import { Content } from '../../views'
 
 const SectionPage = () => (
   <Content>
-    <Title>Entrer en contact</Title>
+    <Title>Rester en contact</Title>
     <Paragraph>
       M’écrire pour parler de votre projet <Link href="mailto:contact@joellesenne.dev">contact@joellesenne.dev</Link>,{' '}
       voir mon{' '}

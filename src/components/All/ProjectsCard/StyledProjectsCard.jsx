@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 export const ProjectsWrapper = styled.section`
-  padding: 1rem 0;
+  padding: 3rem 0;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   justify-content: space-between;

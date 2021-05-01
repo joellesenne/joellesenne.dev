@@ -76,7 +76,7 @@ const indexPage = ({
       </Header>
       <Container>
         <Content>
-          <Title>Côté projet</Title>
+          <Title>Mes projets</Title>
           <ProjectsWrapper>
             {projects.map((project) => (
               <ProjectsCard
@@ -93,7 +93,7 @@ const indexPage = ({
           <Button url="/projets" title="Voir mes projets" />
         </Content>
         <Content>
-          <Title>Côté blog</Title>
+          <Title>Mes articles</Title>
           {posts.map((post) => (
             <ArticlesCard
               title={post.frontmatter.title}

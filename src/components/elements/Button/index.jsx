@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 // styled
-import { wrapperBTN, linkdBTN } from './Styled'
+import { Wrapperbtn, Linkdbtn } from './Styled'
 
 const Button = ({ url, title }) => (
-  <wrapperBTN>
-    <linkdBTN to={url}>{title}</linkdBTN>
-  </wrapperBTN>
+  <Wrapperbtn>
+    <Linkdbtn to={url}>{title}</Linkdbtn>
+  </Wrapperbtn>
 )
 
 export default Button
