@@ -70,7 +70,7 @@ yarn install
 gatsby develop -o
 ```
 
-=> browse to http://localhost:8000/
+=> Now browse to http://localhost:8000/
 
 🎉 have fun
 
