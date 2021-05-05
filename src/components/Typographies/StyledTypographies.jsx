@@ -57,10 +57,10 @@ export const Title = styled.h2`
       content: url(${triangle});
       position: absolute;
       left: -70px;
-      top: 25px;
+      top: 0;
       width: 40px;
-      height: 40px;
       background-size: 40px;
+      transform-origin: center center;
       ${rotateAnimation('4s')};
     }
   }

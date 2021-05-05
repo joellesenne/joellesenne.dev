@@ -1,11 +1,20 @@
 import { Link } from 'gatsby'
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 import { lighten } from 'polished'
 
 export const Wrapperbtn = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+`
+export const rainbow = keyframes`
+  0% { 
+    background-position: 0% 50%; 
+  }
+  100% { 
+    background-position: 100% 50%; 
+    
+  }
 `
 
 export const Linkdbtn = styled(Link)`
@@ -16,20 +25,26 @@ export const Linkdbtn = styled(Link)`
   color: ${(props) => props.theme.colors.base.white};
   background-color: ${(props) => props.theme.colors.link.gradientRight};
   background-image: ${(props) => props.theme.gradient.btn};
+  background-size: 1200% 1200%;
+  background-position: 2% 80%;
   border-radius: 50px;
-  border: 4px solid ${(props) => lighten(0.3, props.theme.colors.base.bg)};
+  border: 4px solid ${(props) => lighten(0.2, props.theme.colors.base.bg)};
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
   transition: ${(props) => props.theme.transition.link};
+  animation: ${ rainbow } 4s ease-out alternate infinite;
   @media (max-width: ${(props) => props.theme.breakpoints.md}) {
     font-size: 1rem;
   }
   &:hover {
-    background-color: ${(props) => props.theme.colors.link.bg};
     box-shadow: 0 0 2px 2px ${(props) => lighten(0.1, props.theme.colors.base.bg)};
-    background-image: ${(props) => props.theme.gradient.btn};
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    background-position: right center;
+    
+    
+  }
+  &:focus {
+  background-color: ${(props) => props.theme.colors.link.bg};
+  background-image: ${(props) => props.theme.gradient.btn};
   }
 `

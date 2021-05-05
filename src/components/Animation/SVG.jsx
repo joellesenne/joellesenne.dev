@@ -13,8 +13,8 @@ const SVG = styled.svg`
 
 export const icons = {
   triangle: {
-    shape: <path fill="none" stroke="white" d="M14.921,2.27 28.667,25.5 1.175,25.5 z" />,
-    viewBox: '0 0 30 35',
+    shape: <path fill="none" stroke="#a8dcfe" d="M14.921,2.27 28.667,25.5 1.175,25.5 z" />,
+    viewBox: '0 0 40 40',
   },
   file: {
     shape: (

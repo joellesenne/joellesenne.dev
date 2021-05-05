@@ -1,27 +1,27 @@
 const colors = {
   base: {
-    color: '#d4d4f7',
+    color: '#dedede',
     gradientLeft: '#e41b64',
     gradientRight: '#89103c',
     gradientLeftTo: '#fe1605',
     gradientRightButton: '#fea04f',
-    bg: '#050663',
+    bg: '#0800a8',
     white: '#fff',
     black: '#000',
-    bgLight: '#0030f0',
+    bgLight: '#0030ef',
   },
   heros: {
     subtitle: {
-      color: '#b6b7e5',
+      color: '#a8dcfe',
     },
   },
   nav: {
-    bg: '#0030f0',
+    bg: '#0030ef',
   },
   link: {
     gradientRight: '#da8725',
     gradientLeft: '#da1a60',
-    border: '#0030f0',
+    border: '#0030ef',
   },
 }
 

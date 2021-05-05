@@ -1,6 +1,11 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+@media (prefers-reduced-motion: reduce) {
+  * {
+  animation: none;
+  }
+}
   *, *:before, *:after {
     box-sizing: inherit;
     margin: 0;

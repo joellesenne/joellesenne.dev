@@ -22,10 +22,10 @@ const ArticlePage = ({ title, date, excerpt, slug, timeToRead, category }) => {
         <Link to={slug}>{title}</Link>
       </Title>
       <Information>
-        <SVG icon="category" stroke="#a9a9ef" strokeWidth="2" width={14} height={14} />{' '}
+        <SVG icon="category" stroke="#a8dcfe" strokeWidth="2" width={14} height={14} />{' '}
         <GatsbyLink to={`/categorie/${kebabCase(category)}`}>{category}</GatsbyLink>–{' '}
-        <SVG icon="calendar" stroke="#a9a9ef" strokeWidth="2" width={14} height={14} /> {date} –{' '}
-        <SVG icon="clock" stroke="#a9a9ef" strokeWidth="2" width={14} height={14} /> {timeToRead} min de lecture
+        <SVG icon="calendar" stroke="#a8dcfe" strokeWidth="2" width={14} height={14} /> {date} –{' '}
+        <SVG icon="clock" stroke="#a8dcfe" strokeWidth="2" width={14} height={14} /> {timeToRead} min de lecture
       </Information>
       <Excerpt>{excerpt}</Excerpt>
     </Post>

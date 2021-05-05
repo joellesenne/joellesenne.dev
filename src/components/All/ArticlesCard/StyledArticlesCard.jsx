@@ -37,12 +37,12 @@ export const Initial = styled.span`
 export const Information = styled.div`
   margin-top: -0.5rem;
   margin-bottom: 0.5rem;
-  color: ${(props) => darken(0.1, props.theme.colors.base.color)};
+  color: ${(props) => darken(0.1, props.theme.colors.heros.subtitle.color)};
 `
 
 export const IconSvg = styled.img`
   svg {
-    stroke: ${(props) => darken(0.1, props.theme.colors.base.color)};
+    stroke: ${(props) => darken(0.1, props.theme.colors.heros.subtitle.color)};
   }
 `
 
