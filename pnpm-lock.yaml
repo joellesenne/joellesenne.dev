@@ -49,7 +49,7 @@ specifiers:
   polished: ^4.1.4
   prettier: ^2.5.1
   prettier-standard: ^16.4.1
-  prism-react-renderer: ^1.2.1
+  prism-react-renderer: ^1.3.1
   prop-types: ^15.8.1
   react: ^17.0.2
   react-cookie-consent: ^7.2.1
@@ -97,7 +97,7 @@ dependencies:
   lodash: 4.17.21
   mdx-utils: 0.2.0
   polished: 4.1.4
-  prism-react-renderer: 1.2.1_react@17.0.2
+  prism-react-renderer: 1.3.1_react@17.0.2
   prop-types: 15.8.1
   react: 17.0.2
   react-cookie-consent: 7.2.1_react@17.0.2
@@ -11725,8 +11725,8 @@ packages:
       renderkid: 2.0.7
     dev: false
 
-  /prism-react-renderer/1.2.1_react@17.0.2:
-    resolution: {integrity: sha512-w23ch4f75V1Tnz8DajsYKvY5lF7H1+WvzvLUcF0paFxkTHSp42RS0H5CttdN2Q8RR3DRGZ9v5xD/h3n8C8kGmg==}
+  /prism-react-renderer/1.3.1_react@17.0.2:
+    resolution: {integrity: sha512-xUeDMEz074d0zc5y6rxiMp/dlC7C+5IDDlaEUlcBOFE2wddz7hz5PNupb087mPwTt7T9BrFmewObfCBuf/LKwQ==}
     peerDependencies:
       react: '>=0.14.9'
     dependencies:
@@ -12047,7 +12047,7 @@ packages:
       buble: 0.19.6
       core-js: 3.21.0
       dom-iterator: 1.0.0
-      prism-react-renderer: 1.2.1_react@17.0.2
+      prism-react-renderer: 1.3.1_react@17.0.2
       prop-types: 15.8.1
       react-simple-code-editor: 0.11.0_react-dom@17.0.2+react@17.0.2
       unescape: 1.0.1
