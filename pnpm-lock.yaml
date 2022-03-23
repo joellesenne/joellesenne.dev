@@ -6,7 +6,7 @@ specifiers:
   '@mdx-js/react': ^2.0.0
   '@mdx-js/tag': ^0.20.3
   babel-eslint: ^10.1.0
-  babel-plugin-styled-components: ^2.0.2
+  babel-plugin-styled-components: ^2.0.6
   commentbox.io: ^2.1.0
   cypress: ^9.4.1
   cypress-testing-library: ^4.0.0
@@ -69,7 +69,7 @@ dependencies:
   '@mdx-js/mdx': 2.0.0
   '@mdx-js/react': 2.0.0_react@17.0.2
   '@mdx-js/tag': 0.20.3_react@17.0.2
-  babel-plugin-styled-components: 2.0.2_styled-components@5.3.3
+  babel-plugin-styled-components: 2.0.6_styled-components@5.3.3
   commentbox.io: 2.1.0
   gatsby: 4.6.1_84b0ee729d10030fbc30d430c15309c5
   gatsby-image: 3.11.0
@@ -87,7 +87,7 @@ dependencies:
   gatsby-plugin-remove-serviceworker: 1.0.0
   gatsby-plugin-sharp: 4.6.0_gatsby@4.6.1
   gatsby-plugin-sitemap: 5.6.0_fdae88221fea8a2238ece8d49affecf7
-  gatsby-plugin-styled-components: 5.6.0_312c1549454a6b27c09e57afae4d5065
+  gatsby-plugin-styled-components: 5.6.0_ffc2aa2b9db2606d7f567ba2bb4d9827
   gatsby-remark-autolink-headers: 5.6.0_fdae88221fea8a2238ece8d49affecf7
   gatsby-remark-external-links: 0.0.4
   gatsby-remark-images: 6.6.0_ddc11764bdfbb58b48b086d6abce55fd
@@ -3467,8 +3467,8 @@ packages:
       gatsby-core-utils: 3.6.0
     dev: false
 
-  /babel-plugin-styled-components/2.0.2_styled-components@5.3.3:
-    resolution: {integrity: sha512-7eG5NE8rChnNTDxa6LQfynwgHTVOYYaHJbUYSlOhk8QBXIQiMBKq4gyfHBBKPrxUcVBXVJL61ihduCpCQbuNbw==}
+  /babel-plugin-styled-components/2.0.6_styled-components@5.3.3:
+    resolution: {integrity: sha512-Sk+7o/oa2HfHv3Eh8sxoz75/fFvEdHsXV4grdeHufX0nauCmymlnN0rGhIvfpMQSJMvGutJ85gvCGea4iqmDpg==}
     peerDependencies:
       styled-components: '>= 2'
     dependencies:
@@ -3476,6 +3476,7 @@ packages:
       '@babel/helper-module-imports': 7.16.7
       babel-plugin-syntax-jsx: 6.18.0
       lodash: 4.17.21
+      picomatch: 2.3.1
       styled-components: 5.3.3_react-dom@17.0.2+react@17.0.2
     dev: false
 
@@ -7150,7 +7151,7 @@ packages:
       sitemap: 7.1.1
     dev: false
 
-  /gatsby-plugin-styled-components/5.6.0_312c1549454a6b27c09e57afae4d5065:
+  /gatsby-plugin-styled-components/5.6.0_ffc2aa2b9db2606d7f567ba2bb4d9827:
     resolution: {integrity: sha512-D/LmioFAA0l6fe3+q0/Y6zj7i9TAJBWhFq3htHHIP8kGbK1gUlRMqLXjdHVo7aYnKqHb76X7kHyjoyYfD2s3aA==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
@@ -7161,7 +7162,7 @@ packages:
       styled-components: '>=2.0.0'
     dependencies:
       '@babel/runtime': 7.16.7
-      babel-plugin-styled-components: 2.0.2_styled-components@5.3.3
+      babel-plugin-styled-components: 2.0.6_styled-components@5.3.3
       gatsby: 4.6.1_84b0ee729d10030fbc30d430c15309c5
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -13485,7 +13486,7 @@ packages:
       '@emotion/is-prop-valid': 0.8.8
       '@emotion/stylis': 0.8.5
       '@emotion/unitless': 0.7.5
-      babel-plugin-styled-components: 2.0.2_styled-components@5.3.3
+      babel-plugin-styled-components: 2.0.6_styled-components@5.3.3
       css-to-react-native: 3.0.0
       hoist-non-react-statics: 3.3.2
       react: 17.0.2
