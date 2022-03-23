@@ -60,7 +60,7 @@ specifiers:
   react-live: ^2.4.1
   react-particles-js: ^3.6.0
   react-use: ^17.3.2
-  snyk: ^1.844.0
+  snyk: ^1.881.0
   start-server-and-test: ^1.14.0
   styled-components: ^5.3.3
 
@@ -108,7 +108,7 @@ dependencies:
   react-live: 2.4.1_react-dom@17.0.2+react@17.0.2
   react-particles-js: 3.6.0_react@17.0.2
   react-use: 17.3.2_react-dom@17.0.2+react@17.0.2
-  snyk: 1.844.0
+  snyk: 1.881.0
   styled-components: 5.3.3_react-dom@17.0.2+react@17.0.2
 
 devDependencies:
@@ -12974,8 +12974,8 @@ packages:
       use: 3.1.1
     dev: false
 
-  /snyk/1.844.0:
-    resolution: {integrity: sha512-FEaitzYefNqbwlQnESbINc4Fb9dRDQ8PaAhz3GQNT9qUpeHpBDRHgVQKDq1YdwAjJpiBQMuRtHdPN+DDMMXuuQ==}
+  /snyk/1.881.0:
+    resolution: {integrity: sha512-0dzvh3AxvbjelPNqTDWJXKdm6PnbdA+nDtRPUQJv2nKTPqLZt5fiKxB8JZ38cgAzhwputsETEWBRSQHz6v6rTA==}
     engines: {node: '>=10'}
     hasBin: true
     dev: false

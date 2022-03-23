@@ -83,7 +83,7 @@
     "react-live": "^2.4.1",
     "react-particles-js": "^3.6.0",
     "react-use": "^17.3.2",
-    "snyk": "^1.844.0",
+    "snyk": "^1.881.0",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
