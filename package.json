@@ -106,7 +106,7 @@
     "start-server-and-test": "^1.14.0"
   },
   "engines": {
-    "node": ">=16.13.2",
+    "node": ">=v16.14.2",
     "npm": ">=8.4.0"
   },
   "snyk": true
