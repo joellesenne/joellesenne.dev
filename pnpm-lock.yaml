@@ -19,7 +19,7 @@ specifiers:
   '@mdx-js/tag': ^0.20.3
   '@snyk/protect': ^1.881.0
   babel-eslint: ^10.1.0
-  babel-plugin-styled-components: ^2.0.6
+  babel-plugin-styled-components: ^2.0.7
   commentbox.io: ^2.1.0
   cypress: ^8.7.0
   cypress-testing-library: ^4.0.0
@@ -82,7 +82,7 @@ dependencies:
   '@mdx-js/react': 2.1.0_react@17.0.2
   '@mdx-js/tag': 0.20.3_react@17.0.2
   '@snyk/protect': 1.881.0
-  babel-plugin-styled-components: 2.0.6_styled-components@5.3.3
+  babel-plugin-styled-components: 2.0.7_styled-components@5.3.3
   commentbox.io: 2.1.0
   gatsby: 4.10.3_84b0ee729d10030fbc30d430c15309c5
   gatsby-image: 3.11.0
@@ -100,7 +100,7 @@ dependencies:
   gatsby-plugin-remove-serviceworker: 1.0.0
   gatsby-plugin-sharp: 4.10.2_gatsby@4.10.3
   gatsby-plugin-sitemap: 5.10.2_81fde3177dbcd2f1894400551d888680
-  gatsby-plugin-styled-components: 5.10.0_bfe5379d68e78b94d65e594201ce012c
+  gatsby-plugin-styled-components: 5.10.0_9c51f82cb1ffab5e5e08b4876f17c863
   gatsby-remark-autolink-headers: 5.10.2_81fde3177dbcd2f1894400551d888680
   gatsby-remark-external-links: 0.0.4
   gatsby-remark-images: 6.10.2_bced32841dc092f03f390304902b3e7f
@@ -4077,8 +4077,8 @@ packages:
       gatsby-core-utils: 3.10.1
     dev: false
 
-  /babel-plugin-styled-components/2.0.6_styled-components@5.3.3:
-    resolution: {integrity: sha512-Sk+7o/oa2HfHv3Eh8sxoz75/fFvEdHsXV4grdeHufX0nauCmymlnN0rGhIvfpMQSJMvGutJ85gvCGea4iqmDpg==}
+  /babel-plugin-styled-components/2.0.7_styled-components@5.3.3:
+    resolution: {integrity: sha512-i7YhvPgVqRKfoQ66toiZ06jPNA3p6ierpfUuEWxNF+fV27Uv5gxBkf8KZLHUCc1nFA9j6+80pYoIpqCeyW3/bA==}
     peerDependencies:
       styled-components: '>= 2'
     dependencies:
@@ -7824,7 +7824,7 @@ packages:
       sitemap: 7.1.1
     dev: false
 
-  /gatsby-plugin-styled-components/5.10.0_bfe5379d68e78b94d65e594201ce012c:
+  /gatsby-plugin-styled-components/5.10.0_9c51f82cb1ffab5e5e08b4876f17c863:
     resolution: {integrity: sha512-aEycuqIecQK/lATy75sJoNkfy2pEZ12yPRlg9iTrPCZKUHQImbLIp9J9YzxMjxkH6XB3pbf2Ug31XaGVntJUVQ==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
@@ -7835,7 +7835,7 @@ packages:
       styled-components: '>=2.0.0'
     dependencies:
       '@babel/runtime': 7.17.8
-      babel-plugin-styled-components: 2.0.6_styled-components@5.3.3
+      babel-plugin-styled-components: 2.0.7_styled-components@5.3.3
       gatsby: 4.10.3_84b0ee729d10030fbc30d430c15309c5
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -14250,7 +14250,7 @@ packages:
       '@emotion/is-prop-valid': 0.8.8
       '@emotion/stylis': 0.8.5
       '@emotion/unitless': 0.7.5
-      babel-plugin-styled-components: 2.0.6_styled-components@5.3.3
+      babel-plugin-styled-components: 2.0.7_styled-components@5.3.3
       css-to-react-native: 3.0.0
       hoist-non-react-statics: 3.3.2
       react: 17.0.2
