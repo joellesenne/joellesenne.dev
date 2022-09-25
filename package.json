@@ -84,7 +84,7 @@
     "react-helmet": "^6.1.0",
     "react-live": "^2.4.1",
     "react-particles-js": "^3.6.0",
-    "react-use": "^17.3.2",
+    "react-use": "^17.4.0",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
