@@ -42,8 +42,8 @@
   },
   "dependencies": {
     "@hot-loader/react-dom": "^17.0.2",
-    "@mdx-js/mdx": "^2.1.0",
-    "@mdx-js/react": "^2.1.0",
+    "@mdx-js/mdx": "^2.1.5",
+    "@mdx-js/react": "^2.1.5",
     "@mdx-js/tag": "^0.20.3",
     "@snyk/protect": "^1.881.0",
     "babel-plugin-styled-components": "^2.0.6",
