@@ -17,7 +17,7 @@ specifiers:
   '@mdx-js/mdx': ^2.3.0
   '@mdx-js/react': ^2.3.0
   '@mdx-js/tag': ^0.20.3
-  '@snyk/protect': ^1.1106.0
+  '@snyk/protect': ^1.1108.0
   babel-eslint: ^10.1.0
   babel-plugin-styled-components: ^2.0.7
   commentbox.io: ^2.1.0
@@ -81,7 +81,7 @@ dependencies:
   '@mdx-js/mdx': 2.3.0
   '@mdx-js/react': 2.3.0_react@18.2.0
   '@mdx-js/tag': 0.20.3_react@18.2.0
-  '@snyk/protect': 1.1106.0
+  '@snyk/protect': 1.1108.0
   babel-plugin-styled-components: 2.0.7_styled-components@5.3.6
   commentbox.io: 2.1.0
   gatsby: 5.7.0_reymdd3lntqhs7cz5cdwnxxlke
@@ -2512,8 +2512,8 @@ packages:
       escape-string-regexp: 2.0.0
       lodash.deburr: 4.1.0
 
-  /@snyk/protect/1.1106.0:
-    resolution: {integrity: sha512-0fodYwkc//gWxIrIfaPL22cfuFI3mD/mdtqWjCXuoNFx2yzwd5FIMSlByTJRV9/UuIo+JlpkzhZmBQK8V0rNqA==}
+  /@snyk/protect/1.1108.0:
+    resolution: {integrity: sha512-NJFFPiSTenMMfjqM4lm1N/CmuTWaD1DR5MQL1Saiwa8MhM2lz3c4gDMhpHCCR2VztlvOHmgdLMupFSCGfM1dJw==}
     engines: {node: '>=10'}
     hasBin: true
     dev: false
