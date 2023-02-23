@@ -23,9 +23,7 @@
 
 ### ✨ [Demo](https://joellesenne.dev)
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+**Table of Contents**
 
 - [Prerequisites](#prerequisites)
 - [Install](#install)
@@ -36,12 +34,11 @@
 - [Show your support](#show-your-support)
 - [📝 License](#-license)
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Prerequisites
 
-- node >=16.0.0
-- npm >=7.13.0
+This project requires [node](https://nodejs.org) and [npm](https://npmjs.com). Go check them out if you don't have them locally installed.
+
 
 ## Install
 
@@ -108,6 +105,3 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2021 [Joël Lesenne](https://github.com/joellesenne).<br />
 This project is [MIT](https://github.com/joellesenne/joellesenne.dev/blob/master/LICENSE) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
